@@ -32,16 +32,21 @@ jobs:
           set -e
           ASSET_URL=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest \
             | grep browser_download_url \
-            | grep "linux-amd64" \
+            | grep "linux-amd64-compatible" \
             | grep -v "go120" \
             | grep -v "\.sha256" \
             | head -n1 \
             | cut -d '"' -f4)
+          if [ -z "$ASSET_URL" ]; then
+            echo "找不到 linux-amd64-compatible 资源, 退出"
+            exit 1
+          fi
           echo "downloading $ASSET_URL"
           curl -L "$ASSET_URL" -o mihomo.gz
           gunzip mihomo.gz
           mv mihomo* mihomo 2>/dev/null || true
           chmod +x mihomo
+          file ./mihomo
           ./mihomo -v
 
       - name: Run pipeline
