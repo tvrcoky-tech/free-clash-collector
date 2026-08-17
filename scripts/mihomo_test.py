@@ -5,7 +5,7 @@
 不对、或被墙检测阻断的假活节点。
 """
 import asyncio
-import json
+import re
 import subprocess
 import time
 import yaml
@@ -78,7 +78,12 @@ def run_real_test(proxies, mihomo_bin="./mihomo"):
     """
     proxies: list of clash proxy dicts (需要唯一 name)
     返回: {name: delay_ms}  只包含测试成功(真的能连通)的节点
+
+    如果某个节点配置损坏导致 mihomo 直接拒绝加载整份配置(mihomo 的行为是
+    一颗老鼠屎坏一锅粥式的), 会自动从报错信息里定位这个坏节点的下标并剔除,
+    然后重试, 而不是让全部节点都陪葬。
     """
+    # 保证 name 唯一, 否则 mihomo 会去重导致漏测
     seen = {}
     for p in proxies:
         base = p["name"]
@@ -90,35 +95,53 @@ def run_real_test(proxies, mihomo_bin="./mihomo"):
         seen[n] = True
         p["name"] = n
 
-    config_path = build_mihomo_config(proxies)
-    log_file = open("mihomo_run.log", "w")
-    proc = subprocess.Popen(
-        [mihomo_bin, "-f", config_path, "-d", "."],
-        stdout=log_file,
-        stderr=subprocess.STDOUT,
-    )
-    try:
-        ready = asyncio.run(_wait_controller_ready())
-        if not ready:
-            print("mihomo 内核未能在超时内启动, 跳过真实测速。日志内容:")
+    max_attempts = 6
+    for attempt in range(1, max_attempts + 1):
+        if not proxies:
+            return {}
+        config_path = build_mihomo_config(proxies)
+        log_file = open("mihomo_run.log", "w")
+        proc = subprocess.Popen(
+            [mihomo_bin, "-f", config_path, "-d", "."],
+            stdout=log_file,
+            stderr=subprocess.STDOUT,
+        )
+        try:
+            ready = asyncio.run(_wait_controller_ready())
+            if ready:
+                names = [p["name"] for p in proxies]
+                print(f"开始对 {len(names)} 个候选节点做真实连通性测试 (并发 {CONCURRENCY}) ...")
+                results = asyncio.run(_test_all(names))
+                alive = {k: v for k, v in results.items() if v is not None}
+                print(f"真实测试通过: {len(alive)} / {len(names)}")
+                return alive
+
+            # 没启动起来: 看是不是某个节点配置有问题导致 mihomo 直接拒绝加载
             log_file.close()
+            log_text = ""
             try:
                 with open("mihomo_run.log") as f:
-                    print(f.read()[-2000:])
+                    log_text = f.read()
             except Exception:
                 pass
+
+            m = re.search(r"proxy (\d+):", log_text)
+            if m and attempt < max_attempts:
+                bad_index = int(m.group(1))
+                if 0 <= bad_index < len(proxies):
+                    bad_name = proxies[bad_index].get("name", "?")
+                    print(f"第 {attempt} 次尝试: 配置里第 {bad_index} 个节点({bad_name})解析失败, 剔除后重试")
+                    del proxies[bad_index]
+                    continue
+            print(f"mihomo 内核未能启动 (第 {attempt} 次尝试后放弃), 日志:")
+            print(log_text[-2000:])
             return {}
-        names = [p["name"] for p in proxies]
-        print(f"开始对 {len(names)} 个候选节点做真实连通性测试 (并发 {CONCURRENCY}) ...")
-        results = asyncio.run(_test_all(names))
-        alive = {k: v for k, v in results.items() if v is not None}
-        print(f"真实测试通过: {len(alive)} / {len(names)}")
-        return alive
-    finally:
-        proc.terminate()
-        try:
-            proc.wait(timeout=5)
-        except Exception:
-            proc.kill()
-        if not log_file.closed:
-            log_file.close()
+        finally:
+            proc.terminate()
+            try:
+                proc.wait(timeout=5)
+            except Exception:
+                proc.kill()
+            if not log_file.closed:
+                log_file.close()
+    return {}

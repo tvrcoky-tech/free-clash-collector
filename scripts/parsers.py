@@ -238,16 +238,48 @@ def parse_clash_yaml(text: str):
 
 ALLOWED_TYPES = {"ss", "vmess", "vless", "trojan", "hysteria2"}
 
+VALID_SS_CIPHERS = {
+    "aes-128-gcm", "aes-192-gcm", "aes-256-gcm",
+    "aes-128-cfb", "aes-192-cfb", "aes-256-cfb",
+    "aes-128-ctr", "aes-192-ctr", "aes-256-ctr",
+    "chacha20-ietf", "chacha20", "xchacha20",
+    "chacha20-ietf-poly1305", "xchacha20-ietf-poly1305",
+    "2022-blake3-aes-128-gcm", "2022-blake3-aes-256-gcm",
+    "2022-blake3-chacha20-poly1305",
+    "rc4-md5", "none",
+}
+
 
 def clean_proxy(p: dict):
-    """标准化字段,过滤掉 mihomo 不支持的类型"""
+    """标准化字段,过滤掉 mihomo 不支持的类型, 以及格式损坏的节点
+    (脏数据会导致 mihomo 直接拒绝加载整份配置, 必须在这里挡住)"""
     if not p or p.get("type") not in ALLOWED_TYPES:
         return None
     if not p.get("server") or not p.get("port"):
         return None
     try:
-        p["port"] = int(p["port"])
+        port = int(p["port"])
+        if not (0 < port < 65536):
+            return None
+        p["port"] = port
     except Exception:
         return None
+
+    if p["type"] == "ss":
+        cipher = str(p.get("cipher", "")).lower()
+        password = str(p.get("password", ""))
+        if cipher not in VALID_SS_CIPHERS:
+            return None
+        if not password or any(c in password for c in ("@", " ", "\n", "\t")):
+            return None
+    elif p["type"] in ("vmess", "vless"):
+        uuid = str(p.get("uuid", ""))
+        if not uuid or any(c in uuid for c in (" ", "\n", "\t", "@")):
+            return None
+    elif p["type"] in ("trojan", "hysteria2"):
+        password = str(p.get("password", ""))
+        if not password or any(c in password for c in (" ", "\n", "\t")):
+            return None
+
     p["name"] = str(p.get("name") or f"{p['type']}-{p['server']}")[:60]
     return p
