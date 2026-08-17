@@ -117,6 +117,19 @@ def annotate_and_sort(proxies, delays: dict):
         p["name"] = f"{flag}{cc or '??'} | {d}ms | {p['name'][:24]}"
         out.append(p)
     out.sort(key=lambda x: x["_delay"])
+
+    # 最终保险: 确保节点名全局唯一 (Clash 客户端对重名节点会直接拒绝整份订阅)
+    seen = {}
+    for p in out:
+        base = p["name"]
+        n = base
+        i = 2
+        while n in seen:
+            n = f"{base} #{i}"
+            i += 1
+        seen[n] = True
+        p["name"] = n
+
     return out
 
 
