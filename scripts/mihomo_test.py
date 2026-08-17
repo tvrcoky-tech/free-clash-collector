@@ -70,47 +70,4 @@ async def _test_all(names):
     sem = asyncio.Semaphore(CONCURRENCY)
     async with aiohttp.ClientSession() as session:
         tasks = [_test_one(session, sem, n) for n in names]
-        results = await asyncio.gather(*tasks)
-    return dict(results)
-
-
-def run_real_test(proxies, mihomo_bin="./mihomo"):
-    """
-    proxies: list of clash proxy dicts (需要唯一 name)
-    返回: {name: delay_ms}  只包含测试成功(真的能连通)的节点
-    """
-    # 保证 name 唯一, 否则 mihomo 会去重导致漏测
-    seen = {}
-    for p in proxies:
-        base = p["name"]
-        n = base
-        i = 2
-        while n in seen:
-            n = f"{base}-{i}"
-            i += 1
-        seen[n] = True
-        p["name"] = n
-
-    config_path = build_mihomo_config(proxies)
-    proc = subprocess.Popen(
-        [mihomo_bin, "-f", config_path, "-d", "."],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-    )
-    try:
-        ready = asyncio.run(_wait_controller_ready())
-        if not ready:
-            print("mihomo 内核未能在超时内启动, 跳过真实测速")
-            return {}
-        names = [p["name"] for p in proxies]
-        print(f"开始对 {len(names)} 个候选节点做真实连通性测试 (并发 {CONCURRENCY}) ...")
-        results = asyncio.run(_test_all(names))
-        alive = {k: v for k, v in results.items() if v is not None}
-        print(f"真实测试通过: {len(alive)} / {len(names)}")
-        return alive
-    finally:
-        proc.terminate()
-        try:
-            proc.wait(timeout=5)
-        except Exception:
-            proc.kill()
+        results = await
