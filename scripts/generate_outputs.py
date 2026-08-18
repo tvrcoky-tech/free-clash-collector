@@ -15,12 +15,13 @@ FLAGS = {
 def batch_geo_lookup(servers):
     """
     一次性查一批 IP/域名 属于哪个国家。
-    用 ip-api.com 的批量接口(每次最多 100 个), 比逐个查询快得多也不容易被限流:
-    免费额度是 15 次/分钟, 但每次能塞 100 个, 相当于 1500 个/分钟, 对我们的规模够用。
+    先用 ip-api.com 的批量接口(每次最多 100 个)查一遍; 如果这个接口被限流/查不到,
+    再用 ipwho.is 逐个补查一次兜底 —— 两个免费接口互相兜底, 比单用一个更抗限流。
     返回 {server: countryCode}
     """
     unique = list(dict.fromkeys(servers))
     result = {}
+
     for i in range(0, len(unique), 100):
         chunk = unique[i : i + 100]
         try:
@@ -32,10 +33,22 @@ def batch_geo_lookup(servers):
             for item in r.json():
                 result[item.get("query")] = item.get("countryCode", "") or ""
         except Exception:
-            for s in chunk:
-                result.setdefault(s, "")
+            pass
         if i + 100 < len(unique):
             time.sleep(4.5)  # 批量接口限额 15次/分钟, 留足余量
+
+    # 兜底: 第一轮没查到的, 换个接口逐个补一次
+    missing = [s for s in unique if not result.get(s)]
+    for s in missing:
+        try:
+            r = requests.get(f"https://ipwho.is/{s}?fields=success,country_code", timeout=4)
+            data = r.json()
+            if data.get("success"):
+                result[s] = data.get("country_code", "") or ""
+        except Exception:
+            pass
+        time.sleep(0.2)
+
     return result
 
 
