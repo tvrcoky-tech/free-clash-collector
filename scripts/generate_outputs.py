@@ -12,19 +12,31 @@ FLAGS = {
 }
 
 
-def geo_lookup(ip_or_host: str, cache: dict):
-    if ip_or_host in cache:
-        return cache[ip_or_host]
-    try:
-        r = requests.get(
-            f"http://ip-api.com/json/{ip_or_host}?fields=countryCode", timeout=4
-        )
-        cc = r.json().get("countryCode", "")
-    except Exception:
-        cc = ""
-    cache[ip_or_host] = cc
-    time.sleep(0.05)  # ip-api 免费额度 ~45 req/min, 简单限速
-    return cc
+def batch_geo_lookup(servers):
+    """
+    一次性查一批 IP/域名 属于哪个国家。
+    用 ip-api.com 的批量接口(每次最多 100 个), 比逐个查询快得多也不容易被限流:
+    免费额度是 15 次/分钟, 但每次能塞 100 个, 相当于 1500 个/分钟, 对我们的规模够用。
+    返回 {server: countryCode}
+    """
+    unique = list(dict.fromkeys(servers))
+    result = {}
+    for i in range(0, len(unique), 100):
+        chunk = unique[i : i + 100]
+        try:
+            r = requests.post(
+                "http://ip-api.com/batch?fields=query,countryCode",
+                json=chunk,
+                timeout=10,
+            )
+            for item in r.json():
+                result[item.get("query")] = item.get("countryCode", "") or ""
+        except Exception:
+            for s in chunk:
+                result.setdefault(s, "")
+        if i + 100 < len(unique):
+            time.sleep(4.5)  # 批量接口限额 15次/分钟, 留足余量
+    return result
 
 
 def build_clash_yaml(alive_proxies, path="output/clash.yaml"):
@@ -104,13 +116,13 @@ def build_v2ray_base64(alive_proxies, path="output/v2ray-base64.txt"):
 
 
 def annotate_and_sort(proxies, delays: dict):
-    cache = {}
+    alive = [p for p in proxies if delays.get(p["name"]) is not None]
+    geo_map = batch_geo_lookup([p["server"] for p in alive])
+
     out = []
-    for p in proxies:
-        d = delays.get(p["name"])
-        if d is None:
-            continue
-        cc = geo_lookup(p["server"], cache)
+    for p in alive:
+        d = delays[p["name"]]
+        cc = geo_map.get(p["server"], "")
         flag = FLAGS.get(cc, "🌐")
         p["_delay"] = d
         p["_country"] = cc
