@@ -37,7 +37,6 @@ def batch_geo_lookup(servers):
         if i + 100 < len(unique):
             time.sleep(4.5)  # 批量接口限额 15次/分钟, 留足余量
 
-    # 兜底: 第一轮没查到的, 换个接口逐个补一次
     missing = [s for s in unique if not result.get(s)]
     for s in missing:
         try:
@@ -128,27 +127,21 @@ def build_v2ray_base64(alive_proxies, path="output/v2ray-base64.txt"):
         f.write(base64.b64encode(blob.encode()).decode())
 
 
-def annotate_and_sort(proxies, delays: dict, gemini_ok=None):
-    gemini_ok = gemini_ok or set()
+def annotate_and_sort(proxies, delays: dict):
     alive = [p for p in proxies if delays.get(p["name"]) is not None]
     geo_map = batch_geo_lookup([p["server"] for p in alive])
 
     out = []
     for p in alive:
         d = delays[p["name"]]
-        ok = p["name"] in gemini_ok
         cc = geo_map.get(p["server"], "")
         flag = FLAGS.get(cc, "🌐")
-        tag = "✅Gemini " if ok else ""
         p["_delay"] = d
         p["_country"] = cc
-        p["_gemini_ok"] = ok
-        p["name"] = f"{tag}{flag}{cc or '??'} | {d}ms | {p['name'][:24]}"
+        p["name"] = f"{flag}{cc or '??'} | {d}ms | {p['name'][:24]}"
         out.append(p)
-    # 能访问 Gemini 的优先排在前面, 组内再按延迟从低到高排
-    out.sort(key=lambda x: (0 if x["_gemini_ok"] else 1, x["_delay"]))
+    out.sort(key=lambda x: x["_delay"])
 
-    # 最终保险: 确保节点名全局唯一 (Clash 客户端对重名节点会直接拒绝整份订阅)
     seen = {}
     for p in out:
         base = p["name"]
@@ -167,7 +160,6 @@ def write_stats(alive_proxies, source_stats, path="output/stats.json"):
     stats = {
         "updated": time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime()),
         "alive_count": len(alive_proxies),
-        "gemini_ok_count": sum(1 for p in alive_proxies if p.get("_gemini_ok")),
         "sources": source_stats,
         "protocol_mix": {},
         "country_mix": {},
