@@ -28,14 +28,14 @@ def main():
         print("没有抓到任何节点, 退出")
         return
 
-    print("== 第 2 步: 用 mihomo 内核做真实连通性测试 ==")
+    print("== 第 2 步: 用 mihomo 内核做真实连通性测试 (含 Gemini 专项测试) ==")
     mihomo_bin = os.path.join(os.path.dirname(__file__), "..", "mihomo")
-    delays = run_real_test(proxies, mihomo_bin=mihomo_bin)
+    delays, gemini_ok = run_real_test(proxies, mihomo_bin=mihomo_bin)
     delays = {k: v for k, v in delays.items() if v <= MAX_DELAY_MS}
 
     print("== 第 3 步: 标注地理位置, 排序, 生成输出 ==")
-    alive = annotate_and_sort(proxies, delays)
-    print(f"最终可用节点: {len(alive)}")
+    alive = annotate_and_sort(proxies, delays, gemini_ok)
+    print(f"最终可用节点: {len(alive)} (其中可访问 Gemini: {sum(1 for p in alive if p.get('_gemini_ok'))})")
 
     out_dir = os.path.join(os.path.dirname(__file__), "..", "output")
     build_clash_yaml(alive, os.path.join(out_dir, "clash.yaml"))
