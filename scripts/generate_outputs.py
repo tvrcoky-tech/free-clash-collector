@@ -12,6 +12,54 @@ FLAGS = {
 }
 
 
+def load_previous_alive(path="output/clash.yaml"):
+    """读取上一次已经生成/发布出去的订阅里有哪些节点, 给保底机制当备用池"""
+    if not os.path.exists(path):
+        return []
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = yaml.safe_load(f)
+        proxies = data.get("proxies") or []
+        return [p for p in proxies if isinstance(p, dict) and p.get("server") and p.get("port")]
+    except Exception:
+        return []
+
+
+def top_up_with_previous(alive, min_count, previous_path="output/clash.yaml"):
+    """
+    如果这一轮存活节点数不够 min_count 个, 就从上一次成功发布的订阅里借几个补上,
+    凑够保底数量。够了就什么都不做, 完全不影响正常流程。
+    借来的节点会在名字前加 🕰️ 标记, 说明它没有经过这一轮的真实验证,
+    是"上次还活着"而不是"这次测过还活着"。
+    """
+    if len(alive) >= min_count:
+        return alive, 0
+
+    previous = load_previous_alive(previous_path)
+    if not previous:
+        return alive, 0
+
+    existing_keys = {(p.get("server"), p.get("port")) for p in alive}
+    added = 0
+    for p in previous:
+        key = (p.get("server"), p.get("port"))
+        if key in existing_keys:
+            continue
+        borrowed = dict(p)
+        name = str(borrowed.get("name", "")).strip()
+        if not name.startswith("🕰️"):
+            name = f"🕰️沿用 {name}"
+        borrowed["name"] = name[:80]
+        borrowed["_borrowed"] = True
+        alive.append(borrowed)
+        existing_keys.add(key)
+        added += 1
+        if len(alive) >= min_count:
+            break
+
+    return alive, added
+
+
 def batch_geo_lookup(servers):
     """
     一次性查一批 IP/域名 属于哪个国家。
@@ -142,6 +190,7 @@ def annotate_and_sort(proxies, delays: dict):
         out.append(p)
     out.sort(key=lambda x: x["_delay"])
 
+    # 最终保险: 确保节点名全局唯一 (Clash 客户端对重名节点会直接拒绝整份订阅)
     seen = {}
     for p in out:
         base = p["name"]
