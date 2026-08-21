@@ -3,50 +3,19 @@ mode: rule
 log-level: info
 ipv6: false
 proxies:
-- name: 🇺🇸US | 30ms | 5🍏@oneclickvpnkeys
-  type: ss
-  server: 154.53.60.212
-  port: 443
-  cipher: aes-256-gcm
-  password: Nxv8ypErRfCSczD7
+- name: 🇺🇸US | 38ms | 🇺🇸US-173.249.209.146-014
+  type: vmess
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇨🇦CA | 62ms | >>@configV2rayNG::US-2
-  type: trojan
-  server: 172.67.132.19
-  port: 443
-  password: Telegram_healer_config
-  udp: true
-  sni: VRE6R9qRbQI0t25TG.SRTB0M3hdbwr2cJZ8fjUr.WoRKeRS.dev
   network: ws
   ws-opts:
-    path: /tr/bDodLFtTQwCZ6EX3ffMYJ06j9EjLse4d?ed=2560
-- name: 🇨🇦CA | 62ms | 美国 371
-  type: vless
-  network: ws
-  server: 172.67.148.180
-  port: 443
-  uuid: 02e6ad71-7f85-4c3a-aac7-6171762bce87
-  servername: summer-field-3c5b.fsdfsddf.workers.dev
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: summer-field-3c5b.fsdfsddf.workers.dev
-    path: /eyJqdW5rIjoia2N4eldGd0p6NVY1V3hrIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIl19?ed=2560
-- name: 🇨🇦CA | 63ms | >>@configV2rayNG::US-3
-  type: trojan
-  server: 104.21.24.95
-  port: 443
-  password: Telegram_healer_config
-  udp: true
-  sni: 1V95V6TjywCyTbAHl7f7Lx8b27G.L4495eYcqmsE9he0yVoEMJFc4IBYf-4.wORkERS.DeV
-  network: ws
-  ws-opts:
-    path: /tr/zJi4ccv7FeEo780U?ed=2560
-- name: 🇺🇸US | 65ms | @hopev2ray❤️‍🔥
+    path: /
+    headers: {}
+- name: 🇺🇸US | 46ms | @hopev2ray❤️‍🔥
   type: vless
   server: 208.103.161.32
   port: 443
@@ -59,25 +28,51 @@ proxies:
     path: /sg-melbi
     headers:
       Host: josni.hoyes.cloudns.ch
-- name: 🇨🇦CA | 65ms | 美国 685
+- name: 🇨🇦CA | 47ms | 美国 583
   type: vless
   network: ws
-  server: 104.21.34.106
+  server: 104.16.117.43
   port: 443
-  uuid: d8c14c5c-a80a-4f6f-a5fb-52071849c443
-  servername: cgxgqcheiamna-jks01fidlsnqojwf-s.aliama.workers.dev
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  servername: josni.hoyes.cloudns.ch
   skip-cert-verify: false
   tls: true
   udp: true
   tfo: false
-  client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: cgxgqcheiamna-jks01fidlsnqojwf-s.aliama.workers.dev
-    path: /eyJqdW5rIjoiZTFWRGJFS0NUd2F2NkRmIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==
-- name: 🇨🇦CA | 66ms | @Lent_Gc
+      Host: josni.hoyes.cloudns.ch
+    path: musiclovers85?ed=512
+- name: 🇺🇸US | 50ms | 英国 021
+  type: vmess
+  network: tcp
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  xudp: true
+  packet-encoding: xudp
+- name: 🇨🇦CA | 53ms | 🔥Join+Telegram:@Azarbayj
   type: vless
   server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇺🇸US | 54ms | 🐦‍🔥36@oneclickvpnkeys
+  type: vless
+  server: 188.114.99.0
   port: 443
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
@@ -85,111 +80,10 @@ proxies:
   servername: hhlfy.twiladaphne.ndjp.net
   network: ws
   ws-opts:
-    path: /fp
+    path: /sg-melbi
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇨🇦CA | 66ms | >>@configV2rayNG::US-6
-  type: vless
-  server: 104.21.234.13
-  port: 2053
-  uuid: d7d8af23-36cd-4c66-a42a-4469c177210f
-  udp: true
-  tls: true
-  servername: faNCy-raIn-136E.tHiSiSAleE.worKeRS.Dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiMXZFdnZOdVFvSkNWIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiOTEuMTg2LjIxOS44MiJdfQ==?ed=2560
-    headers:
-      Host: fancy-rain-136e.thisisalee.workers.dev
-- name: 🇨🇦CA | 66ms | 美国 425
-  type: vless
-  network: ws
-  server: 104.20.6.134
-  port: 443
-  uuid: 2088ef0d-4d2c-43b3-874b-b6a03531c81b
-  servername: r.mediashoppp.sbs
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: r.mediashoppp.sbs
-    path: /eyJqdW5rIjoiVVpPeXNodUFQMHNVcU12aCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-- name: 🇨🇦CA | 67ms | >>@oneclickvpnkeys::US-2
-  type: vless
-  server: 104.17.111.27
-  port: 8443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  servername: round-art-52ee.eadfgv.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: round-art-52ee.eadfgv.workers.dev
-- name: 🇨🇦CA | 68ms | >>@configV2rayNG::US-4
-  type: trojan
-  server: 172.67.218.38
-  port: 443
-  password: Telegram_healer_config
-  udp: true
-  sni: 1v95V6tjywCyTBAhl7f7lX8B27G.l4495eycQmSE9he0YVoemJfc4IBYf-4.wORkerS.dEV
-  network: ws
-  ws-opts:
-    path: /tr/dxyX388XOtyAjF3A?ed=2560
-- name: 🇨🇦CA | 72ms | >>@oneclickvpnkeys::US-1
-  type: vless
-  server: 104.16.8.66
-  port: 8880
-  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: rapid-base-6c9e.45-d79.workers.dev
-- name: 🇺🇸US | 72ms | >>@oneclickvpnkeys::US-1
-  type: vless
-  server: 209.94.90.4
-  port: 80
-  uuid: 58c1b245-2ea0-40b9-b512-bd2bbe3cbe3f
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram🇨🇳 @WangCai2
-    headers:
-      Host: solitary-mountain-996f.223-38e.workers.dev
-- name: 🇨🇦CA | 73ms | >>@oneclickvpnkeys::US-7
-  type: vless
-  server: 162.159.140.78
-  port: 8880
-  uuid: 363202dd-0521-46b4-b4e2-443dfbaa2ce1
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: flat-heart-b60a.401-306.workers.dev
-- name: 🇺🇸US | 73ms | >>@oneclickvpnkeys::US-1
-  type: vless
-  server: 141.101.114.8
-  port: 443
-  uuid: 5d8eb33a-2166-4daf-88fe-4be5799c493b
-  udp: true
-  tls: true
-  servername: noisy-term-e657.airdrop2014aa5168.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: noisy-term-e657.airdrop2014aa5168.workers.dev
-- name: 🇨🇦CA | 74ms | 美国 544
+- name: 🇨🇦CA | 56ms | 美国 544
   type: vless
   network: ws
   server: 104.18.1.1
@@ -205,54 +99,95 @@ proxies:
     headers:
       Host: testmikonim.hydrymhmdamyn7.workers.dev
     path: /OAZko425kNFF0PpQ
-- name: 🌐?? | 74ms | 美国+CloudFlare节点
-  type: vless
-  server: www.glassdoor.com
-  port: 8880
-  uuid: f6e14309-5cff-4f5d-bce1-06a260159bbe
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: steep-bread-32f0.92-d12.workers.dev
-- name: 🇨🇦CA | 75ms | 🔥Join+Telegram:@Azarbayj
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇨🇦CA | 76ms | >>@v2rayng_fast::US
-  type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: 82a3c394-55b7-4780-93a0-5f45c0e89625
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-brook-e650.353-3ac.workers.dev
-- name: 🇺🇸US | 76ms | >>@oneclickvpnkeys::US-1
+- name: 🇨🇦CA | 57ms | >>@configV2rayNG::US-3
   type: trojan
-  server: 167.68.4.199
-  port: 2053
-  password: Aimer
+  server: 104.21.24.95
+  port: 443
+  password: Telegram_healer_config
   udp: true
-  sni: epge.muarua.filegear-sg.me
+  sni: 1V95V6TjywCyTbAHl7f7Lx8b27G.L4495eYcqmsE9he0yVoEMJFc4IBYf-4.wORkERS.DeV
+  network: ws
+  ws-opts:
+    path: /tr/zJi4ccv7FeEo780U?ed=2560
+- name: 🇨🇦CA | 58ms | >>@configV2rayNG::US
+  type: trojan
+  server: 172.67.218.38
+  port: 443
+  password: Telegram_healer_config
+  udp: true
+  sni: 1v95V6tjywCyTBAhl7f7lX8B27G.l4495eycQmSE9he0YVoemJfc4IBYf-4.wORkerS.dEV
+  network: ws
+  ws-opts:
+    path: /tr/dxyX388XOtyAjF3A?ed=2560
+- name: 🇨🇦CA | 61ms | 美国 517
+  type: vless
+  network: ws
+  server: 172.67.208.181
+  port: 443
+  uuid: 5a5fba4d-6ae8-4975-936d-bb643fb15957
+  servername: biyapain.biyapainbache.workers.dev
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: biyapain.biyapainbache.workers.dev
+    path: /eyJqdW5rIjoiV0lISkpXU0trWFI4OGdUIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIl19
+- name: 🇨🇦CA | 64ms | >>@configV2rayNG::US-2
+  type: trojan
+  server: 104.21.4.124
+  port: 443
+  password: Telegram_healer_config
+  udp: true
+  sni: vRE6r9qrbQi0T25tg.SRtB0M3HDbWr2cjZ8fJuR.WoRKerS.DEv
+  network: ws
+  ws-opts:
+    path: /tr/W3Ei3SdcW9sRVMLIbEd8sB1lm?ed=2560
+- name: 🇨🇦CA | 66ms | 美国 741
+  type: vless
+  network: ws
+  server: 172.66.47.45
+  port: 443
+  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
+  servername: ezaccess-project-f62c30.pages.dev
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ezaccess-project-f62c30.pages.dev
+    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
+- name: 🌐?? | 66ms | Fast Deploy Your Own Wor
+  type: vless
+  server: medium.com
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- name: 🇺🇸US | 66ms | >>@oneclickvpnkeys::US-1
+  type: vless
+  server: 8.39.125.152
+  port: 8443
+  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
+  udp: true
+  tls: true
+  servername: bitter-shadow-4fc5.alvlirm852.workers.dev
   network: ws
   ws-opts:
     path: /
-- name: 🇨🇦CA | 78ms | 美国 647
+    headers:
+      Host: bitter-shadow-4fc5.alvlirm852.workers.dev
+- name: 🇨🇦CA | 67ms | 美国 647
   type: vless
   network: ws
   server: 104.21.5.75
@@ -268,128 +203,20 @@ proxies:
     headers:
       Host: blue-disk-1124.sawmansafi.workers.dev
     path: /eyJqdW5rIjoiS2FGSWxzNmpiUSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ==?ed=2560
-- name: 🇨🇦CA | 81ms | >>@oneclickvpnkeys::US-1
+- name: '🇨🇦CA | 71ms | اگه میخوای قطع نشی جوین '
   type: vless
-  server: 188.114.97.6
-  port: 2053
-  uuid: 934f2038-17f8-4ec5-9204-8381e19fc6e3
+  server: 104.18.37.228
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: true
-  servername: TIGHT-busH-0Bb4.BSHXYyXhDJdGGb.wOrkERS.DEV
+  servername: hhlfy.twiladaphne.ndjp.net
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiVXFEMlhKZVY4dzNoTUtpZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /sg-melbi#TELEGRAM-PROXY_MTM?ed=512
     headers:
-      Host: TIGHT-busH-0Bb4.BSHXYyXhDJdGGb.wOrkERS.DEV
-- name: 🇨🇦CA | 82ms | 美国 236
-  type: vless
-  network: ws
-  server: 172.67.176.31
-  port: 8080
-  uuid: b3a5f201-eeaf-40c8-909c-72f4860cefc8
-  skip-cert-verify: false
-  udp: true
-  encryption: none
-  packet-encoding: xudp
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: orange-bonus-abd9.dalvandimohammadmahdi.workers.dev
-    max-early-data: 2560
-    path: /eyJqdW5rIjoiUWtMSnFJZFM2S3JnIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6W119
-- name: 🌐?? | 82ms | 🇸🇬 Join+Telegram:@Farah_
-  type: vless
-  server: cf-vless-4cf55824.aimall.fr
-  port: 443
-  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
-  udp: true
-  tls: true
-  servername: cf-vless-4cf55824.aimall.fr
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: cf-vless-4cf55824.aimall.fr
-- name: 🌐?? | 82ms | >>@configV2rayNG::US-5
-  type: vless
-  server: cf.levikogjgfdd.ir
-  port: 8880
-  uuid: 8ddedcc7-6c4e-4df3-a190-ac40926f6694
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: late-boat-fbd7.152-de6.workers.dev
-- name: 🇺🇸US | 82ms | >>@oneclickvpnkeys::US-2
-  type: vless
-  server: 8.39.125.152
-  port: 8443
-  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
-  udp: true
-  tls: true
-  servername: bitter-shadow-4fc5.alvlirm852.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bitter-shadow-4fc5.alvlirm852.workers.dev
-- name: 🇺🇸US | 83ms | >>@oneclickvpnkeys::US-4
-  type: trojan
-  server: 44.246.163.102
-  port: 443
-  password: ND91608427
-  udp: true
-  sni: fleet-bonefish.rooster465.autos
-- name: 🇺🇸US | 84ms | 巴西 009
-  type: vless
-  network: ws
-  server: 188.114.99.47
-  port: 443
-  uuid: 1f40d742-dfaa-4694-a509-3d81918a5673
-  servername: auto-1f40d7.rohawmk.workers.dev
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: auto-1f40d7.rohawmk.workers.dev
-    path: /?TELEGRAM-TOOTFFARANGI?ed=2560
-- name: '🇺🇸US | 90ms | 🇺🇸148686 | ⚡️Telegram = '
-  type: ss
-  server: 206.189.223.234
-  port: 443
-  cipher: aes-256-gcm
-  password: YmrYLpErhi5oTrrv
-  udp: true
-- name: 🇺🇸US | 93ms | >>@ShadowsocksM::US
-  type: vless
-  server: 166.62.108.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime17.workers.dev
-- name: 🇨🇦CA | 96ms | >>@v2ray1_ng::US
-  type: vless
-  server: 104.16.72.21
-  port: 8880
-  uuid: 26fb53e4-fd49-4b34-b605-b6cc1b1a06a8
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: royal-shape-3771.93-728.workers.dev
-- name: 🇷🇺RU | 96ms | >>@oneclickvpnkeys::US-9
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇷🇺RU | 73ms | >>@oneclickvpnkeys::US-2
   type: vless
   server: 185.148.104.30
   port: 8880
@@ -401,161 +228,204 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime51.workers.dev
-- name: 🌐?? | 96ms | 🇺🇸_US_美国
+- name: 🇨🇦CA | 73ms | 🇺🇸_US_美国->🇰🇷_KR_韩国
+  type: vless
+  server: 104.16.100.215
+  port: 8880
+  uuid: 7a2df38b-2d8b-486b-9b43-641c81e11f40
+  udp: true
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: shiny-mud-d9fa.466.workers.dev
+- name: 🇨🇦CA | 73ms | 美国 685
+  type: vless
+  network: ws
+  server: 104.21.34.106
+  port: 443
+  uuid: d8c14c5c-a80a-4f6f-a5fb-52071849c443
+  servername: cgxgqcheiamna-jks01fidlsnqojwf-s.aliama.workers.dev
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: cgxgqcheiamna-jks01fidlsnqojwf-s.aliama.workers.dev
+    path: /eyJqdW5rIjoiZTFWRGJFS0NUd2F2NkRmIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==
+- name: 🇺🇸US | 77ms | 美国 253
+  type: vmess
+  network: tcp
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  tls: false
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦CA | 79ms | >>@oneclickvpnkeys::US-4
+  type: vless
+  server: 104.17.170.132
+  port: 8880
+  uuid: 2ff7eec6-da48-46ab-b770-5c83400a528c
+  udp: true
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: icy-glade-ad0f.412.workers.dev
+- name: 🇨🇦CA | 79ms | >>@oneclickvpnkeys::US-8
+  type: vless
+  server: 172.67.89.31
+  port: 2086
+  uuid: 98b6cb05-b5ab-4c82-8683-07de28f796a9
+  udp: true
+  tls: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiRHF6VWU4SmYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0
+    headers:
+      Host: holy-glitter-39f9.wwewee2dasdds.workers.dev
+- name: 🇨🇦CA | 79ms | >>@oneclickvpnkeys::US-1
+  type: vless
+  server: 188.114.96.3
+  port: 2087
+  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
+  udp: true
+  tls: true
+  servername: ez-98919a.motoricb.workers.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+    headers:
+      Host: ez-98919a.motoricb.workers.dev
+- name: 🇺🇸US | 84ms | 美国 231
+  type: vmess
+  network: tcp
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  udp: true
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦CA | 86ms | 🇨🇦CA-149.22.95.183-0141
+  type: ss
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇨🇦CA | 97ms | >>@configV2rayNG::US-5
+  type: vless
+  server: 104.21.234.13
+  port: 443
+  uuid: d7d8af23-36cd-4c66-a42a-4469c177210f
+  udp: true
+  tls: true
+  servername: FAncY-RAIn-136e.THisISaLee.WoRkeRS.DeV
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidDJpVVJEQndqZyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjkxLjE4Ni4yMTkuODIiXX0=?ed=2560
+    headers:
+      Host: fancy-rain-136e.thisisalee.workers.dev
+- name: 🇨🇦CA | 108ms | >>@configV2rayNG::US-4
+  type: vless
+  server: 104.21.234.13
+  port: 2053
+  uuid: d7d8af23-36cd-4c66-a42a-4469c177210f
+  udp: true
+  tls: true
+  servername: faNCy-raIn-136E.tHiSiSAleE.worKeRS.Dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiMXZFdnZOdVFvSkNWIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiOTEuMTg2LjIxOS44MiJdfQ==?ed=2560
+    headers:
+      Host: fancy-rain-136e.thisisalee.workers.dev
+- name: 🇺🇸US | 113ms | 🐦‍🔥83@oneclickvpnkeys
   type: trojan
-  server: humorous-hawk.rooster465.autos
+  server: 34.220.224.252
+  port: 443
+  password: PQ05174892
+  udp: true
+  sni: smooth-sculpin.rooster465.autos
+- name: 🇺🇸US | 116ms | 🐦‍🔥87@oneclickvpnkeys
+  type: trojan
+  server: 54.244.169.225
   port: 443
   password: AE62539071
   udp: true
-  sni: humorous-hawk.rooster465.autos
-- name: 🇺🇸US | 97ms | >>@configV2rayNG::US
+  sni: sharing-duck.rooster465.autos
+- name: 🇺🇸US | 119ms | 🐦‍🔥99@oneclickvpnkeys
   type: trojan
-  server: 44.251.158.80
+  server: 54.245.126.186
   port: 443
-  password: FH72359861
+  password: AE62539071
   udp: true
-  sni: obliging-louse.rooster465.autos
-- name: 🇨🇦CA | 97ms | >>@oneclickvpnkeys::US-6
-  type: vless
-  server: 172.67.75.172
-  port: 80
-  uuid: df301b32-1152-4526-9a63-beedd93d3156
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vl.dalazhi.cloudns.biz
-- name: 🌐?? | 100ms | >>@oneclickvpnkeys::US-1
-  type: vless
-  server: purple-butterfly-8496.erfannull36.workers.dev
+  sni: moral-cow.rooster465.autos
+- name: 🌐?? | 120ms | 🇺🇸US-35.88.210.26-0426
+  type: trojan
+  server: dear-hermit.rooster465.autos
   port: 443
-  uuid: 29fb68bb-ff05-4fd4-8393-cc6c05d81a79
+  password: AE62539071
   udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers: {}
-- name: 🇺🇸US | 104ms | 英国 019
-  type: vmess
-  network: tcp
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  tls: false
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸US | 105ms | 英国 020
-  type: vmess
-  network: tcp
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  tls: false
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸US | 113ms | 🇺🇸 Join+Telegram:@Farah_
-  type: vmess
-  server: 173.249.209.146
-  port: 20086
-  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers: {}
-- name: 🌐?? | 118ms | >>@oneclickvpnkeys::US
-  type: vless
-  server: mfa.gov.ua
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-- name: 🇺🇸US | 133ms | 美国 354
-  type: vmess
-  network: tcp
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-- name: 🌐?? | 137ms | 1🐦‍🔥@oneclickvpnkeys
+- name: 🌐?? | 121ms | 1🐦‍🔥@oneclickvpnkeys
   type: trojan
   server: tough-tuna.rooster465.autos
   port: 443
   password: FH72359861
   udp: true
-- name: 🇺🇸US | 138ms | 🐦‍🔥78@oneclickvpnkeys
-  type: hysteria2
-  server: 142.249.37.90
-  port: 44356
-  password: dongtaiwang.com
-  udp: true
-  skip-cert-verify: false
-  sni: hy2.561891.xyz
-- name: 🌐?? | 152ms | >>@ShadowsocksM::US-2
-  type: vless
-  server: cf3.466688.xyz
-  port: 8880
-  uuid: 5659b42c-636f-4563-ac41-87d565d0dd1e
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.autumniussss.net
-    headers:
-      Host: autumn-base-0eb9.116-d25.workers.dev
-- name: 🌐?? | 156ms | 美国+CloudFlare节点-2
-  type: vless
-  server: www.iplocation.net
-  port: 8880
-  uuid: 05e7abc2-46e1-4a23-9cdc-173ce17eb0d4
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: round-term-947c.41-332.workers.dev
-- name: 🌐?? | 162ms | >>@oneclickvpnkeys::US-2
-  type: vless
-  server: free.server11peekconfig.workers.dev
+- name: 🇺🇸US | 125ms | 🇺🇸 Join+Telegram:@Farah_
+  type: ss
+  server: 156.146.38.168
   port: 443
-  uuid: 63f1ce15-1a88-4698-8a0e-59b85d75e607
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🌐?? | 129ms | 🇩🇪
+  type: vless
+  server: time.is
+  port: 2083
+  uuid: fc8a0708-951a-4027-860f-2a154ebc4dd7
   udp: true
   tls: true
-  servername: FRee.SeRver11pEEkcONFIg.WorkeRS.DEv
+  servername: crimson-king-301d.nexoxnet.workers.dev
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiNDIxWGNPNW5CQXYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ==
+    path: /
     headers:
-      Host: free.server11peekconfig.workers.dev
-- name: 🇺🇸US | 172ms | 🇺🇸US-156.146.38.169-0085
+      Host: crimson-king-301d.nexoxnet.workers.dev
+- name: 🇺🇸US | 136ms | channel_@networld_vpn-2
   type: ss
-  server: 156.146.38.169
+  server: 94.72.127.58
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: aes-256-gcm
+  password: goRz8CTFE6zPZXIA
   udp: true
-- name: 🇺🇸US | 177ms | 🇺🇸 Join+Telegram:@Farah_
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+- name: 🇺🇸US | 179ms | 美国 261
+  type: vmess
+  network: tcp
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  tls: false
+  alterId: 0
+  cipher: auto
+- name: 🌐?? | 216ms | >>@oneclickvpnkeys::US
+  type: vless
+  server: icook.tw
+  port: 8880
+  uuid: 9adb120c-0cce-4b56-9023-ccf7f1e13536
   udp: true
-- name: 🇺🇸US | 211ms | 美国 269
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: spring-sunset-81e8.322.workers.dev
+- name: 🇺🇸US | 219ms | 美国 269
   type: vmess
   network: tcp
   server: 67.220.85.46
@@ -564,39 +434,29 @@ proxies:
   udp: true
   alterId: 0
   cipher: aes-128-gcm
-- name: 🇺🇸US | 213ms | 🇺🇸US-37.19.198.244-0112
+- name: 🇺🇸US | 223ms | channel_@networld_vpn
   type: ss
-  server: 37.19.198.244
+  server: 37.19.198.243
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇨🇦CA | 215ms | 美国 270
-  type: vmess
-  network: tcp
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  tls: false
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸US | 219ms | United+States
-  type: ss
-  server: 198.98.53.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-  udp: true
-- name: 🇺🇸US | 220ms | 🇺🇸US-173.244.56.6-0137
-  type: ss
-  server: 173.244.56.6
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🌐?? | 222ms | >>@oneclickvpnkeys::US-1
+- name: 🌐?? | 236ms | >>@oneclickvpnkeys::US-6
   type: vless
-  server: yd.mmhh.eu.cc
+  server: dx.mmhh.eu.cc
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: true
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐?? | 239ms | >>@oneclickvpnkeys::US-1
+  type: vless
+  server: lt.mmhh.eu.cc
   port: 443
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
@@ -607,152 +467,28 @@ proxies:
     path: /
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: '🇨🇦CA | 230ms | @appsooner کانال تلگرام '
+- name: 🇺🇸US | 241ms | United+States
+  type: ss
+  server: 198.98.53.130
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: eDfN7SODQceIOmIAbtJJtK
+  udp: true
+- name: '🇨🇦CA | 261ms | @appsooner کانال تلگرام '
   type: ss
   server: 15.235.75.71
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: FD3rCuOsxOay
   udp: true
-- name: 🇨🇦CA | 233ms | @v2ray313 کانالمون 🙊
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇺🇸US | 235ms | 美国 261
-  type: vmess
-  network: tcp
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  tls: false
-  alterId: 0
-  cipher: auto
-- name: '🇺🇸US | 251ms | 🇺🇸148542 | ⚡️Telegram = '
-  type: ss
-  server: 107.170.34.46
-  port: 443
-  cipher: aes-256-gcm
-  password: p7KawP5pzJRHWI9q
-  udp: true
-- name: 🌐?? | 260ms | 🇩🇪2
-  type: vless
-  server: time.is
-  port: 2053
-  uuid: 54502a61-2af6-40e7-8331-2c9fc40e5903
-  udp: true
-  tls: true
-  servername: old-cloud-a96a.rohamsahh90.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: old-cloud-a96a.rohamsahh90.workers.dev
-- name: 🇨🇦CA | 267ms | 美国 278
-  type: vmess
-  network: tcp
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  udp: true
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸US | 267ms | 🐦‍🔥66@oneclickvpnkeys
-  type: vless
-  server: 172.96.121.6
-  port: 443
-  uuid: 83c18ff2-0565-4b53-89ad-57357fef153b
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.bing.com
-  reality-opts:
-    public-key: bHGC7iI4Q50nxoYStP3TjBaRXih6O0bmuemexki0aXY
-    short-id: 29ff8963a9fe281c
-  client-fingerprint: chrome
-- name: 🌐?? | 287ms | >>@oneclickvpnkeys::CA
-  type: ss
-  server: ca225.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-  udp: true
-- name: 🇺🇸US | 296ms | vless-169.40.42.74
-  type: vless
-  server: 169.40.42.74
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 🇯🇵JP | 301ms | 🇯🇵JP-149.22.87.241-0255
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵JP | 302ms | 🇯🇵 Join+Telegram:@Farah_
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🌐?? | 305ms | 🐦‍🔥74@oneclickvpnkeys
-  type: vless
-  server: rssm-1btto92.joxenly.com
-  port: 443
-  uuid: 83c18ff2-0565-4b53-89ad-57357fef153b
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.bing.com
-  reality-opts:
-    public-key: bHGC7iI4Q50nxoYStP3TjBaRXih6O0bmuemexki0aXY
-    short-id: 29ff8963a9fe281c
-  client-fingerprint: chrome
-- name: 🇺🇸US | 307ms | 🍏97@oneclickvpnkeys
-  type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-    short-id: ''
-  client-fingerprint: chrome
-- name: 🌐?? | 309ms | @vmess_ir
-  type: vless
-  server: us3.levikogjgfdd.ir
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: '🇯🇵JP | 318ms | 🇯🇵148619 | ⚡️Telegram = '
+- name: '🇯🇵JP | 339ms | 🇯🇵148619 | ⚡️Telegram = '
   type: ss
   server: 54.95.207.148
   port: 8316
   cipher: chacha20-ietf-poly1305
   password: ljqdalu13..
   udp: true
-- name: 🇺🇸US | 319ms | 🐦‍🔥60@oneclickvpnkeys
+- name: 🇺🇸US | 354ms | 🐦‍🔥60@oneclickvpnkeys
   type: vless
   server: 159.89.87.21
   port: 28190
@@ -765,28 +501,7 @@ proxies:
     public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
     short-id: ''
   client-fingerprint: chrome
-- name: 🇺🇸US | 322ms | 🇺🇸US_21|2.9MB/s
-  type: hysteria2
-  server: 82.39.214.83
-  port: 8443
-  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-  udp: true
-  skip-cert-verify: true
-  sni: hopp-us.yyuyy.com
-- name: 🌐?? | 329ms | >>@oneclickvpnkeys::US-8
-  type: vless
-  server: vpn.renshengxuanze.ccwu.cc
-  port: 443
-  uuid: 9a3de3e0-2a6e-4bb2-81bd-1a4e51dfa110
-  udp: true
-  tls: true
-  servername: vpn.renshengxuanze.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn.renshengxuanze.ccwu.cc
-- name: 🇺🇸US | 347ms | @v2ray313 کانالمون 😁
+- name: 🇺🇸US | 355ms | @v2ray313 کانالمون 😁
   type: vless
   server: 169.40.42.16
   port: 443
@@ -799,500 +514,552 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: chrome
-- name: 🇺🇸US | 371ms | 🍏100@oneclickvpnkeys
-  type: hysteria2
-  server: 3.149.228.246
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  udp: true
-  skip-cert-verify: true
-  sni: vpn-us-003.fastervpn.world
-- name: 🇨🇦CA | 391ms | 美国 557
+- name: 🇺🇸US | 363ms | 🇩🇪All¹⁰ | @BigSmoke_Conf
   type: vless
-  network: ws
-  server: 104.16.133.220
+  server: 78.111.89.171
   port: 443
-  uuid: 77a89d8d-9de3-cf40-bafb-e68f0000001a
-  servername: ez-5b038e.ezaccess1c7f862.workers.dev
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: ez-5b038e.ezaccess1c7f862.workers.dev
-    path: /sync
-- name: 🇯🇵JP | 407ms | 🇯🇵JP-3.112.238.99-0186
-  type: trojan
-  server: 3.112.238.99
-  port: 443
-  password: ND91608427
-  udp: true
-  sni: stunning-mite.rooster465.autos
-- name: 🇯🇵JP | 408ms | @V2ray_Alpha🐌 8
-  type: trojan
-  server: 13.158.135.118
-  port: 443
-  password: AE62539071
-  udp: true
-  sni: literate-cow.rooster465.autos
-- name: 🇯🇵JP | 410ms | >>@configV2rayNG::JP
-  type: trojan
-  server: 3.112.29.46
-  port: 443
-  password: AE62539071
-  udp: true
-  sni: clear-killdeer.rooster465.autos
-- name: 🇯🇵JP | 410ms | 🇯🇵JP-54.249.34.120-0225
-  type: trojan
-  server: 54.249.34.120
-  port: 443
-  password: ND91608427
-  udp: true
-  sni: social-mutt.rooster465.autos
-- name: 🇺🇸US | 410ms | 🇺🇸 Join+Telegram:@Farah_
-  type: vless
-  server: 169.40.42.104
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 0370b162-baff-4757-86cc-cce4bf07f6f1
   udp: true
   tls: true
-  flow: xtls-rprx-vision
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 🇯🇵JP | 410ms | 🇯🇵JP-3.112.223.141-0191
-  type: trojan
-  server: 3.112.223.141
-  port: 443
-  password: ND91608427
-  udp: true
-  sni: internal-sunbird.rooster465.autos
-- name: 🌐?? | 415ms | >>@v2nodes::JP-2
-  type: trojan
-  server: merry-falcon.rooster465.autos
-  port: 443
-  password: PQ05174892
-  udp: true
-- name: '🇺🇸US | 416ms | اگه میخوای قطع نشی جوین '
-  type: vless
-  server: 169.40.42.15
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: firefox
-- name: 🇯🇵JP | 416ms | @vmesskhodam-5
-  type: vless
-  server: 43.165.177.82
-  port: 443
-  uuid: 0b772594-d6b9-4f4f-849b-8a6f92f594fe
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
   servername: www.cloudflare.com
   reality-opts:
-    public-key: ZuN9nc78h4Ccb19eb9NpTCs0jZkhJB8L0i1ZoAhu0XU
-    short-id: b2f4518cf979889d
+    public-key: lYcMPEgf6ePmF_d8RXR5fsVorycW37v_ECl-fz_H6w4
+    short-id: cfe08c23a85f24
   client-fingerprint: chrome
-- name: 🇯🇵JP | 416ms | 🇯🇵 Join+Telegram:@Farah_
+- name: 🇨🇦CA | 397ms | 🇨🇦CA_800_@Surfboardv2ray
   type: vless
-  server: 31.76.91.138
-  port: 2087
-  uuid: 309b0ce3-09a8-4883-bfe4-bd56e215be44
-  udp: true
-  tls: true
-  servername: ads.x5.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: JfuItzJ81sJehx1PbxyliWSJvuBMKoa9ahNgPO3R7R4
-    short-id: c226283c4de5b1ad
-  client-fingerprint: chrome
-- name: 🇺🇸US | 417ms | 🐦‍🔥71@oneclickvpnkeys
-  type: vless
-  server: 169.40.42.89
+  server: 158.69.112.254
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
   udp: true
   tls: true
   flow: xtls-rprx-vision
-  servername: yahoo.com
+  servername: www.speedtest.net
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
   client-fingerprint: chrome
-- name: 🌐?? | 418ms | 🇯🇵 Join+Telegram:@Farah_
-  type: trojan
-  server: welcome-owl.rooster465.autos
-  port: 443
-  password: FH72359861
-  udp: true
-  sni: welcome-owl.rooster465.autos
-- name: 🌐?? | 418ms | 🇯🇵JP-18.181.200.117-0172
-  type: trojan
-  server: sacred-shepherd.rooster465.autos
-  port: 443
-  password: FH72359861
-  udp: true
-- name: 🇫🇷FR | 419ms | @confiig_hub-2
+- name: 🇫🇷FR | 432ms | @confiig_hub
   type: ss
   server: 51.77.225.200
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: zRZNBszYyWo5
   udp: true
-- name: 🌐?? | 420ms | 🇯🇵JP-57.180.23.141-0185
+- name: 🇯🇵JP | 438ms | 🇯🇵JP-3.112.15.214-0201
+  type: trojan
+  server: 3.112.15.214
+  port: 443
+  password: ND91608427
+  udp: true
+  sni: adjusted-labrador.rooster465.autos
+- name: 🌐?? | 439ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: mighty-lemming.rooster465.autos
+  port: 443
+  password: PQ05174892
+  udp: true
+  sni: mighty-lemming.rooster465.autos
+- name: '🇳🇱NL | 439ms | 🇳🇱148684 | ⚡️Telegram = '
+  type: ss
+  server: 134.98.147.182
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: kVJer/RaxqQotMpJVDmyRShD2pMmDy1VM0ku+ao8q/4=
+  udp: true
+- name: 🇯🇵JP | 439ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: 3.112.29.46
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: clear-killdeer.rooster465.autos
+- name: 🇯🇵JP | 440ms | 🇯🇵JP-18.181.194.227-0207
+  type: trojan
+  server: 18.181.194.227
+  port: 443
+  password: ND91608427
+  udp: true
+  sni: moral-buzzard.rooster465.autos
+- name: 🇯🇵JP | 440ms | 🇯🇵JP-18.181.164.216-0257
+  type: trojan
+  server: 18.181.164.216
+  port: 443
+  password: ND91608427
+  udp: true
+  sni: upright-impala.rooster465.autos
+- name: 🇯🇵JP | 441ms | @V2ray_Alpha🐌 8
+  type: trojan
+  server: 13.158.135.118
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: literate-cow.rooster465.autos
+- name: 🇯🇵JP | 441ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: 57.180.56.235
+  port: 443
+  password: EQ30679154
+  udp: true
+  sni: gentle-perch.rooster465.autos
+- name: 🌐?? | 442ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: trusting-elf.rooster465.autos
+  port: 443
+  password: FH72359861
+  udp: true
+  sni: trusting-elf.rooster465.autos
+- name: 🌐?? | 442ms | 🇯🇵JP-52.198.117.121-2985
+  type: trojan
+  server: relevant-cicada.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: relevant-cicada.rooster465.autos
+- name: 🌐?? | 443ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: settling-shad.rooster465.autos
+  port: 443
+  password: HC04361579
+  udp: true
+  sni: settling-shad.rooster465.autos
+- name: '🌐?? | 443ms | 🇯🇵 Join+Telegram:@Farah_ #2'
   type: trojan
   server: engaged-lionfish.rooster465.autos
   port: 443
   password: FH72359861
   udp: true
   sni: engaged-lionfish.rooster465.autos
-- name: 🌐?? | 421ms | 🇯🇵 Join+Telegram:@Farah_
+- name: 🇯🇵JP | 443ms | 🇯🇵_JP_日本-2
+  type: trojan
+  server: 13.230.97.36
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: known-albacore.rooster465.autos
+- name: 🌐?? | 444ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: internal-sunbird.rooster465.autos
+  port: 443
+  password: ND91608427
+  udp: true
+  sni: internal-sunbird.rooster465.autos
+- name: '🌐?? | 444ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  type: trojan
+  server: polished-imp.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: polished-imp.rooster465.autos
+- name: 🌐?? | 445ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: great-wasp.rooster465.autos
+  port: 443
+  password: FH72359861
+  udp: true
+- name: 🇯🇵JP | 445ms | 🇯🇵JP-13.114.122.131-0241
+  type: trojan
+  server: 13.114.122.131
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: whole-grub.rooster465.autos
+- name: 🌐?? | 445ms | 🇯🇵JP-13.230.240.243-0196
+  type: trojan
+  server: ready-monarch.rooster465.autos
+  port: 443
+  password: PQ05174892
+  udp: true
+- name: 🌐?? | 446ms | 🇯🇵JP-52.194.223.176-0176
+  type: trojan
+  server: clear-heron.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: clear-heron.rooster465.autos
+- name: 🌐?? | 446ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: social-mutt.rooster465.autos
+  port: 443
+  password: ND91608427
+  udp: true
+  sni: social-mutt.rooster465.autos
+- name: 🇯🇵JP | 446ms | @meliproxyy-8
+  type: trojan
+  server: 13.159.22.208
+  port: 443
+  password: FH72359861
+  udp: true
+  sni: driven-bulldog.rooster465.autos
+- name: 🇯🇵JP | 446ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: 3.112.200.59
+  port: 443
+  password: FH72359861
+  udp: true
+  sni: new-eagle.rooster465.autos
+- name: 🌐?? | 447ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: ethical-raccoon.rooster465.autos
+  port: 443
+  password: PQ05174892
+  udp: true
+  sni: ethical-raccoon.rooster465.autos
+- name: '🌐?? | 447ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  type: trojan
+  server: sure-humpback.rooster465.autos
+  port: 443
+  password: ND91608427
+  udp: true
+  sni: sure-humpback.rooster465.autos
+- name: 🌐?? | 448ms | 🇯🇵JP-13.230.97.36-0243
+  type: trojan
+  server: known-albacore.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+- name: 🌐?? | 448ms | 🇯🇵JP-18.183.92.88-0232
+  type: trojan
+  server: upward-yak.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+- name: 🌐?? | 449ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: moral-buzzard.rooster465.autos
+  port: 443
+  password: ND91608427
+  udp: true
+  sni: moral-buzzard.rooster465.autos
+- name: '🌐?? | 449ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  type: trojan
+  server: thankful-mustang.rooster465.autos
+  port: 443
+  password: ND91608427
+  udp: true
+  sni: thankful-mustang.rooster465.autos
+- name: 🌐?? | 449ms | >>@v2nodes::JP-4
   type: trojan
   server: climbing-frog.rooster465.autos
   port: 443
   password: AE62539071
   udp: true
   sni: climbing-frog.rooster465.autos
-- name: 🌐?? | 422ms | >>@v2nodes::JP-9
+- name: 🇯🇵JP | 450ms | 🇯🇵JP-54.64.255.224-0177
   type: trojan
-  server: exact-sawfish.rooster465.autos
-  port: 443
-  password: HC04361579
-  udp: true
-  sni: exact-sawfish.rooster465.autos
-- name: 🌐?? | 422ms | 🇯🇵JP-57.180.38.121-0256
-  type: trojan
-  server: champion-panther.rooster465.autos
-  port: 443
-  password: FH72359861
-  udp: true
-  sni: champion-panther.rooster465.autos
-- name: 🌐?? | 422ms | 🇯🇵JP-13.113.89.229-0430
-  type: trojan
-  server: coherent-newt.rooster465.autos
+  server: 54.64.255.224
   port: 443
   password: AE62539071
   udp: true
-- name: 🇺🇸US | 424ms | 🇩🇪telegram➠@v2rayNG_Mats
-  type: vless
-  server: 169.40.42.173
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-- name: 🌐?? | 425ms | >>@v2nodes::JP-10
+  sni: maximum-elk.rooster465.autos
+- name: 🌐?? | 451ms | 🇯🇵 Join+Telegram:@Farah_
   type: trojan
-  server: pet-albacore.rooster465.autos
+  server: together-amoeba.rooster465.autos
+  port: 443
+  password: PQ05174892
+  udp: true
+- name: 🇯🇵JP | 451ms | 🇯🇵JP-52.68.175.30-0234
+  type: trojan
+  server: 52.68.175.30
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: on-roughy.rooster465.autos
+- name: 🌐?? | 451ms | >>@v2nodes::JP-6
+  type: trojan
+  server: game-thrush.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: game-thrush.rooster465.autos
+- name: 🌐?? | 452ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: many-pangolin.rooster465.autos
+  port: 443
+  password: FH72359861
+  udp: true
+- name: 🌐?? | 453ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: sacred-shepherd.rooster465.autos
+  port: 443
+  password: FH72359861
+  udp: true
+  sni: sacred-shepherd.rooster465.autos
+- name: '🌐?? | 453ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  type: trojan
+  server: devoted-heron.rooster465.autos
+  port: 443
+  password: ND91608427
+  udp: true
+  sni: devoted-heron.rooster465.autos
+- name: '🌐?? | 453ms | 🇯🇵 Join+Telegram:@Farah_ #3'
+  type: trojan
+  server: legible-ocelot.rooster465.autos
   port: 443
   password: HC04361579
   udp: true
-  sni: pet-albacore.rooster465.autos
-- name: 🇭🇰HK | 434ms | @filembad-2
-  type: vless
-  server: 141.11.149.200
-  port: 11650
-  uuid: 2aa2be33-b987-461e-8d0e-2ffe15cb8e4c
-  udp: true
-  tls: false
-- name: 🇳🇱NL | 438ms | @v2rayng3-3
-  type: ss
-  server: 158.173.20.208
+  sni: legible-ocelot.rooster465.autos
+- name: '🌐?? | 453ms | 🇯🇵 Join+Telegram:@Farah_ #4'
+  type: trojan
+  server: needed-gelding.rooster465.autos
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  password: FH72359861
   udp: true
-- name: 🇫🇷FR | 439ms | 🍏15@oneclickvpnkeys
+  sni: needed-gelding.rooster465.autos
+- name: 🌐?? | 454ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: definite-gazelle.rooster465.autos
+  port: 443
+  password: EQ30679154
+  udp: true
+- name: 🇫🇷FR | 456ms | 🍏15@oneclickvpnkeys
   type: ss
   server: 38.180.92.242
   port: 32245
   cipher: chacha20-ietf-poly1305
   password: pFNN9jKe8jwD
   udp: true
-- name: 🇳🇱NL | 441ms | 🇳🇱NL-109.201.152.181-013
-  type: ss
-  server: 109.201.152.181
+- name: 🌐?? | 458ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: endless-kiwi.rooster465.autos
   port: 443
-  cipher: aes-128-cfb
+  password: FH72359861
+  udp: true
+- name: 🇬🇧GB | 459ms | @hex_proxy ⁴-2
+  type: ss
+  server: 129.151.89.37
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: AYhW0WCXnkWSVLU1TWzGkAAutfAlRaf3PPe++vWpKV4=
+  udp: true
+- name: 🌐?? | 461ms | 🇯🇵 Join+Telegram:@Farah_
+  type: trojan
+  server: stunning-mite.rooster465.autos
+  port: 443
+  password: ND91608427
+  udp: true
+  sni: stunning-mite.rooster465.autos
+- name: 🌐?? | 461ms | >>@v2nodes::JP-5
+  type: trojan
+  server: merry-falcon.rooster465.autos
+  port: 443
+  password: PQ05174892
+  udp: true
+- name: 🌐?? | 464ms | >>@v2nodes::JP-2
+  type: trojan
+  server: upright-impala.rooster465.autos
+  port: 443
+  password: ND91608427
+  udp: true
+  sni: upright-impala.rooster465.autos
+- name: 🇬🇧GB | 469ms | 🇬🇧GB-141.98.101.181-0160
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🌐?? | 447ms | >>@v2nodes::JP-4
+- name: 🇩🇪DE | 471ms | (S101)🇩🇪t.me/PrivateVPNs
+  type: vless
+  server: 3.78.22.74
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+- name: 🇯🇵JP | 471ms | 🇯🇵JP-18.178.132.111-0215
   type: trojan
-  server: literate-cow.rooster465.autos
+  server: 18.178.132.111
   port: 443
-  password: AE62539071
+  password: ND91608427
   udp: true
-- name: 🌐?? | 453ms | @Lent_Gc-2
-  type: ss
-  server: nl1.levikogjgfdd.ir
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-  udp: true
-- name: 🌐?? | 463ms | 立陶宛+V2CROSS.COM
-  type: hysteria2
-  server: jp.cryptoofarm.com
+  sni: devoted-heron.rooster465.autos
+- name: 🇹🇼TW | 473ms | 加拿大 006
+  type: vmess
+  network: tcp
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  tls: false
+  alterId: 0
+  cipher: auto
+  client-fingerprint: ''
+- name: 🌐?? | 478ms | >>@v2nodes::JP-3
+  type: trojan
+  server: open-octopus.rooster465.autos
   port: 443
-  password: ef18d810-719c-4bf1-83c6-615d01f217eb
+  password: EQ30679154
   udp: true
-  skip-cert-verify: true
-  sni: jp.cryptoofarm.com
-- name: 🇳🇱NL | 469ms | 🇬🇧GB-82.38.31.15-0124
-  type: ss
-  server: 82.38.31.15
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 470ms | @freenettir-6
-  type: ss
-  server: 193.29.139.230
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 475ms | 🇬🇧GB-82.38.31.36-0121
-  type: ss
-  server: 82.38.31.36
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 477ms | نتورلد تو تلگرام جستجو ک
-  type: ss
-  server: 82.38.31.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 477ms | @hex_proxy ⁸
-  type: ss
-  server: 82.38.31.155
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 477ms | 🇳🇱 Join+Telegram:@Farah_
-  type: ss
-  server: 82.38.31.200
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱NL | 477ms | 🇬🇧GB-82.38.31.46-0109
-  type: ss
-  server: 82.38.31.46
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 477ms | 🇬🇧GB-82.38.31.49-0101
-  type: ss
-  server: 82.38.31.49
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 477ms | TEL:Father_vpn-3
-  type: ss
-  server: 82.38.31.7
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 478ms | 🇬🇧GB-82.38.31.16-0123
-  type: ss
-  server: 82.38.31.16
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 479ms | 🇳🇱NL-193.29.139.235-0095
-  type: ss
-  server: 193.29.139.235
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 480ms | @freenettir
+- name: 🇳🇱NL | 479ms | @meliproxyy-9
   type: ss
   server: 193.29.139.212
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: QCXDxuDlTTMD7jtgHUjIoj
   udp: true
-- name: 🇳🇱NL | 482ms | 🇬🇧GB-82.38.31.180-0100
-  type: ss
-  server: 82.38.31.180
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱NL | 483ms | T.me/Vpn_Mafia 🇳🇱
-  type: ss
-  server: 82.38.31.216
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱NL | 485ms | @v2rayng3-19
-  type: ss
-  server: 82.38.31.162
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 486ms | @Rayan_Config-82.38.31.1
-  type: ss
-  server: 82.38.31.179
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱NL | 487ms | @freenettir-5
+- name: 🇳🇱NL | 480ms | @meliproxyy-5
   type: ss
   server: 193.29.139.147
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇸🇬SG | 489ms | channel_@networld_vpn
+- name: 🇳🇱NL | 481ms | @VpnCostumer+|+بیا+تو+وص
   type: ss
-  server: 139.180.133.90
-  port: 80
-  cipher: aes-256-gcm
-  password: jSU7bGKupQ96YFvf
+  server: 82.38.31.218
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱NL | 489ms | @freenettir-8
+- name: 🇨🇦CA | 484ms | >>@oneclickvpnkeys::CA
+  type: ss
+  server: 142.4.216.225
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: ytw2awn
+  udp: true
+- name: 🇳🇱NL | 485ms | @v2rayngzendegimamad🕊️-3
+  type: ss
+  server: 82.38.31.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱NL | 486ms | @meliproxyy
   type: ss
   server: 193.29.139.223
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: '🇸🇬SG | 491ms | 🇸🇬148685 | ⚡️Telegram = '
+- name: 🇳🇱NL | 486ms | @v2rayng3
   type: ss
-  server: 161.118.236.226
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: mK3U4CcxreExT+4ZbQ+ixTCRA0PpbwB2qEYHsgySaLU=
+  server: 158.173.20.208
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-- name: 🇩🇪DE | 494ms | 𝐕𝐄𝐆𝐀𝐀𝐒_𝐕𝐏𝐍 🇩🇪
-  type: vmess
-  server: 91.107.153.232
-  port: 45002
-  uuid: 518814fb-79a7-4e6f-ae8a-ab5bf0e77381
-  alterId: 0
-  cipher: auto
-  udp: true
-- name: 🇳🇱NL | 496ms | @Rayan_Config-82.38.31.1
+- name: 🇳🇱NL | 486ms | 🇬🇧GB-82.38.31.186-0126
   type: ss
-  server: 82.38.31.194
+  server: 82.38.31.186
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🌐FI | 499ms | @Selinc-4
+- name: 🇳🇱NL | 487ms | @hex_proxy ²
   type: ss
-  server: 31.76.30.79
-  port: 10808
+  server: 82.38.31.176
+  port: 8080
   cipher: chacha20-ietf-poly1305
-  password: TmXSpcRBbhvHDg66bo2w89bToxQsbMoa
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇸🇬SG | 511ms | kurdconfig-2
+- name: 🇳🇱NL | 488ms | 🇬🇧GB-82.38.31.16-0123
   type: ss
-  server: 176.97.64.144
+  server: 82.38.31.16
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL | 489ms | T.me/Vpn_Mafia 🇳🇱
+  type: ss
+  server: 82.38.31.216
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱NL | 490ms | 🇳🇱NL-193.29.139.235-0095
+  type: ss
+  server: 193.29.139.235
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL | 491ms | @Rayan_Config-82.38.31.2
+  type: ss
+  server: 82.38.31.205
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱NL | 491ms | @Rayan_Config-82.38.31.1
+  type: ss
+  server: 82.38.31.179
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱NL | 493ms | @EXPRESSVPN_420  👈🏻 کانا
+  type: ss
+  server: 82.38.31.164
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL | 496ms | 🐦‍🔥31@oneclickvpnkeys
+  type: ss
+  server: 82.38.31.57
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL | 496ms | @SylphNet | 2026-06-27 0
+  type: ss
+  server: 82.38.31.190
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇩🇪DE | 497ms | @v2rayng3-2
+  type: ss
+  server: 51.195.126.38
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: TFElG2FVqyqG
+  password: 2YdE4lFOid5a
   udp: true
-- name: 🌐IE | 512ms | @hex_proxy ⁴
-  type: trojan
-  server: 108.130.49.217
-  port: 443
-  password: PQ05174892
-  udp: true
-  sni: concise-bass.rooster465.autos
-- name: 🌐IE | 514ms | @hex_proxy ⁵-2
-  type: trojan
-  server: 54.217.167.110
-  port: 443
-  password: PQ05174892
-  udp: true
-  sni: glowing-filly.rooster465.autos
-- name: 🌐IE | 519ms | >>@oneclickvpnkeys::IE-3
-  type: trojan
-  server: 54.72.58.12
-  port: 443
-  password: FH72359861
-  udp: true
-  sni: darling-mongrel.rooster465.autos
-- name: 🌐PL | 519ms | @TEHRANARGO
+- name: 🇳🇱NL | 499ms | 🇬🇧GB-82.38.31.46-0109
   type: ss
-  server: 54.36.174.140
+  server: 82.38.31.46
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL | 502ms | @v2rayng3-11
+  type: ss
+  server: 82.38.31.162
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: ytw2awn
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🌐IE | 521ms | >>@oneclickvpnkeys::IE-4
-  type: trojan
-  server: 34.251.228.118
-  port: 443
-  password: UO36402987
+- name: 🇳🇱NL | 503ms | 🇬🇧GB-82.38.31.49-0101
+  type: ss
+  server: 82.38.31.49
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-  sni: definite-ladybird.rooster465.autos
-- name: 🌐IE | 536ms | >>@oneclickvpnkeys::IE-2
-  type: trojan
-  server: 18.201.47.180
-  port: 443
-  password: AE62539071
+- name: 🇳🇱NL | 503ms | 🇬🇧GB-82.38.31.149-0113
+  type: ss
+  server: 82.38.31.149
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-  sni: healthy-panda.rooster465.autos
-- name: 🌐IE | 537ms | @hex_proxy ⁴-2
-  type: trojan
-  server: 3.253.78.205
-  port: 443
-  password: FH72359861
-  udp: true
-  sni: balanced-heron.rooster465.autos
-- name: 🌐MY | 539ms | 🇲🇾 Join+Telegram:@Farah_
+- name: 🇬🇧GB | 505ms | 美国 329
   type: vmess
-  server: 47.250.45.234
-  port: 8613
-  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
+  network: tcp
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  tls: false
   alterId: 0
   cipher: auto
+- name: 🇦🇺AU | 509ms | 🇦🇺 Join+Telegram:@Farah_
+  type: ss
+  server: 45.77.232.213
+  port: 15675
+  cipher: chacha20-ietf-poly1305
+  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
   udp: true
-  network: ws
-  ws-opts:
-    path: /arki?ed=2048
-    headers: {}
-- name: 🌐?? | 542ms | 🇨🇦 Join+Telegram:@Farah_
-  type: vless
-  server: lizca2.footballfantasyforum.com
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🇸🇬SG | 550ms | 以色列 001
+- name: 🇸🇬SG | 516ms | 以色列 001
   type: vmess
   network: tcp
   server: 149.88.23.202
@@ -1301,66 +1068,149 @@ proxies:
   udp: true
   alterId: 0
   cipher: auto
-- name: 🌐?? | 557ms | >>@v2nodes::JP-8
+- name: 🇸🇬SG | 520ms | 以色列 002
+  type: vmess
+  network: tcp
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  udp: true
+  alterId: 0
+  cipher: auto
+- name: 🌐IE | 522ms | >>@oneclickvpnkeys::IE-3
   type: trojan
-  server: witty-duckling.rooster465.autos
+  server: 54.216.139.140
+  port: 443
+  password: FH72359861
+  udp: true
+  sni: cunning-grub.rooster465.autos
+- name: 🌐IE | 523ms | Ireland 🇮🇪
+  type: trojan
+  server: 108.128.201.154
+  port: 443
+  password: FH72359861
+  udp: true
+  sni: touching-turtle.rooster465.autos
+- name: 🌐?? | 525ms | 美国 001
+  type: vmess
+  network: ws
+  server: rush-6it6b.teeopp.quest
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  servername: rush-6it6b.teeopp.quest
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: rush-6it6b.teeopp.quest
+    path: /
+- name: 🌐IE | 532ms | >>@oneclickvpnkeys::IE-7
+  type: trojan
+  server: 108.130.137.102
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: worthy-labrador.rooster465.autos
+- name: 🇯🇵JP | 535ms | @Alpha_v2rayIP-4
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🌐?? | 541ms | 🇵🇱 Join+Telegram:@Farah_
+  type: ss
+  server: pl140.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: ytw2awn
+  udp: true
+- name: 🌐IE | 541ms | @hex_proxy ⁴
+  type: trojan
+  server: 3.253.78.205
+  port: 443
+  password: FH72359861
+  udp: true
+  sni: balanced-heron.rooster465.autos
+- name: 🇨🇦CA | 544ms | >>@oneclickvpnkeys::US-1
+  type: vless
+  server: 104.21.200.243
+  port: 2053
+  uuid: 7074b9d7-2183-8919-fc11-ca5e00000000
+  udp: true
+  tls: true
+  servername: netlivpn2584.vjvdgbc.workers.dev
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn2584.vjvdgbc.workers.dev
+- name: 🇰🇷KR | 551ms | 日本 035
+  type: vmess
+  network: tcp
+  server: 146.56.112.110
+  port: 8888
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  udp: true
+  alterId: 0
+  cipher: auto
+- name: 🌐?? | 551ms | >>@oneclickvpnkeys::IE-8
+  type: trojan
+  server: darling-mongrel.rooster465.autos
+  port: 443
+  password: FH72359861
+  udp: true
+- name: 🌐ES | 551ms | 乌克兰 002
+  type: vmess
+  network: tcp
+  server: 85.90.217.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  tls: false
+  alterId: 0
+  cipher: auto
+- name: 🌐IE | 554ms | >>@oneclickvpnkeys::IE-9
+  type: trojan
+  server: 54.72.58.12
+  port: 443
+  password: FH72359861
+  udp: true
+  sni: darling-mongrel.rooster465.autos
+- name: 🇺🇸US | 561ms | 🇺🇸 Join+Telegram:@Farah_
+  type: vless
+  server: 169.40.42.52
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: 🌐?? | 562ms | >>@oneclickvpnkeys::IE-5
+  type: trojan
+  server: glowing-filly.rooster465.autos
   port: 443
   password: PQ05174892
   udp: true
-  sni: witty-duckling.rooster465.autos
-- name: 🇳🇱NL | 570ms | @v2rayng3-16
-  type: vless
-  server: 51.158.206.26
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: 🌐?? | 566ms | >>@oneclickvpnkeys::IE-2
+  type: trojan
+  server: helped-haddock.rooster465.autos
+  port: 443
+  password: AE62539071
   udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: '🇳🇱NL | 571ms | کانال تلگرام : Free_VPN_'
-  type: vless
-  server: 51.158.206.87
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: 🇳🇱NL | 572ms | 🇬🇧GB-82.38.31.212-0142
+  type: ss
+  server: 82.38.31.212
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: '🇳🇱NL | 571ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn-10'
-  type: vless
-  server: 51.158.206.80
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🇳🇱NL | 572ms | >>@oneclickvpnkeys::NL
-  type: vless
-  server: 51.158.206.34
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🇳🇱NL | 573ms | @v2ray313 کانالمون ☹️
+- name: 🇳🇱NL | 576ms | @v2ray313 کانالمون ☹️
   type: vless
   server: 51.158.206.103
   port: 23576
@@ -1373,24 +1223,116 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   client-fingerprint: chrome
-- name: 🌐?? | 573ms | 法国 005
+- name: 🇺🇸US | 576ms | 美国 560
   type: vless
   network: ws
-  server: sc-thenetherlands1.09vpn.com
-  port: 80
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
+  server: 141.193.213.20
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  servername: speed.dulacloud.store
   skip-cert-verify: false
-  tls: false
+  tls: true
   udp: true
-  encryption: none
-  packet-encoding: xudp
+  tfo: false
+  client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: sc-thenetherlands1.09vpn.com
-    path: /vless/
-- name: 🇳🇱NL | 574ms | >>@oneclickvpnkeys::NL-2
+      Host: speed.dulacloud.store
+    path: /dula
+- name: 🇳🇱NL | 586ms | @v2ray313 کانالمون 🦋
   type: vless
-  server: 51.158.206.97
+  server: 163.172.213.174
+  port: 80
+  uuid: e73df646-1f62-41bf-8c50-653497d603d0
+  udp: true
+  tls: false
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: SC-TheNetherlands2.09vpn.com
+- name: 🌐?? | 587ms | 🇮🇪_IE_爱尔兰
+  type: trojan
+  server: healthy-panda.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+- name: 🇫🇷FR | 587ms | 🇫🇷_FR_法国
+  type: trojan
+  server: 15.237.214.103
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: tough-hermit.rooster465.autos
+- name: 🌐?? | 590ms | >>@oneclickvpnkeys::NL
+  type: trojan
+  server: thorough-falcon.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+- name: 🇳🇱NL | 592ms | 🍏7@oneclickvpnkeys
+  type: trojan
+  server: 89.39.70.238
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: present-warthog.rooster465.autos
+- name: 🇩🇪DE | 594ms | 🇩🇪 Join+Telegram:@Farah_
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪DE | 596ms | 🇩🇪 Join+Telegram:@Farah_
+  type: vless
+  server: 163.53.244.247
+  port: 443
+  uuid: 56971dae-1974-4ebe-a903-00e310828dd5
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.bing.com
+  reality-opts:
+    public-key: KdveJDEjZkGpf3Ymw3Ptu0cjDQ9geOY3ueMniWuWa2E
+    short-id: 2694d28edfdd2c38
+  client-fingerprint: chrome
+- name: 🇫🇷FR | 596ms | >>@oneclickvpnkeys::FR-7
+  type: trojan
+  server: 13.37.222.178
+  port: 443
+  password: FH72359861
+  udp: true
+  sni: correct-pony.rooster465.autos
+- name: 🌐?? | 597ms | >>@oneclickvpnkeys::FR-6
+  type: trojan
+  server: chief-cricket.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+- name: 🇳🇱NL | 599ms | 🍥5@oneclickvpnkeys
+  type: vless
+  server: 85.155.226.211
+  port: 443
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: getsavesafe.net
+  reality-opts:
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
+  client-fingerprint: chrome
+- name: '🌐IE | 600ms | 🇮🇪148752 | ⚡️Telegram = '
+  type: trojan
+  server: 34.251.228.118
+  port: 443
+  password: PQ05174892
+  udp: true
+  sni: definite-ladybird.rooster465.autos
+- name: 🇫🇷FR | 601ms | >>@oneclickvpnkeys::FR-5
+  type: vless
+  server: 62.210.91.2
   port: 23576
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
@@ -1401,129 +1343,33 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   client-fingerprint: chrome
-- name: 🇳🇱NL | 574ms | 美国 302
-  type: vmess
-  network: tcp
-  server: 159.223.13.109
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  servername: supervpn.super.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  alterId: 0
-  cipher: aes-128-gcm
-  client-fingerprint: chrome
-- name: 🌐?? | 577ms | 法国 006
+- name: 🇳🇱NL | 603ms | @hex_proxy ⁵
   type: vless
-  network: ws
-  server: SC-TheNetherlands1.09vpn.com
-  port: 80
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-  skip-cert-verify: false
-  tls: false
-  encryption: none
-  ws-opts:
-    headers:
-      Host: SC-TheNetherlands1.09vpn.com
-    path: /vless/
-- name: 🌐?? | 583ms | @hex_proxy ⁵
-  type: vless
-  server: netraidly.ru
-  port: 40443
-  uuid: 4480161e-2c59-4d37-8736-675c9af32bf1
+  server: 195.184.247.220
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
   tls: true
   flow: xtls-rprx-vision
-  servername: deepl.com
+  servername: savesafe.co
   reality-opts:
-    public-key: fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y
-    short-id: 01d1bf2d4755d40c
+    public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
+    short-id: f63805c3ecc7a483
   client-fingerprint: chrome
-- name: 🇧🇷BR | 584ms | 🇧🇷 Join+Telegram:@Farah_
-  type: ss
-  server: 163.176.6.223
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: SP1M0IipjvtsuKVyn9U2iK+ZKuuQ0afVhLCicK9pO8Y=
-  udp: true
-- name: 🌐?? | 585ms | 🇯🇵JP-13.231.255.107-0235
-  type: trojan
-  server: humorous-starling.rooster465.autos
-  port: 443
-  password: PQ05174892
-  udp: true
-- name: 🇫🇷FR | 589ms | 🍏61@oneclickvpnkeys
-  type: trojan
-  server: 13.39.249.40
-  port: 443
-  password: AE62539071
-  udp: true
-  sni: one-quail.rooster465.autos
-- name: 🌐?? | 589ms | >>@v2nodes::JP-6
-  type: trojan
-  server: casual-stallion.rooster465.autos
-  port: 443
-  password: FH72359861
-  udp: true
-  sni: casual-stallion.rooster465.autos
-- name: 🇳🇱NL | 591ms | @freenettir-2
+- name: 🇩🇪DE | 605ms | 🍥3@oneclickvpnkeys
   type: vless
-  server: 85.155.226.134
+  server: 45.131.213.39
   port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
   udp: true
   tls: true
   flow: xtls-rprx-vision
-  servername: getsavesafe.net
+  servername: de.servers.gracevpnbuy.com
   reality-opts:
-    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
-    short-id: 82f5d3a1e9c0b661
+    public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
+    short-id: b91a73752053b039
   client-fingerprint: chrome
-- name: '🇳🇱NL | 592ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn-5'
-  type: vless
-  server: 85.155.226.156
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: getsavesafe.net
-  reality-opts:
-    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
-    short-id: 82f5d3a1e9c0b661
-  client-fingerprint: chrome
-- name: 🌐?? | 594ms | >>@v2nodes::JP
-  type: trojan
-  server: concise-guinea.rooster465.autos
-  port: 443
-  password: PQ05174892
-  udp: true
-- name: 🇫🇷FR | 596ms | >>@oneclickvpnkeys::FR-3
-  type: trojan
-  server: 51.44.161.22
-  port: 443
-  password: AE62539071
-  udp: true
-  sni: distinct-quail.rooster465.autos
-- name: 🇳🇱NL | 596ms | @v2ray313 کانالمون 💚
-  type: vless
-  server: 85.17.145.65
-  port: 12068
-  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers: {}
-- name: 🌐?? | 597ms | >>@oneclickvpnkeys::FR-4
-  type: trojan
-  server: fancy-skink.rooster465.autos
-  port: 443
-  password: ND91608427
-  udp: true
-- name: 🇫🇷FR | 599ms | 🚀t.me/iProxyChannel-5
+- name: 🇫🇷FR | 607ms | 🚀t.me/iProxyChannel-12
   type: vless
   server: 35.180.187.82
   port: 12228
@@ -1536,9 +1382,9 @@ proxies:
     public-key: hvyaRhFtrj3cGv1Ya5uXpE256i2PoUi2fOgU0KlvKmI
     short-id: 59625eb3275249ca
   client-fingerprint: chrome
-- name: 🇳🇱NL | 601ms | @meliproxyy-9
+- name: 🇳🇱NL | 609ms | @meliproxyy-3
   type: vless
-  server: 85.155.226.174
+  server: 85.155.226.140
   port: 443
   uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
   udp: true
@@ -1549,99 +1395,45 @@ proxies:
     public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
     short-id: 82f5d3a1e9c0b661
   client-fingerprint: chrome
-- name: 🌐ES | 602ms | 🇪🇸 Join+Telegram:@Farah_
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+- name: '🇳🇱NL | 609ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn-6'
+  type: vless
+  server: 51.158.206.8
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
-- name: 🌐?? | 602ms | 🍏91@oneclickvpnkeys
+  tls: true
+  flow: xtls-rprx-vision
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🌐?? | 609ms | >>@oneclickvpnkeys::NL-5
+  type: trojan
+  server: actual-aardvark.rooster465.autos
+  port: 443
+  password: PQ05174892
+  udp: true
+- name: 🌐?? | 611ms | 🇵🇱 Join+Telegram:@Farah_
   type: ss
   server: pl134.vpnbook.com
   port: 443
   cipher: chacha20-ietf-poly1305
   password: ytw2awn
   udp: true
-- name: 🌐?? | 603ms | 🇫🇷_FR_法国
+- name: 🇨🇦CA | 611ms | 美国 144
   type: trojan
-  server: one-quail.rooster465.autos
+  network: ws
+  server: 104.17.121.43
   port: 443
-  password: AE62539071
-  udp: true
-- name: 🇭🇰HK | 605ms | 🐦‍🔥100@oneclickvpnkeys
-  type: vless
-  server: 128.1.12.19
-  port: 443
-  uuid: daf0c4cb-3541-4f20-bc71-cc9d94bb17bc
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.bing.com
-  reality-opts:
-    public-key: BF9aCRIeWaFADnCRCeEKsX1SSRaqAPrXttdD9eFCl0k
-    short-id: 96b6483bfb4ac526
-  client-fingerprint: chrome
-- name: 🇩🇪DE | 605ms | 🇩🇪 Join+Telegram:@Farah_
-  type: trojan
-  server: 35.159.21.7
-  port: 443
-  password: FH72359861
-  udp: true
-  sni: summary-lemming.rooster465.autos
-- name: 🇳🇱NL | 606ms | 🐦‍🔥12@oneclickvpnkeys
-  type: vless
-  server: 195.184.247.222
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: savesafe.co
-  reality-opts:
-    public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
-    short-id: f63805c3ecc7a483
-  client-fingerprint: chrome
-- name: 🇳🇱NL | 607ms | @freenettir-3
-  type: vless
-  server: 85.155.226.113
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: getsavesafe.net
-  reality-opts:
-    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
-    short-id: 82f5d3a1e9c0b661
-  client-fingerprint: chrome
-- name: 🌐?? | 613ms | @hex_proxy ¹
-  type: trojan
-  server: summary-lemming.rooster465.autos
-  port: 443
-  password: FH72359861
-  udp: true
-  sni: summary-lemming.rooster465.autos
-- name: 🌐?? | 617ms | 🍏63@oneclickvpnkeys
-  type: trojan
-  server: alert-fish.rooster465.autos
-  port: 443
-  password: PQ05174892
-  udp: true
-- name: 🌐?? | 619ms | >>@v2nodes::JP-3
-  type: trojan
-  server: square-tortoise.rooster465.autos
-  port: 443
-  password: FH72359861
-  udp: true
-- name: 🇩🇪DE | 621ms | >>@oneclickvpnkeys::DE-3
-  type: trojan
-  server: 3.64.117.92
-  port: 443
-  password: FH72359861
-  udp: true
-  sni: epic-iguana.rooster465.autos
-- name: 🇫🇷FR | 623ms | 美国 745
+  password: humanity
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: 🇫🇷FR | 611ms | 美国 745
   type: vless
   network: tcp
   server: 162.19.10.99
@@ -1654,278 +1446,222 @@ proxies:
   tfo: false
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇷🇺RU | 626ms | @filembad-4
+- name: 🇳🇱NL | 613ms | 🍥6@oneclickvpnkeys
   type: vless
-  server: 89.19.223.136
+  server: 85.155.226.174
   port: 443
-  uuid: 22419260-5475-49d8-a29c-01905c54d1b8
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: getsavesafe.net
+  reality-opts:
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
+  client-fingerprint: chrome
+- name: 🌐?? | 613ms | 🍥14@oneclickvpnkeys
+  type: vless
+  server: mypanel.unixzone.us
+  port: 12068
+  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
   udp: true
   tls: false
-- name: 🌐?? | 632ms | 🇯🇵JP-18.177.142.108-0187
-  type: trojan
-  server: endless-kiwi.rooster465.autos
-  port: 443
-  password: FH72359861
-  udp: true
-  sni: endless-kiwi.rooster465.autos
-- name: 🇨🇦CA | 632ms | 美国 144
-  type: trojan
   network: ws
-  server: 104.17.121.43
-  port: 443
-  password: humanity
-  skip-cert-verify: false
-  sni: www.calmlunch.com
   ws-opts:
+    path: /
     headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: 🇳🇱NL | 633ms | 🐦‍🔥19@oneclickvpnkeys
+      Host: mypanel.unixzone.us
+- name: 🇫🇷FR | 615ms | 🍥26@oneclickvpnkeys
   type: vless
-  server: 94.183.221.165
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  servername: deepl.com
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  client-fingerprint: chrome
+- name: 🇳🇱NL | 615ms | 🍥7@oneclickvpnkeys
+  type: vless
+  server: 85.155.226.113
   port: 443
-  uuid: 15e83ced-7544-422e-863d-deafe29a1dbe
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
   udp: true
   tls: true
   flow: xtls-rprx-vision
-  servername: www.amd.com
+  servername: getsavesafe.net
   reality-opts:
-    public-key: jgf0wWpgkEJZzu9wu45Ms33SNZpibtx507rpvzfz3mQ
-    short-id: 635a76c25a4b1820
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
   client-fingerprint: chrome
-- name: 🌐?? | 635ms | 🇯🇵JP-52.198.117.121-2985
-  type: trojan
-  server: relevant-cicada.rooster465.autos
-  port: 443
-  password: AE62539071
-  udp: true
-  sni: relevant-cicada.rooster465.autos
-- name: 🌐IE | 636ms | برای اتصال دائمی جوین شو
-  type: trojan
-  server: 54.74.210.220
-  port: 443
-  password: AE62539071
-  udp: true
-  sni: funny-hen.rooster465.autos
-- name: '🇩🇪DE | 636ms | 德国 #2'
-  type: hysteria2
-  server: 194.180.188.104
+- name: 🌐?? | 615ms | @v2ray313 کانالمون 😙
+  type: vless
+  server: s1.test.anti-zapret.com
   port: 8443
-  password: dsfa_k0123WFzerrf_kZ3490VNb03J_m30_s
-  udp: true
-  skip-cert-verify: true
-  sni: keyhop-offshore.roxa.org
-- name: 🌐SC | 637ms | 荷兰 002
-  type: trojan
-  network: ws
-  server: 45.130.125.75
-  port: 443
-  password: humanity
-  sni: www.calmlunch.com
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: 🇩🇪DE | 638ms | >>@oneclickvpnkeys::DE-4
-  type: trojan
-  server: 63.179.149.234
-  port: 443
-  password: PQ05174892
-  udp: true
-  sni: usable-dogfish.rooster465.autos
-- name: 🇩🇪DE | 645ms | @v2rayng3-17
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-  udp: true
-- name: 🇸🇬SG | 656ms | @v2rayng3-13
-  type: vless
-  server: 178.128.112.70
-  port: 443
-  uuid: 9206ae06-88ee-49b1-a558-531ade80fcaa
+  uuid: f82332b2-dc8c-eac4-ac12-f276e37e278a
   udp: true
   tls: true
-  flow: xtls-rprx-vision
-  servername: www.amazon.com
+  servername: s1.test.anti-zapret.com
   reality-opts:
-    public-key: -O8QFkqeMAc6TzQp6eY1s38my_8jhBd7HDHxNki6QlY
-    short-id: 7f7f
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: 58fbcddfaae3ade9
   client-fingerprint: chrome
-- name: 🇩🇪DE | 656ms | 保加利亚 003
-  type: vless
-  network: tcp
-  server: 87.120.84.32
-  port: 33843
-  uuid: 93dac4b8-3879-4179-abdb-9666a9e2ca8d
-  servername: deproxy2.lckdwn.ru
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-- name: 🌐?? | 658ms | >>@v2nodes::JP-5
+- name: 🇩🇪DE | 615ms | >>@oneclickvpnkeys::DE-7
   type: trojan
-  server: great-wasp.rooster465.autos
+  server: 3.120.70.66
   port: 443
   password: FH72359861
   udp: true
-- name: 🇩🇪DE | 661ms | 🍏64@oneclickvpnkeys
+  sni: renewed-porpoise.rooster465.autos
+- name: 🇩🇪DE | 617ms | 🐦‍🔥6@oneclickvpnkeys
+  type: vless
+  server: 103.109.234.166
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: dep.opngtr.nl
+  reality-opts:
+    public-key: gA6-Fj5hl4x-HOtbCcYqD99qsml4ActHRmw-VTkFU14
+    short-id: 7d6b6b7a606c21cf
+  client-fingerprint: chrome
+- name: '🇳🇱NL | 617ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn-5'
+  type: vless
+  server: 51.158.206.98
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🇩🇪DE | 617ms | @GozargahAzad|🇩🇪
+  type: trojan
+  server: 18.199.174.201
+  port: 443
+  password: PQ05174892
+  udp: true
+  sni: casual-quail.rooster465.autos
+- name: 🌐?? | 617ms | >>@oneclickvpnkeys::FR-8
+  type: trojan
+  server: musical-shrew.rooster465.autos
+  port: 443
+  password: PQ05174892
+  udp: true
+- name: 🇺🇸US | 619ms | 𝗡𝗲𝗧𝗠𝗲𝗹𝗶⚡️@prrofile_purpl
+  type: vless
+  server: 194.55.189.249
+  port: 40443
+  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
+  udp: true
+  tls: true
+  servername: deepl.com
+  reality-opts:
+    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
+    short-id: aae8
+  client-fingerprint: chrome
+- name: 🌐?? | 619ms | >>@oneclickvpnkeys::NL-2
+  type: trojan
+  server: emerging-weevil.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+- name: 🇳🇱NL | 619ms | >>@oneclickvpnkeys::NL-4
+  type: vless
+  server: 51.158.206.20
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: '🇩🇪DE | 619ms | 🇩🇪148744 | ⚡️Telegram = '
+  type: trojan
+  server: 3.124.187.220
+  port: 443
+  password: PQ05174892
+  udp: true
+  sni: rapid-firefly.rooster465.autos
+- name: 🇫🇷FR | 624ms | @Net2ray 2
+  type: vless
+  server: 62.210.91.10
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🌐?? | 624ms | >>@oneclickvpnkeys::FR-3
+  type: trojan
+  server: moral-dolphin.rooster465.autos
+  port: 443
+  password: PQ05174892
+  udp: true
+- name: 🌐?? | 626ms | >>@oneclickvpnkeys::FR-2
+  type: trojan
+  server: fancy-skink.rooster465.autos
+  port: 443
+  password: ND91608427
+  udp: true
+- name: 🌐AT | 628ms | 🇩🇪All¹⁰ | @BigSmoke_Conf
+  type: trojan
+  server: 212.183.88.136
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱NL | 630ms | @hex_proxy ¹
+  type: trojan
+  server: 89.39.70.120
+  port: 443
+  password: FH72359861
+  udp: true
+  sni: pro-crane.rooster465.autos
+- name: '🌐?? | 632ms | 法国 #1'
   type: hysteria2
-  server: 64.188.98.171
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  server: fr.vpn.legendaah.xyz
+  port: 36723
+  password: Krab9Hyst2_Rk7pQ2xL
   udp: true
   skip-cert-verify: true
-  sni: germany3.h2corp.local
-- name: 🇨🇦CA | 662ms | 巴西 019
-  type: vless
-  network: ws
-  server: 188.114.97.6
-  port: 2087
-  uuid: 3cb4c775-bf08-4158-a0e3-cbae9ac452d7
-  servername: orange-darkness-749f.phantomnettest1-65d.workers.dev
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: orange-darkness-749f.phantomnettest1-65d.workers.dev
-    path: /sync
-- name: 🌐?? | 665ms | 🐦‍🔥32@oneclickvpnkeys
-  type: vless
-  server: nasnet-162191099-direct.mbghalibaf.com
-  port: 443
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL | 665ms | 🍏76@oneclickvpnkeys
-  type: vless
-  server: 64.188.77.13
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: eu-west.cendora.ru
-  reality-opts:
-    public-key: m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0
-    short-id: dd3ff38418d29d22
-  client-fingerprint: chrome
-- name: 🌐?? | 671ms | Germany 🇩🇪
+  sni: www.cloudflare.com
+- name: 🌐?? | 638ms | >>@oneclickvpnkeys::NL-6
   type: trojan
-  server: usable-dogfish.rooster465.autos
+  server: whole-woodcock.rooster465.autos
   port: 443
-  password: PQ05174892
+  password: AE62539071
   udp: true
-- name: 🌐SE | 671ms | 🇸🇪 Join+Telegram:@Farah_
+- name: 🇳🇱NL | 638ms | 🐦‍🔥13@oneclickvpnkeys
   type: vless
-  server: 150.241.73.137
+  server: 195.184.247.229
   port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
   tls: true
   flow: xtls-rprx-vision
-  servername: eu-central.cendora.ru
+  servername: savesafe.co
   reality-opts:
-    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-    short-id: 00bca5982f82d083
+    public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
+    short-id: f63805c3ecc7a483
   client-fingerprint: chrome
-- name: 🇩🇪DE | 672ms | @Net2ray Germany 🇩🇪
-  type: vless
-  server: 157.90.165.181
-  port: 11762
-  uuid: 7c9b4360-6be9-47f2-ace9-b87297ea3d8f
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: swdist.apple.com
-  reality-opts:
-    public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU
-    short-id: ''
-  client-fingerprint: chrome
-- name: 🇺🇸US | 673ms | 美国 154
-  type: trojan
-  network: ws
-  server: 162.159.253.41
-  port: 443
-  password: humanity
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: 🌐CH | 681ms | @EVAY_VPN 3
-  type: vless
-  server: 178.83.226.55
-  port: 443
-  uuid: 2a77a470-315c-493d-b690-59b814a804cb
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: sellflow.org
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  client-fingerprint: chrome
-- name: 🇨🇦CA | 684ms | 美国 670
-  type: vless
-  network: ws
-  server: 104.24.192.212
-  port: 443
-  uuid: c9d1b8e6-f28a-419f-2581-97ad3258c320
-  servername: withered-cake-d636.asfvgsrhtrzdbvcgfn.workers.dev
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: withered-cake-d636.asfvgsrhtrzdbvcgfn.workers.dev
-    path: /kbapqjwhbsjwoqjhskso
-- name: 🇩🇪DE | 690ms | 🍏92@oneclickvpnkeys
-  type: vless
-  server: 144.31.219.161
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: eu-west.cendora.ru
-  reality-opts:
-    public-key: m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0
-    short-id: dd3ff38418d29d22
-  client-fingerprint: chrome
-- name: 🌐?? | 696ms | 🇯🇵JP-13.231.237.228-0188
-  type: trojan
-  server: classic-pug.rooster465.autos
-  port: 443
-  password: FH72359861
-  udp: true
-  sni: classic-pug.rooster465.autos
-- name: 🇩🇪DE | 703ms | @icv2ray-3
-  type: trojan
-  server: 45.80.111.7
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐?? | 704ms | >>@oneclickvpnkeys::IE
-  type: trojan
-  server: darling-mongrel.rooster465.autos
-  port: 443
-  password: FH72359861
-  udp: true
-- name: 🌐FI | 708ms | @Daily_Configs-3
+- name: 🌐FI | 646ms | 🍥22@oneclickvpnkeys
   type: vless
   server: 85.192.49.151
   port: 443
@@ -1938,17 +1674,185 @@ proxies:
     public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
     short-id: b91a73752053b039
   client-fingerprint: chrome
-- name: 🇨🇦CA | 711ms | @icv2ray-2
+- name: 🌐?? | 652ms | 🇪🇸ES_2|1.1MB/s
+  type: hysteria2
+  server: xby.mangshe.xyz
+  port: 2056
+  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
+  udp: true
+  skip-cert-verify: true
+  sni: mg2.mangshe.xyz
+- name: 🇺🇸US | 652ms | 🐦‍🔥30@oneclickvpnkeys
+  type: vless
+  server: 151.242.160.49
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: eu-central.cendora.ru
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+  client-fingerprint: chrome
+- name: 🌐?? | 658ms | >>@oneclickvpnkeys::DE-2
   type: trojan
-  server: 104.16.72.2
+  server: rapid-firefly.rooster465.autos
+  port: 443
+  password: PQ05174892
+  udp: true
+- name: '🇩🇪DE | 662ms | 德国 #4'
+  type: hysteria2
+  server: 194.180.188.104
+  port: 8443
+  password: dsfa_k0123WFzerrf_kZ3490VNb03J_m30_s
+  udp: true
+  skip-cert-verify: true
+  sni: keyhop-offshore.roxa.org
+- name: 🌐?? | 665ms | 🇦🇺 Join+Telegram:@Farah_
+  type: trojan
+  server: wanted-marmoset.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: wanted-marmoset.rooster465.autos
+- name: 🌐?? | 667ms | >>@oneclickvpnkeys::IE
+  type: trojan
+  server: definite-ladybird.rooster465.autos
+  port: 443
+  password: UO36402987
+  udp: true
+- name: '🌐?? | 669ms | 🇪🇪148676 | ⚡️Telegram = '
+  type: vless
+  server: ee.cdn-global.pro
+  port: 443
+  uuid: d96e05a1-18bb-45da-9e9f-ab7caab6952a
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ee.cdn-global.pro
+  reality-opts:
+    public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
+    short-id: 7a3f9e2b1c8d4f6a
+  client-fingerprint: chrome
+- name: 🌐?? | 680ms | >>@v2nodes::AU
+  type: trojan
+  server: darling-mutt.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+- name: 🇸🇬SG | 681ms | 🇸🇬SG
+  type: hysteria2
+  server: 43.156.90.144
+  port: 34567
+  password: P6qkAwznuC076mbIR2cGPg==
+  udp: true
+  skip-cert-verify: true
+  sni: bing.com
+- name: 🌐?? | 687ms | >>@v2nodes::JP
+  type: trojan
+  server: upright-sheepdog.rooster465.autos
+  port: 443
+  password: EQ30679154
+  udp: true
+  sni: upright-sheepdog.rooster465.autos
+- name: 🇳🇱NL | 690ms | 🇬🇧GB-82.38.31.189-0102
+  type: ss
+  server: 82.38.31.189
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇩🇪DE | 692ms | 德国 007
+  type: vmess
+  network: tcp
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  servername: supervpn.super.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: aes-128-gcm
+  client-fingerprint: chrome
+- name: 🇨🇦CA | 693ms | 美国 145
+  type: trojan
+  network: ws
+  server: 104.18.9.83
   port: 443
   password: humanity
-  udp: true
   sni: www.calmlunch.com
-  network: ws
   ws-opts:
+    headers:
+      Host: www.calmlunch.com
     path: /assignment
-- name: 🌐FI | 715ms | 🇫🇮FI_1|1.0MB/s
+- name: 🇸🇬SG | 693ms | @v2rayng3-8
+  type: vless
+  server: 178.128.112.70
+  port: 443
+  uuid: 9206ae06-88ee-49b1-a558-531ade80fcaa
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.amazon.com
+  reality-opts:
+    public-key: -O8QFkqeMAc6TzQp6eY1s38my_8jhBd7HDHxNki6QlY
+    short-id: 7f7f
+  client-fingerprint: chrome
+- name: 🌐CH | 693ms | @EVAY_VPN 3
+  type: vless
+  server: 178.83.226.55
+  port: 443
+  uuid: 2a77a470-315c-493d-b690-59b814a804cb
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: sellflow.org
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇸🇬SG | 695ms | @GozargahAzad|🇸🇬
+  type: vless
+  server: 162.128.44.164
+  port: 443
+  uuid: 8d1e0577-bfcb-4cbd-91c0-1f8788d4ba44
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: rJ-aDop3jUC-FzyETfI2uDSXQ659PFlehr7XWm5Cm0A
+    short-id: fe1a104caf309f5a
+  client-fingerprint: chrome
+- name: 🇸🇬SG | 698ms | 🐦‍🔥86@oneclickvpnkeys
+  type: vless
+  server: 162.128.71.118
+  port: 443
+  uuid: 690ad3be-991b-4a2c-b351-42dd06789d03
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.bing.com
+  reality-opts:
+    public-key: 3ZKNZEktRaPxt-XoWmx68EGsFwglnICVkvIl96973iA
+    short-id: 4014ce9b0d82ad9d
+  client-fingerprint: chrome
+- name: 🇩🇪DE | 699ms | 美国 312
+  type: vmess
+  network: tcp
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  servername: supervpn.super.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+- name: 🌐FI | 722ms | 🇫🇮FI_2|2.9MB/s
   type: hysteria2
   server: 138.124.0.168
   port: 8443
@@ -1956,169 +1860,146 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: hopp-legend-se.roxa.org
-- name: 🌐?? | 717ms | 🍏81@oneclickvpnkeys
+- name: '🌐?? | 726ms | 波兰 #1'
   type: hysteria2
-  server: cabinet.wwwinternetvideo.click
+  server: streambox.wwwinternetvideo.click
   port: 443
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
   udp: true
   skip-cert-verify: true
-  sni: cabinet.wwwinternetvideo.click
-- name: 🌐AT | 720ms | 🇩🇪All¹⁰ | @BigSmoke_Conf
+  sni: streambox.wwwinternetvideo.click
+- name: 🌐?? | 730ms | [🇩🇪]t.me/ConfigV2RayNG
+  type: ss
+  server: netixu.mashhad1market.ir
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: TU4NUJuMe4XlZ3NCQ_1KiQ
+  udp: true
+- name: 🌐?? | 735ms | 美国 171
   type: trojan
-  server: 212.183.88.136
+  network: ws
+  server: www.calmlunch.com
   port: 443
   password: humanity
-  udp: true
   sni: www.calmlunch.com
-  network: ws
   ws-opts:
+    headers:
+      Host: www.calmlunch.com
     path: /assignment
-- name: 🌐PL | 727ms | @filembad-3
-  type: vless
-  server: 144.31.5.171
-  port: 753
-  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.nvidia.com
-  reality-opts:
-    public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
-    short-id: b91a73752053b039
-  client-fingerprint: chrome
-- name: 🌐PL | 730ms | 🍏85@oneclickvpnkeys
+- name: 🌐?? | 748ms | 🇭🇰 Join+Telegram:@Farah_
   type: trojan
-  server: 202.78.163.233
+  server: modern-bedbug.rooster465.autos
   port: 443
   password: FH72359861
   udp: true
-  sni: magnetic-caiman.rooster465.autos
-- name: 🌐PL | 731ms | 🍏74@oneclickvpnkeys
-  type: trojan
-  server: 202.78.163.89
-  port: 443
-  password: AE62539071
-  udp: true
-  sni: tolerant-mosquito.rooster465.autos
-- name: 🌐PL | 732ms | >>@oneclickvpnkeys::PL-4
-  type: trojan
-  server: 202.78.163.248
-  port: 443
-  password: ND91608427
-  udp: true
-  sni: relaxed-gull.rooster465.autos
-- name: 🇨🇦CA | 738ms | @tootffarangi🍓-8
-  type: vless
-  server: 184.107.106.68
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🌐?? | 740ms | >>@oneclickvpnkeys::PL-3
-  type: trojan
-  server: optimal-urchin.rooster465.autos
-  port: 443
-  password: FH72359861
-  udp: true
-- name: 🌐?? | 740ms | >>@v2nodes::JP-7
-  type: trojan
-  server: open-octopus.rooster465.autos
-  port: 443
-  password: EQ30679154
-  udp: true
-- name: 🌐?? | 740ms | @hex_proxy ⁸-2
+  sni: modern-bedbug.rooster465.autos
+- name: 🌐?? | 749ms | @hex_proxy ⁸
   type: trojan
   server: primary-leech.rooster465.autos
   port: 443
   password: FH72359861
   udp: true
   sni: primary-leech.rooster465.autos
-- name: 🇦🇺AU | 742ms | 澳大利亚 016
-  type: vless
-  network: tcp
-  server: 172.105.169.70
+- name: 🌐?? | 750ms | 🇵🇱_PL_波兰
+  type: trojan
+  server: enough-basilisk.rooster465.autos
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  servername: 172.105.169.70
-  skip-cert-verify: true
+  password: AE62539071
+  udp: true
+- name: '🌐?? | 752ms | 🇳🇱148697 | ⚡️Telegram = '
+  type: vless
+  server: vip-nl-1.hkd4fwmg.vip
+  port: 31883
+  uuid: 20593145-d975-46f9-9bad-d9f3c8e2d899
+  udp: true
   tls: true
-  udp: true
-  encryption: none
-  xudp: true
-  packet-encoding: xudp
-- name: 🌐IT | 746ms | @V2ray_Alpha👽 7
-  type: ss
-  server: 194.87.47.162
-  port: 10901
-  cipher: aes-256-gcm
-  password: d1fa2f4b98a38bc8
-  udp: true
-- name: 🌐PL | 747ms | 🍏87@oneclickvpnkeys
-  type: vless
-  server: 150.251.114.43
-  port: 443
-  uuid: 851b2819-b359-40bc-ad61-a5d41027be2c
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /vless
-    headers: {}
-- name: 🌐?? | 751ms | >>@oneclickvpnkeys::FI
-  type: ss
-  server: autodiscover.fuzzyaytor.cyou
-  port: 42982
-  cipher: chacha20-ietf-poly1305
-  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
-  udp: true
-- name: 🌐?? | 752ms | >>@v2nodes::AU
+  flow: xtls-rprx-vision
+  servername: vip-nl-1.hkd4fwmg.vip
+- name: 🌐?? | 753ms | >>@oneclickvpnkeys::PL-2
   type: trojan
-  server: national-stingray.rooster465.autos
+  server: game-firefly.rooster465.autos
   port: 443
-  password: FH72359861
+  password: AE62539071
   udp: true
-  sni: national-stingray.rooster465.autos
-- name: 🇳🇱NL | 761ms | @hex_proxy ¹-2
+- name: '🇭🇰HK | 756ms | [25706] - Telegram : @V2'
   type: trojan
-  server: 89.39.70.120
+  server: 185.244.208.210
   port: 443
-  password: FH72359861
+  password: ND91608427
   udp: true
-  sni: pro-crane.rooster465.autos
-- name: 🌐?? | 775ms | 🐦‍🔥98@oneclickvpnkeys
-  type: trojan
-  server: eminent-lamb.rooster465.autos
-  port: 443
-  password: HC04361579
-  udp: true
-- name: 🌐?? | 784ms | >>@oneclickvpnkeys::PL
+  sni: upright-hamster.rooster465.autos
+- name: 🌐?? | 759ms | >>@oneclickvpnkeys::PL
   type: trojan
   server: relaxed-gull.rooster465.autos
   port: 443
   password: ND91608427
   udp: true
-- name: '🌐?? | 793ms | [25700] - Telegram : @V2'
+- name: 🇩🇪DE | 776ms | >>@oneclickvpnkeys::DE-6
   type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: cac6ec8f-99f0-44c5-814f-2f3f65e4db74
+  server: 80.240.18.227
+  port: 10051
+  uuid: f4d859eb-abc6-4c57-9eee-8fe9e2ef0f94
   udp: true
-  tls: false
+  tls: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
   network: ws
   ws-opts:
-    path: /dula
+    path: /@Marisa_kristi
     headers:
-      Host: speed.dulacloud.store
-- name: 🌐PL | 802ms | @ghand_sheken
-  type: ss
-  server: 92.118.205.211
-  port: 5600
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: 🌐?? | 787ms | >>@oneclickvpnkeys::FR
+  type: trojan
+  server: distinct-quail.rooster465.autos
+  port: 443
+  password: AE62539071
   udp: true
-- name: 🌐?? | 806ms | >>@oneclickvpnkeys::FR-5
+- name: 🌐?? | 798ms | @v2ray313 کانالمون 🇳🇱
+  type: ss
+  server: switcher-nick-croquet.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: RFK38Cg7APneSB5cWDcpbm
+  udp: true
+- name: 🇩🇪DE | 800ms | >>@oneclickvpnkeys::DE-5
+  type: vless
+  server: 45.76.87.125
+  port: 14750
+  uuid: 432289de-8dec-46ef-9a3f-001a3af178a7
+  udp: true
+  tls: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: 🇩🇪DE | 800ms | @hex_proxy ³
+  type: vless
+  server: 193.58.121.95
+  port: 2053
+  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: vk.ru
+  reality-opts:
+    public-key: 6RshLCSAs31qGRa_tWi63KClbh2Kzj9ooXpdaPJKbjs
+    short-id: a6bbc4aecf5d961f
+  client-fingerprint: chrome
+- name: 🇷🇺RU | 804ms | >>@oneclickvpnkeys::DE-3
+  type: vless
+  server: 185.125.103.62
+  port: 8082
+  uuid: 7909e164-d482-4620-a370-07e6fda6676b
+  udp: true
+  tls: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+- name: 🌐?? | 832ms | >>@oneclickvpnkeys::FR-4
   type: vless
   server: bab-6.site
   port: 443
@@ -2130,75 +2011,83 @@ proxies:
   ws-opts:
     path: /vws/
     headers: {}
-- name: 🌐?? | 810ms | 🇯🇵JP-13.115.247.230-0260
+- name: 🌐FI | 843ms | @meliproxyy-6
+  type: vless
+  server: 72.35.246.31
+  port: 1244
+  uuid: 2d96d4d6-a276-4ab5-9f20-8dc5cbf6e902
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: axisvpn.ru
+  reality-opts:
+    public-key: gHG_cbbi-OJKY2tBQTqz1QryfmmRZEQ7BQgymimukkQ
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: 🇩🇪DE | 857ms | 德国 047
+  type: vless
+  network: ws
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  servername: bab-6.site
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: bab-6.site
+    path: /vws/
+- name: 🌐?? | 863ms | 🇫🇷 Join+Telegram:@Farah_
   type: trojan
-  server: ethical-raccoon.rooster465.autos
+  server: great-krill.rooster465.autos
   port: 443
-  password: PQ05174892
+  password: QV31589740
   udp: true
-- name: 🇷🇺RU | 827ms | 🇷🇺RU_2|2.5MB/s
+- name: 🌐LT | 901ms | >>@oneclickvpnkeys::LT
   type: vless
-  server: 194.55.239.17
+  server: 84.32.209.7
   port: 443
-  uuid: 2c7e5320-7f9e-4af8-9024-c4790929ddef
-  udp: true
-  tls: true
-  servername: harknmav.fun
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.playback.v1.SessionGateway
-- name: 🇹🇷TR | 830ms | 🏳️ Join+Telegram:@Farah_
-  type: vless
-  server: 155.103.70.160
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  uuid: f1c496bf-d2ab-45be-bc13-051d60d227b7
   udp: true
   tls: true
   flow: xtls-rprx-vision
-  servername: tr.savesafe.cc
+  servername: dartsearch-cn.net
   reality-opts:
-    public-key: fyOnHd_PZ6UjxCLPDFfxrT3XIJnjTpHXyluFakC3v14
-    short-id: 95d36da964f4e951
+    public-key: 00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM
+    short-id: ''
   client-fingerprint: chrome
-- name: 🌐FI | 838ms | @Net2ray Fi🇫🇮 2
+- name: 🇳🇱NL | 919ms | 荷兰 039
   type: vless
-  server: 163.5.153.153
+  network: ws
+  server: 91.232.114.148
   port: 443
-  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
-  udp: true
+  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
+  servername: vod.ensf.top
+  skip-cert-verify: false
   tls: true
-  flow: xtls-rprx-vision
-  servername: www.samsung.com
-  reality-opts:
-    public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0
-    short-id: a91045bc
-  client-fingerprint: chrome
-- name: 🌐?? | 844ms | 🇵🇱_PL_波兰-2
-  type: vless
-  server: pl4.lckdwn.ru
-  port: 443
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
   udp: true
-  tls: false
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: vod.ensf.top
+    path: /api/v1/irc
+- name: 🇮🇳IN | 922ms | 🇮🇳 Join+Telegram:@Farah_
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
   network: ws
   ws-opts:
     path: /
     headers: {}
-- name: 🌐?? | 845ms | >>@oneclickvpnkeys::FR-2
-  type: trojan
-  server: moral-dolphin.rooster465.autos
-  port: 443
-  password: PQ05174892
-  udp: true
-- name: 🌐?? | 855ms | 🍏71@oneclickvpnkeys
-  type: hysteria2
-  server: iq5ny.pleiades.codes
-  port: 8443
-  password: 95e8532b-cc69-42d4-9553-e3c23292b15b
-  udp: true
-  skip-cert-verify: false
-  sni: iq5ny.pleiades.codes
-- name: 🇸🇬SG | 855ms | >>@freeland8::SG
+- name: 🇸🇬SG | 925ms | >>@freeland8::SG
   type: vless
   server: 54.254.145.25
   port: 6768
@@ -2211,101 +2100,133 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: '🇩🇪DE | 878ms | 德国 #3'
-  type: hysteria2
-  server: 194.180.188.97
-  port: 8443
-  password: dsfa_k0123WFzerrf_kZ3490VNb03J_m30_s
-  udp: true
-  skip-cert-verify: true
-  sni: keyhop-offshore.roxa.org
-- name: 🇩🇪DE | 882ms | 🐦‍🔥5@oneclickvpnkeys
-  type: vless
-  server: 178.162.253.64
-  port: 443
-  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: de.servers.gracevpnbuy.com
-  reality-opts:
-    public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
-    short-id: b91a73752053b039
-  client-fingerprint: chrome
-- name: 🌐?? | 911ms | >>@oneclickvpnkeys::DE-2
+- name: 🇩🇪DE | 944ms | >>@oneclickvpnkeys::DE-4
   type: trojan
-  server: renewed-porpoise.rooster465.autos
+  server: 63.179.149.234
   port: 443
-  password: FH72359861
+  password: PQ05174892
   udp: true
-- name: 🌐?? | 916ms | 🐦‍🔥42@oneclickvpnkeys
+  sni: usable-dogfish.rooster465.autos
+- name: 🌐?? | 965ms | >>@v2nodes::FR
   type: vless
-  server: gb1.wba-pn.ru
-  port: 443
-  uuid: 4bc8ff7a-20b4-41b2-9751-dfca869f0553
+  server: usejh2.neobo-tooth.ru
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
-  tls: true
-  servername: gb1.wba-pn.ru
+  tls: false
+  servername: usejh2.neobo-tooth.ru
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: gb1.wba-pn.ru
-- name: 🌐?? | 923ms | >>@oneclickvpnkeys::PL-2
-  type: trojan
-  server: game-firefly.rooster465.autos
-  port: 443
-  password: AE62539071
-  udp: true
-- name: 🌐?? | 938ms | 🇵🇱_PL_波兰
-  type: trojan
-  server: enough-basilisk.rooster465.autos
-  port: 443
-  password: AE62539071
-  udp: true
-- name: 🇮🇳IN | 954ms | @bored_vpn-2
+      Host: usejh2.neobo-tooth.ru
+- name: 🇳🇱NL | 974ms | kurdconfig-7
   type: vless
-  server: 128.128.90.72
-  port: 443
-  uuid: ec31f6d7-c71a-413d-93aa-24296805a594
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.bing.com
-  reality-opts:
-    public-key: FL9zvOg48NhHk_YWJMcDXNOseisuzeBW7d8KitUaAQM
-    short-id: dc941fb0778384e2
-  client-fingerprint: chrome
-- name: 🌐?? | 965ms | 🇮🇪_IE_爱尔兰
-  type: trojan
-  server: healthy-panda.rooster465.autos
-  port: 443
-  password: AE62539071
-  udp: true
-- name: 🌐?? | 973ms | >>@v2nodes::PL-2
-  type: trojan
-  server: pretty-mollusk.rooster465.autos
-  port: 443
-  password: EQ30679154
-  udp: true
-- name: 🌐PL | 1032ms | 波兰 008
-  type: vless
-  network: ws
-  server: 145.239.85.117
+  server: 213.183.61.100
   port: 2053
   uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  servername: forfreeuse.rtqa.ru
-  skip-cert-verify: false
-  tls: true
   udp: true
-  tfo: false
-  client-fingerprint: chrome
-  flow: ''
+  tls: true
+  servername: forfreeuse.rtqa.ru
+  network: ws
   ws-opts:
+    path: /
     headers:
       Host: forfreeuse.rtqa.ru
+- name: 🌐IE | 994ms | >>@oneclickvpnkeys::IE-4
+  type: trojan
+  server: 54.74.159.195
+  port: 443
+  password: AE62539071
+  udp: true
+  sni: kind-stork.rooster465.autos
+- name: 🇳🇱NL | 994ms | 荷兰+阿姆斯特丹Online+S.A.S
+  type: vless
+  server: 51.15.127.20
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  udp: true
+  tls: true
+  servername: forfreeuse.rtqa.ru
+  network: ws
+  ws-opts:
     path: /
-- name: 🇨🇦CA | 1039ms | 美国 743
+    headers:
+      Host: forfreeuse.rtqa.ru
+- name: 🌐FI | 997ms | @Begoo_VPN ²⁶⁸
+  type: vless
+  server: 31.76.46.138
+  port: 20422
+  uuid: d8523317-503e-43ad-b2c3-e5f77d725848
+  udp: true
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: ZUQTvwYk_hDqSrw36uc18MkeEIXIGZZGsf5XWVwdqAQ
+    short-id: '90'
+  client-fingerprint: chrome
+- name: 🇺🇸US | 1007ms | @v2raybaaz ¹
+  type: ss
+  server: 15.204.247.124
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
+- name: 🌐FI | 1010ms | 英国
+  type: hysteria2
+  server: 222.167.212.81
+  port: 8080
+  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
+  udp: true
+  skip-cert-verify: true
+  sni: hopp-legend-se.roxa.org
+- name: 🌐?? | 1046ms | >>@oneclickvpnkeys::DE
+  type: vless
+  server: po.fastbrokencompony.com
+  port: 2053
+  uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers: {}
+- name: '🌐?? | 1067ms | 🇷🇺148586 | ⚡️Telegram = '
+  type: ss
+  server: robon.mashhad1market.ir
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: TU4NUJuMe4XlZ3NCQ_1KiQ
+  udp: true
+- name: 🌐?? | 1087ms | 🚀t.me/iProxyChannel-8
+  type: vless
+  server: de-193-58.neobo-tooth.ru
+  port: 2053
+  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: vk.ru
+  reality-opts:
+    public-key: 6RshLCSAs31qGRa_tWi63KClbh2Kzj9ooXpdaPJKbjs
+    short-id: a6bbc4aecf5d961f
+  client-fingerprint: chrome
+- name: 🌐?? | 1090ms | 🇷🇺RU_1|1.7MB/s
+  type: hysteria2
+  server: els.mangshe.xyz
+  port: 2056
+  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
+  udp: true
+  skip-cert-verify: true
+  sni: els.mangshe.xyz
+- name: 🌐?? | 1099ms | 🇩🇪DE-🚀@VPNine1
+  type: ss
+  server: BatmaNAli.Sav-savteAm.iR
+  port: 41432
+  cipher: chacha20-ietf-poly1305
+  password: 4omgZOIwxQR7AT6a2_2O-3NPz-zboAd0
+  udp: true
+- name: 🇨🇦CA | 1121ms | 美国 743
   type: vless
   network: ws
   server: 172.67.191.52
@@ -2321,289 +2242,59 @@ proxies:
     headers:
       Host: po.fastbrokencompony.com
     path: /
-- name: 🇨🇦CA | 1042ms | >>@configV2rayNG::FR
-  type: vless
-  server: 104.18.28.234
-  port: 2053
-  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
-  udp: true
-  tls: true
-  servername: ov.iran-servers.shop
-  network: ws
-  ws-opts:
-    path: /J5aLQOY1R9ONWYCM
-    headers:
-      Host: ov.iran-servers.shop
-- name: 🌐PL | 1056ms | @Nexus_Panell چنل تلگرام
-  type: vless
-  server: 31.133.0.133
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  udp: true
-  tls: true
-  servername: forfreeuse.rtqa.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: forfreeuse.rtqa.ru
-- name: 🌐?? | 1057ms | @hex_proxy ⁷-2
-  type: trojan
-  server: pro-crane.rooster465.autos
-  port: 443
-  password: FH72359861
-  udp: true
-- name: 🌐SC | 1059ms | >>@oneclickvpnkeys::DE
-  type: vless
-  server: 45.130.125.158
-  port: 2053
-  uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
-  udp: true
-  tls: true
-  servername: po.fastbrokencompony.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: po.fastbrokencompony.com
-- name: 🌐?? | 1066ms | >>@oneclickvpnkeys::HK
-  type: trojan
-  server: natural-swan.rooster465.autos
-  port: 443
-  password: FH72359861
-  udp: true
-- name: 🇺🇸US | 1066ms | 美国+V2CROSS.COM
-  type: vless
-  server: 192.169.222.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2
-    headers:
-      Host: speed.dulacloud.store
-- name: '🌐?? | 1102ms | 🇷🇺148586 | ⚡️Telegram = '
+- name: 🌐?? | 1126ms | 🇯🇵_JP_日本
   type: ss
-  server: robon.mashhad1market.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: TU4NUJuMe4XlZ3NCQ_1KiQ
+  server: 0ccenterhk-c.center-link.org
+  port: 611
+  cipher: aes-128-gcm
+  password: 929c5ce8-222b-4d93-a80f-9ed580e2e8c1
   udp: true
-- name: 🌐FI | 1115ms | @Begoo_VPN ²⁶⁸
+- name: 🌐AT | 1132ms | 🇦🇹 Join+Telegram:@Farah_
   type: vless
-  server: 31.76.46.138
-  port: 20422
-  uuid: d8523317-503e-43ad-b2c3-e5f77d725848
-  udp: true
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: ZUQTvwYk_hDqSrw36uc18MkeEIXIGZZGsf5XWVwdqAQ
-    short-id: '90'
-  client-fingerprint: chrome
-- name: 🌐?? | 1138ms | 🚀t.me/iProxyChannel-4
-  type: vless
-  server: de-193-58.neobo-tooth.ru
-  port: 2053
-  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
+  server: 152.53.114.186
+  port: 443
+  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
   udp: true
   tls: true
   flow: xtls-rprx-vision
-  servername: vk.ru
+  servername: as.tunnelx.space
   reality-opts:
-    public-key: 6RshLCSAs31qGRa_tWi63KClbh2Kzj9ooXpdaPJKbjs
-    short-id: a6bbc4aecf5d961f
+    public-key: UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA
+    short-id: 4e9b0c2d1a3f5768
   client-fingerprint: chrome
-- name: 🌐LV | 1143ms | >>@oneclickvpnkeys::LV
-  type: vless
-  server: 89.36.161.222
-  port: 2053
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: vk.ru
-  reality-opts:
-    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
-    short-id: d26f4703cdd30f4e
-  client-fingerprint: chrome
-- name: 🇹🇷TR | 1146ms | 立陶宛 010
-  type: vless
+- name: 🌐?? | 1168ms | 美国 013
+  type: vmess
   network: ws
-  server: 86.38.214.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  servername: speed.dulacloud.store
+  server: node.socks5.kdns.fr
+  port: 443
+  uuid: 3d69d9bc-eaae-42bd-828f-6894c7d7edbf
+  servername: resolution-secretary-presence-amazing.trycloudflare.com
   skip-cert-verify: false
   tls: true
   udp: true
-  tfo: false
-  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
+  xudp: true
   ws-opts:
     headers:
-      Host: speed.dulacloud.store
-    path: /dula?Telegram-WangCai2
-- name: 🌐?? | 1173ms | >>@v2nodes::FR
-  type: vless
-  server: usejh2.neobo-tooth.ru
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+      Host: resolution-secretary-presence-amazing.trycloudflare.com
+    path: /3d69d9bc-eaae-42bd-828f-6894c7d7edbf-vm
+- name: 🇩🇪DE | 1198ms | @ghand_sheken
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
-  tls: false
-  servername: usejh2.neobo-tooth.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: usejh2.neobo-tooth.ru
-- name: 🇭🇰HK | 1211ms | 🇭🇰 ConfigV2RayNG
-  type: vless
-  server: 103.149.183.198
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+- name: '🌐?? | 1240ms | SG #1'
+  type: hysteria2
+  server: vip-sg-2.hkd4fwmg.vip
+  port: 55793
+  password: ZYTopBPE6fGijECIcT3KxqFEpjQJ44ND
   udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: tesla.com
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  client-fingerprint: chrome
-- name: 🌐FI | 1213ms | 伊朗 095
-  type: vless
-  network: ws
-  server: 37.27.11.192
-  port: 443
-  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-  servername: vod.ensf.top
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-  flow: ''
-  ws-opts:
-    headers:
-      Host: vod.ensf.top
-    path: /api/v1/irc
-- name: 🌐FI | 1303ms | @meliproxyy-7
-  type: vless
-  server: 72.35.246.31
-  port: 1244
-  uuid: 2d96d4d6-a276-4ab5-9f20-8dc5cbf6e902
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: axisvpn.ru
-  reality-opts:
-    public-key: gHG_cbbi-OJKY2tBQTqz1QryfmmRZEQ7BQgymimukkQ
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-- name: '🌐?? | 1308ms | @appsooner کانال تلگرام '
-  type: vless
-  server: billing.netraidly.ru
-  port: 40443
-  uuid: 17d29827-7cf1-4115-b40d-548e10ec355d
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: deepl.com
-  reality-opts:
-    public-key: bjOGTQ4xsiFbyCPM_WzoK53L130rW5vZJtuYDJx_pkM
-    short-id: aa3c
-  client-fingerprint: chrome
-- name: 🌐PL | 1310ms | @FarazV2ray
-  type: vless
-  server: 132.243.212.205
-  port: 41503
-  uuid: 58984fe1-5f01-486b-bb68-c2f8352d7a92
-  udp: true
-  tls: true
-  servername: github.com
-  reality-opts:
-    public-key: RIGmegmuEpwjJWkWnJF_woRYpLH5h8d_3uZQrcqgeRs
-    short-id: acabab18bfcf51f4
-  client-fingerprint: chrome
-- name: '🌐?? | 1316ms | 🇨🇦148654 | ⚡️Telegram = '
-  type: vless
-  server: chatgpt.com
-  port: 2053
-  uuid: 7cf1c6ae-bfd6-4910-9678-a214f31ed7bf
-  udp: true
-  tls: true
-  servername: za12kl3.bingnet.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: za12kl3.bingnet.online
-- name: 🌐?? | 1415ms | >>@v2nodes::FR-2
-  type: vless
-  server: fr15.mechvpn.online
-  port: 443
-  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision-udp443
-- name: '🌐?? | 1511ms | 🇪🇪148676 | ⚡️Telegram = '
-  type: vless
-  server: ee.cdn-global.pro
-  port: 443
-  uuid: d96e05a1-18bb-45da-9e9f-ab7caab6952a
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: ee.cdn-global.pro
-  reality-opts:
-    public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
-    short-id: 7a3f9e2b1c8d4f6a
-  client-fingerprint: chrome
-- name: 🌐?? | 1561ms | @V2rayng_market_1378_bot
-  type: vless
-  server: millionaire.levikogjgfdd.ir
-  port: 2053
-  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
-  udp: true
-  tls: true
-  servername: ov.iran-servers.shop
-  network: ws
-  ws-opts:
-    path: /J5aLQOY1R9ONWYCM
-    headers:
-      Host: ov.iran-servers.shop
-- name: 🇨🇦CA | 1640ms | 🇵🇱 Join+Telegram:@Farah_
-  type: vless
-  server: 172.67.118.45
-  port: 2053
-  uuid: da4747a6-be0d-4c1b-90f4-d82ec3012be2
-  udp: true
-  tls: true
-  servername: music1000.melobitmusic1.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: music1000.melobitmusic1.ir
-- name: 🇨🇦CA | 1739ms | 美国 680
-  type: vless
-  network: ws
-  server: 104.18.32.47
-  port: 2053
-  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
-  servername: ov.iran-servers.shop
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: ov.iran-servers.shop
-    path: /J5aLQOY1R9ONWYCM
-- name: 🌐?? | 1800ms | 🚀t.me/iProxyChannel-12
+  skip-cert-verify: true
+  sni: vip-sg-2.hkd4fwmg.vip
+- name: 🌐?? | 1294ms | 🚀t.me/iProxyChannel-6
   type: vless
   server: music1000.melobitmusic1.ir
   port: 2053
@@ -2616,44 +2307,138 @@ proxies:
     path: /
     headers:
       Host: music1000.melobitmusic1.ir
-- name: 🌐?? | 2211ms | 香港
-  type: hysteria2
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  password: 1427eb10-7529-4d38-a6a2-01b337868b37
-  udp: true
-  skip-cert-verify: true
-  sni: hk2.xiaoliyu.cyou
-- name: 🇨🇦CA | 2268ms | 美国 372
+- name: 🇨🇦CA | 1331ms | @tootffarangi🍓-8
   type: vless
-  network: ws
-  server: 104.16.75.251
+  server: 184.107.106.68
   port: 443
-  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
-  servername: germany-2.ariyuz.org
-  skip-cert-verify: false
-  tls: true
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
   udp: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: germany-2.ariyuz.org
-    path: /
-- name: 🌐?? | 2949ms | @hex_proxy ⁷
+  tls: true
+  servername: lizca2.footballfantasyforum.com
+- name: 🇯🇵JP | 1350ms | @vmesskhodam-6
   type: vless
-  server: cdn.netraidly.ru
-  port: 40443
-  uuid: 4bf5a71c-d726-4585-b095-7396675706d5
+  server: 43.165.177.82
+  port: 443
+  uuid: 0b772594-d6b9-4f4f-849b-8a6f92f594fe
   udp: true
   tls: true
   flow: xtls-rprx-vision
-  servername: deepl.com
+  servername: www.cloudflare.com
   reality-opts:
-    public-key: D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU
-    short-id: c84f
+    public-key: ZuN9nc78h4Ccb19eb9NpTCs0jZkhJB8L0i1ZoAhu0XU
+    short-id: b2f4518cf979889d
   client-fingerprint: chrome
-- name: 🌐?? | 3113ms | @MDvpnSEC-3
+- name: 🌐?? | 1373ms | 美国 330
+  type: vless
+  network: ws
+  server: de.vpnbase.net
+  port: 80
+  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  encryption: none
+  packet-encoding: xudp
+  ws-opts:
+    headers:
+      Host: de.vpnbase.net
+    path: /http
+- name: 🇨🇦CA | 1427ms | >>@configV2rayNG::FR
+  type: vless
+  server: 104.18.28.234
+  port: 2053
+  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
+  udp: true
+  tls: true
+  servername: ov.iran-servers.shop
+  network: ws
+  ws-opts:
+    path: /J5aLQOY1R9ONWYCM
+    headers:
+      Host: ov.iran-servers.shop
+- name: '🇺🇸US | 1504ms | 🇺🇸139822 | ⚡️Telegram = '
+  type: vless
+  server: 169.40.42.133
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: 🌐FI | 1659ms | @Selinc
+  type: ss
+  server: 31.76.30.79
+  port: 10808
+  cipher: chacha20-ietf-poly1305
+  password: TmXSpcRBbhvHDg66bo2w89bToxQsbMoa
+  udp: true
+- name: 🇳🇱NL | 1798ms | @V2ray_Alpha👽 5
+  type: ss
+  server: 193.29.139.168
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  udp: true
+- name: 🇨🇦CA | 2014ms | >>@v2nodes::US
+  type: vless
+  server: 172.64.146.153
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
+- name: 🇷🇺RU | 2174ms | @vmesskhodam
+  type: vless
+  server: 176.108.243.192
+  port: 9880
+  uuid: 14777bd9-56a5-46f6-a94f-826b4800dc05
+  udp: true
+  tls: true
+  servername: dl.google.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: aa
+  client-fingerprint: chrome
+- name: 🌐PL | 2518ms | @ghand_sheken-3
+  type: ss
+  server: 92.118.205.211
+  port: 5600
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇭🇰HK | 2545ms | 中国 007
+  type: trojan
+  network: tcp
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+- name: 🌐?? | 2653ms | 🇬🇧 Join+Telegram:@Farah_
+  type: vless
+  server: gb1.wba-pn.ru
+  port: 443
+  uuid: 4bc8ff7a-20b4-41b2-9751-dfca869f0553
+  udp: true
+  tls: true
+  servername: gb1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gb1.wba-pn.ru
+- name: 🌐?? | 3102ms | @MDvpnSEC-2
   type: vless
   server: fi1.levikogjgfdd.ir
   port: 443
@@ -2666,280 +2451,322 @@ proxies:
     public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
     short-id: ff776ff77be48b88
   client-fingerprint: chrome
+- name: 🇺🇸US | 3422ms | vless-169.40.42.74
+  type: vless
+  server: 169.40.42.74
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: 🌐PL | 3689ms | 🐦‍🔥39@oneclickvpnkeys
+  type: vless
+  server: 144.31.171.143
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: eu-central.cendora.ru
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+  client-fingerprint: chrome
+- name: 🇳🇱NL | 3843ms | @v2ray313 کانالمون 🦋-2
+  type: vless
+  server: 95.85.247.155
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: eu-west.cendora.ru
+  reality-opts:
+    public-key: m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0
+    short-id: dd3ff38418d29d22
+  client-fingerprint: chrome
+- name: 🌐?? | 3960ms | >>@oneclickvpnkeys::IE-6
+  type: trojan
+  server: funny-hen.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
 proxy-groups:
 - name: ♻️ 自动选优
   type: url-test
   proxies: &id001
-  - 🇺🇸US | 30ms | 5🍏@oneclickvpnkeys
-  - 🇨🇦CA | 62ms | >>@configV2rayNG::US-2
-  - 🇨🇦CA | 62ms | 美国 371
-  - 🇨🇦CA | 63ms | >>@configV2rayNG::US-3
-  - 🇺🇸US | 65ms | @hopev2ray❤️‍🔥
-  - 🇨🇦CA | 65ms | 美国 685
-  - 🇨🇦CA | 66ms | @Lent_Gc
-  - 🇨🇦CA | 66ms | >>@configV2rayNG::US-6
-  - 🇨🇦CA | 66ms | 美国 425
-  - 🇨🇦CA | 67ms | >>@oneclickvpnkeys::US-2
-  - 🇨🇦CA | 68ms | >>@configV2rayNG::US-4
-  - 🇨🇦CA | 72ms | >>@oneclickvpnkeys::US-1
-  - 🇺🇸US | 72ms | >>@oneclickvpnkeys::US-1
-  - 🇨🇦CA | 73ms | >>@oneclickvpnkeys::US-7
-  - 🇺🇸US | 73ms | >>@oneclickvpnkeys::US-1
-  - 🇨🇦CA | 74ms | 美国 544
-  - 🌐?? | 74ms | 美国+CloudFlare节点
-  - 🇨🇦CA | 75ms | 🔥Join+Telegram:@Azarbayj
-  - 🇨🇦CA | 76ms | >>@v2rayng_fast::US
-  - 🇺🇸US | 76ms | >>@oneclickvpnkeys::US-1
-  - 🇨🇦CA | 78ms | 美国 647
-  - 🇨🇦CA | 81ms | >>@oneclickvpnkeys::US-1
-  - 🇨🇦CA | 82ms | 美国 236
-  - 🌐?? | 82ms | 🇸🇬 Join+Telegram:@Farah_
-  - 🌐?? | 82ms | >>@configV2rayNG::US-5
-  - 🇺🇸US | 82ms | >>@oneclickvpnkeys::US-2
-  - 🇺🇸US | 83ms | >>@oneclickvpnkeys::US-4
-  - 🇺🇸US | 84ms | 巴西 009
-  - '🇺🇸US | 90ms | 🇺🇸148686 | ⚡️Telegram = '
-  - 🇺🇸US | 93ms | >>@ShadowsocksM::US
-  - 🇨🇦CA | 96ms | >>@v2ray1_ng::US
-  - 🇷🇺RU | 96ms | >>@oneclickvpnkeys::US-9
-  - 🌐?? | 96ms | 🇺🇸_US_美国
-  - 🇺🇸US | 97ms | >>@configV2rayNG::US
-  - 🇨🇦CA | 97ms | >>@oneclickvpnkeys::US-6
-  - 🌐?? | 100ms | >>@oneclickvpnkeys::US-1
-  - 🇺🇸US | 104ms | 英国 019
-  - 🇺🇸US | 105ms | 英国 020
-  - 🇺🇸US | 113ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🌐?? | 118ms | >>@oneclickvpnkeys::US
-  - 🇺🇸US | 133ms | 美国 354
-  - 🌐?? | 137ms | 1🐦‍🔥@oneclickvpnkeys
-  - 🇺🇸US | 138ms | 🐦‍🔥78@oneclickvpnkeys
-  - 🌐?? | 152ms | >>@ShadowsocksM::US-2
-  - 🌐?? | 156ms | 美国+CloudFlare节点-2
-  - 🌐?? | 162ms | >>@oneclickvpnkeys::US-2
-  - 🇺🇸US | 172ms | 🇺🇸US-156.146.38.169-0085
-  - 🇺🇸US | 177ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🇺🇸US | 211ms | 美国 269
-  - 🇺🇸US | 213ms | 🇺🇸US-37.19.198.244-0112
-  - 🇨🇦CA | 215ms | 美国 270
-  - 🇺🇸US | 219ms | United+States
-  - 🇺🇸US | 220ms | 🇺🇸US-173.244.56.6-0137
-  - 🌐?? | 222ms | >>@oneclickvpnkeys::US-1
-  - '🇨🇦CA | 230ms | @appsooner کانال تلگرام '
-  - 🇨🇦CA | 233ms | @v2ray313 کانالمون 🙊
-  - 🇺🇸US | 235ms | 美国 261
-  - '🇺🇸US | 251ms | 🇺🇸148542 | ⚡️Telegram = '
-  - 🌐?? | 260ms | 🇩🇪2
-  - 🇨🇦CA | 267ms | 美国 278
-  - 🇺🇸US | 267ms | 🐦‍🔥66@oneclickvpnkeys
-  - 🌐?? | 287ms | >>@oneclickvpnkeys::CA
-  - 🇺🇸US | 296ms | vless-169.40.42.74
-  - 🇯🇵JP | 301ms | 🇯🇵JP-149.22.87.241-0255
-  - 🇯🇵JP | 302ms | 🇯🇵 Join+Telegram:@Farah_
-  - 🌐?? | 305ms | 🐦‍🔥74@oneclickvpnkeys
-  - 🇺🇸US | 307ms | 🍏97@oneclickvpnkeys
-  - 🌐?? | 309ms | @vmess_ir
-  - '🇯🇵JP | 318ms | 🇯🇵148619 | ⚡️Telegram = '
-  - 🇺🇸US | 319ms | 🐦‍🔥60@oneclickvpnkeys
-  - 🇺🇸US | 322ms | 🇺🇸US_21|2.9MB/s
-  - 🌐?? | 329ms | >>@oneclickvpnkeys::US-8
-  - 🇺🇸US | 347ms | @v2ray313 کانالمون 😁
-  - 🇺🇸US | 371ms | 🍏100@oneclickvpnkeys
-  - 🇨🇦CA | 391ms | 美国 557
-  - 🇯🇵JP | 407ms | 🇯🇵JP-3.112.238.99-0186
-  - 🇯🇵JP | 408ms | @V2ray_Alpha🐌 8
-  - 🇯🇵JP | 410ms | >>@configV2rayNG::JP
-  - 🇯🇵JP | 410ms | 🇯🇵JP-54.249.34.120-0225
-  - 🇺🇸US | 410ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🇯🇵JP | 410ms | 🇯🇵JP-3.112.223.141-0191
-  - 🌐?? | 415ms | >>@v2nodes::JP-2
-  - '🇺🇸US | 416ms | اگه میخوای قطع نشی جوین '
-  - 🇯🇵JP | 416ms | @vmesskhodam-5
-  - 🇯🇵JP | 416ms | 🇯🇵 Join+Telegram:@Farah_
-  - 🇺🇸US | 417ms | 🐦‍🔥71@oneclickvpnkeys
-  - 🌐?? | 418ms | 🇯🇵 Join+Telegram:@Farah_
-  - 🌐?? | 418ms | 🇯🇵JP-18.181.200.117-0172
-  - 🇫🇷FR | 419ms | @confiig_hub-2
-  - 🌐?? | 420ms | 🇯🇵JP-57.180.23.141-0185
-  - 🌐?? | 421ms | 🇯🇵 Join+Telegram:@Farah_
-  - 🌐?? | 422ms | >>@v2nodes::JP-9
-  - 🌐?? | 422ms | 🇯🇵JP-57.180.38.121-0256
-  - 🌐?? | 422ms | 🇯🇵JP-13.113.89.229-0430
-  - 🇺🇸US | 424ms | 🇩🇪telegram➠@v2rayNG_Mats
-  - 🌐?? | 425ms | >>@v2nodes::JP-10
-  - 🇭🇰HK | 434ms | @filembad-2
-  - 🇳🇱NL | 438ms | @v2rayng3-3
-  - 🇫🇷FR | 439ms | 🍏15@oneclickvpnkeys
-  - 🇳🇱NL | 441ms | 🇳🇱NL-109.201.152.181-013
-  - 🌐?? | 447ms | >>@v2nodes::JP-4
-  - 🌐?? | 453ms | @Lent_Gc-2
-  - 🌐?? | 463ms | 立陶宛+V2CROSS.COM
-  - 🇳🇱NL | 469ms | 🇬🇧GB-82.38.31.15-0124
-  - 🇳🇱NL | 470ms | @freenettir-6
-  - 🇳🇱NL | 475ms | 🇬🇧GB-82.38.31.36-0121
-  - 🇳🇱NL | 477ms | نتورلد تو تلگرام جستجو ک
-  - 🇳🇱NL | 477ms | @hex_proxy ⁸
-  - 🇳🇱NL | 477ms | 🇳🇱 Join+Telegram:@Farah_
-  - 🇳🇱NL | 477ms | 🇬🇧GB-82.38.31.46-0109
-  - 🇳🇱NL | 477ms | 🇬🇧GB-82.38.31.49-0101
-  - 🇳🇱NL | 477ms | TEL:Father_vpn-3
-  - 🇳🇱NL | 478ms | 🇬🇧GB-82.38.31.16-0123
-  - 🇳🇱NL | 479ms | 🇳🇱NL-193.29.139.235-0095
-  - 🇳🇱NL | 480ms | @freenettir
-  - 🇳🇱NL | 482ms | 🇬🇧GB-82.38.31.180-0100
-  - 🇳🇱NL | 483ms | T.me/Vpn_Mafia 🇳🇱
-  - 🇳🇱NL | 485ms | @v2rayng3-19
-  - 🇳🇱NL | 486ms | @Rayan_Config-82.38.31.1
-  - 🇳🇱NL | 487ms | @freenettir-5
-  - 🇸🇬SG | 489ms | channel_@networld_vpn
-  - 🇳🇱NL | 489ms | @freenettir-8
-  - '🇸🇬SG | 491ms | 🇸🇬148685 | ⚡️Telegram = '
-  - 🇩🇪DE | 494ms | 𝐕𝐄𝐆𝐀𝐀𝐒_𝐕𝐏𝐍 🇩🇪
-  - 🇳🇱NL | 496ms | @Rayan_Config-82.38.31.1
-  - 🌐FI | 499ms | @Selinc-4
-  - 🇸🇬SG | 511ms | kurdconfig-2
-  - 🌐IE | 512ms | @hex_proxy ⁴
-  - 🌐IE | 514ms | @hex_proxy ⁵-2
-  - 🌐IE | 519ms | >>@oneclickvpnkeys::IE-3
-  - 🌐PL | 519ms | @TEHRANARGO
-  - 🌐IE | 521ms | >>@oneclickvpnkeys::IE-4
-  - 🌐IE | 536ms | >>@oneclickvpnkeys::IE-2
-  - 🌐IE | 537ms | @hex_proxy ⁴-2
-  - 🌐MY | 539ms | 🇲🇾 Join+Telegram:@Farah_
-  - 🌐?? | 542ms | 🇨🇦 Join+Telegram:@Farah_
-  - 🇸🇬SG | 550ms | 以色列 001
-  - 🌐?? | 557ms | >>@v2nodes::JP-8
-  - 🇳🇱NL | 570ms | @v2rayng3-16
-  - '🇳🇱NL | 571ms | کانال تلگرام : Free_VPN_'
-  - '🇳🇱NL | 571ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn-10'
-  - 🇳🇱NL | 572ms | >>@oneclickvpnkeys::NL
-  - 🇳🇱NL | 573ms | @v2ray313 کانالمون ☹️
-  - 🌐?? | 573ms | 法国 005
-  - 🇳🇱NL | 574ms | >>@oneclickvpnkeys::NL-2
-  - 🇳🇱NL | 574ms | 美国 302
-  - 🌐?? | 577ms | 法国 006
-  - 🌐?? | 583ms | @hex_proxy ⁵
-  - 🇧🇷BR | 584ms | 🇧🇷 Join+Telegram:@Farah_
-  - 🌐?? | 585ms | 🇯🇵JP-13.231.255.107-0235
-  - 🇫🇷FR | 589ms | 🍏61@oneclickvpnkeys
-  - 🌐?? | 589ms | >>@v2nodes::JP-6
-  - 🇳🇱NL | 591ms | @freenettir-2
-  - '🇳🇱NL | 592ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn-5'
-  - 🌐?? | 594ms | >>@v2nodes::JP
-  - 🇫🇷FR | 596ms | >>@oneclickvpnkeys::FR-3
-  - 🇳🇱NL | 596ms | @v2ray313 کانالمون 💚
-  - 🌐?? | 597ms | >>@oneclickvpnkeys::FR-4
-  - 🇫🇷FR | 599ms | 🚀t.me/iProxyChannel-5
-  - 🇳🇱NL | 601ms | @meliproxyy-9
-  - 🌐ES | 602ms | 🇪🇸 Join+Telegram:@Farah_
-  - 🌐?? | 602ms | 🍏91@oneclickvpnkeys
-  - 🌐?? | 603ms | 🇫🇷_FR_法国
-  - 🇭🇰HK | 605ms | 🐦‍🔥100@oneclickvpnkeys
-  - 🇩🇪DE | 605ms | 🇩🇪 Join+Telegram:@Farah_
-  - 🇳🇱NL | 606ms | 🐦‍🔥12@oneclickvpnkeys
-  - 🇳🇱NL | 607ms | @freenettir-3
-  - 🌐?? | 613ms | @hex_proxy ¹
-  - 🌐?? | 617ms | 🍏63@oneclickvpnkeys
-  - 🌐?? | 619ms | >>@v2nodes::JP-3
-  - 🇩🇪DE | 621ms | >>@oneclickvpnkeys::DE-3
-  - 🇫🇷FR | 623ms | 美国 745
-  - 🇷🇺RU | 626ms | @filembad-4
-  - 🌐?? | 632ms | 🇯🇵JP-18.177.142.108-0187
-  - 🇨🇦CA | 632ms | 美国 144
-  - 🇳🇱NL | 633ms | 🐦‍🔥19@oneclickvpnkeys
-  - 🌐?? | 635ms | 🇯🇵JP-52.198.117.121-2985
-  - 🌐IE | 636ms | برای اتصال دائمی جوین شو
-  - '🇩🇪DE | 636ms | 德国 #2'
-  - 🌐SC | 637ms | 荷兰 002
-  - 🇩🇪DE | 638ms | >>@oneclickvpnkeys::DE-4
-  - 🇩🇪DE | 645ms | @v2rayng3-17
-  - 🇸🇬SG | 656ms | @v2rayng3-13
-  - 🇩🇪DE | 656ms | 保加利亚 003
-  - 🌐?? | 658ms | >>@v2nodes::JP-5
-  - 🇩🇪DE | 661ms | 🍏64@oneclickvpnkeys
-  - 🇨🇦CA | 662ms | 巴西 019
-  - 🌐?? | 665ms | 🐦‍🔥32@oneclickvpnkeys
-  - 🇳🇱NL | 665ms | 🍏76@oneclickvpnkeys
-  - 🌐?? | 671ms | Germany 🇩🇪
-  - 🌐SE | 671ms | 🇸🇪 Join+Telegram:@Farah_
-  - 🇩🇪DE | 672ms | @Net2ray Germany 🇩🇪
-  - 🇺🇸US | 673ms | 美国 154
-  - 🌐CH | 681ms | @EVAY_VPN 3
-  - 🇨🇦CA | 684ms | 美国 670
-  - 🇩🇪DE | 690ms | 🍏92@oneclickvpnkeys
-  - 🌐?? | 696ms | 🇯🇵JP-13.231.237.228-0188
-  - 🇩🇪DE | 703ms | @icv2ray-3
-  - 🌐?? | 704ms | >>@oneclickvpnkeys::IE
-  - 🌐FI | 708ms | @Daily_Configs-3
-  - 🇨🇦CA | 711ms | @icv2ray-2
-  - 🌐FI | 715ms | 🇫🇮FI_1|1.0MB/s
-  - 🌐?? | 717ms | 🍏81@oneclickvpnkeys
-  - 🌐AT | 720ms | 🇩🇪All¹⁰ | @BigSmoke_Conf
-  - 🌐PL | 727ms | @filembad-3
-  - 🌐PL | 730ms | 🍏85@oneclickvpnkeys
-  - 🌐PL | 731ms | 🍏74@oneclickvpnkeys
-  - 🌐PL | 732ms | >>@oneclickvpnkeys::PL-4
-  - 🇨🇦CA | 738ms | @tootffarangi🍓-8
-  - 🌐?? | 740ms | >>@oneclickvpnkeys::PL-3
-  - 🌐?? | 740ms | >>@v2nodes::JP-7
-  - 🌐?? | 740ms | @hex_proxy ⁸-2
-  - 🇦🇺AU | 742ms | 澳大利亚 016
-  - 🌐IT | 746ms | @V2ray_Alpha👽 7
-  - 🌐PL | 747ms | 🍏87@oneclickvpnkeys
-  - 🌐?? | 751ms | >>@oneclickvpnkeys::FI
-  - 🌐?? | 752ms | >>@v2nodes::AU
-  - 🇳🇱NL | 761ms | @hex_proxy ¹-2
-  - 🌐?? | 775ms | 🐦‍🔥98@oneclickvpnkeys
-  - 🌐?? | 784ms | >>@oneclickvpnkeys::PL
-  - '🌐?? | 793ms | [25700] - Telegram : @V2'
-  - 🌐PL | 802ms | @ghand_sheken
-  - 🌐?? | 806ms | >>@oneclickvpnkeys::FR-5
-  - 🌐?? | 810ms | 🇯🇵JP-13.115.247.230-0260
-  - 🇷🇺RU | 827ms | 🇷🇺RU_2|2.5MB/s
-  - 🇹🇷TR | 830ms | 🏳️ Join+Telegram:@Farah_
-  - 🌐FI | 838ms | @Net2ray Fi🇫🇮 2
-  - 🌐?? | 844ms | 🇵🇱_PL_波兰-2
-  - 🌐?? | 845ms | >>@oneclickvpnkeys::FR-2
-  - 🌐?? | 855ms | 🍏71@oneclickvpnkeys
-  - 🇸🇬SG | 855ms | >>@freeland8::SG
-  - '🇩🇪DE | 878ms | 德国 #3'
-  - 🇩🇪DE | 882ms | 🐦‍🔥5@oneclickvpnkeys
-  - 🌐?? | 911ms | >>@oneclickvpnkeys::DE-2
-  - 🌐?? | 916ms | 🐦‍🔥42@oneclickvpnkeys
-  - 🌐?? | 923ms | >>@oneclickvpnkeys::PL-2
-  - 🌐?? | 938ms | 🇵🇱_PL_波兰
-  - 🇮🇳IN | 954ms | @bored_vpn-2
-  - 🌐?? | 965ms | 🇮🇪_IE_爱尔兰
-  - 🌐?? | 973ms | >>@v2nodes::PL-2
-  - 🌐PL | 1032ms | 波兰 008
-  - 🇨🇦CA | 1039ms | 美国 743
-  - 🇨🇦CA | 1042ms | >>@configV2rayNG::FR
-  - 🌐PL | 1056ms | @Nexus_Panell چنل تلگرام
-  - 🌐?? | 1057ms | @hex_proxy ⁷-2
-  - 🌐SC | 1059ms | >>@oneclickvpnkeys::DE
-  - 🌐?? | 1066ms | >>@oneclickvpnkeys::HK
-  - 🇺🇸US | 1066ms | 美国+V2CROSS.COM
-  - '🌐?? | 1102ms | 🇷🇺148586 | ⚡️Telegram = '
-  - 🌐FI | 1115ms | @Begoo_VPN ²⁶⁸
-  - 🌐?? | 1138ms | 🚀t.me/iProxyChannel-4
-  - 🌐LV | 1143ms | >>@oneclickvpnkeys::LV
-  - 🇹🇷TR | 1146ms | 立陶宛 010
-  - 🌐?? | 1173ms | >>@v2nodes::FR
-  - 🇭🇰HK | 1211ms | 🇭🇰 ConfigV2RayNG
-  - 🌐FI | 1213ms | 伊朗 095
-  - 🌐FI | 1303ms | @meliproxyy-7
-  - '🌐?? | 1308ms | @appsooner کانال تلگرام '
-  - 🌐PL | 1310ms | @FarazV2ray
-  - '🌐?? | 1316ms | 🇨🇦148654 | ⚡️Telegram = '
-  - 🌐?? | 1415ms | >>@v2nodes::FR-2
-  - '🌐?? | 1511ms | 🇪🇪148676 | ⚡️Telegram = '
-  - 🌐?? | 1561ms | @V2rayng_market_1378_bot
-  - 🇨🇦CA | 1640ms | 🇵🇱 Join+Telegram:@Farah_
-  - 🇨🇦CA | 1739ms | 美国 680
-  - 🌐?? | 1800ms | 🚀t.me/iProxyChannel-12
-  - 🌐?? | 2211ms | 香港
-  - 🇨🇦CA | 2268ms | 美国 372
-  - 🌐?? | 2949ms | @hex_proxy ⁷
-  - 🌐?? | 3113ms | @MDvpnSEC-3
+  - 🇺🇸US | 38ms | 🇺🇸US-173.249.209.146-014
+  - 🇺🇸US | 46ms | @hopev2ray❤️‍🔥
+  - 🇨🇦CA | 47ms | 美国 583
+  - 🇺🇸US | 50ms | 英国 021
+  - 🇨🇦CA | 53ms | 🔥Join+Telegram:@Azarbayj
+  - 🇺🇸US | 54ms | 🐦‍🔥36@oneclickvpnkeys
+  - 🇨🇦CA | 56ms | 美国 544
+  - 🇨🇦CA | 57ms | >>@configV2rayNG::US-3
+  - 🇨🇦CA | 58ms | >>@configV2rayNG::US
+  - 🇨🇦CA | 61ms | 美国 517
+  - 🇨🇦CA | 64ms | >>@configV2rayNG::US-2
+  - 🇨🇦CA | 66ms | 美国 741
+  - 🌐?? | 66ms | Fast Deploy Your Own Wor
+  - 🇺🇸US | 66ms | >>@oneclickvpnkeys::US-1
+  - 🇨🇦CA | 67ms | 美国 647
+  - '🇨🇦CA | 71ms | اگه میخوای قطع نشی جوین '
+  - 🇷🇺RU | 73ms | >>@oneclickvpnkeys::US-2
+  - 🇨🇦CA | 73ms | 🇺🇸_US_美国->🇰🇷_KR_韩国
+  - 🇨🇦CA | 73ms | 美国 685
+  - 🇺🇸US | 77ms | 美国 253
+  - 🇨🇦CA | 79ms | >>@oneclickvpnkeys::US-4
+  - 🇨🇦CA | 79ms | >>@oneclickvpnkeys::US-8
+  - 🇨🇦CA | 79ms | >>@oneclickvpnkeys::US-1
+  - 🇺🇸US | 84ms | 美国 231
+  - 🇨🇦CA | 86ms | 🇨🇦CA-149.22.95.183-0141
+  - 🇨🇦CA | 97ms | >>@configV2rayNG::US-5
+  - 🇨🇦CA | 108ms | >>@configV2rayNG::US-4
+  - 🇺🇸US | 113ms | 🐦‍🔥83@oneclickvpnkeys
+  - 🇺🇸US | 116ms | 🐦‍🔥87@oneclickvpnkeys
+  - 🇺🇸US | 119ms | 🐦‍🔥99@oneclickvpnkeys
+  - 🌐?? | 120ms | 🇺🇸US-35.88.210.26-0426
+  - 🌐?? | 121ms | 1🐦‍🔥@oneclickvpnkeys
+  - 🇺🇸US | 125ms | 🇺🇸 Join+Telegram:@Farah_
+  - 🌐?? | 129ms | 🇩🇪
+  - 🇺🇸US | 136ms | channel_@networld_vpn-2
+  - 🇺🇸US | 179ms | 美国 261
+  - 🌐?? | 216ms | >>@oneclickvpnkeys::US
+  - 🇺🇸US | 219ms | 美国 269
+  - 🇺🇸US | 223ms | channel_@networld_vpn
+  - 🌐?? | 236ms | >>@oneclickvpnkeys::US-6
+  - 🌐?? | 239ms | >>@oneclickvpnkeys::US-1
+  - 🇺🇸US | 241ms | United+States
+  - '🇨🇦CA | 261ms | @appsooner کانال تلگرام '
+  - '🇯🇵JP | 339ms | 🇯🇵148619 | ⚡️Telegram = '
+  - 🇺🇸US | 354ms | 🐦‍🔥60@oneclickvpnkeys
+  - 🇺🇸US | 355ms | @v2ray313 کانالمون 😁
+  - 🇺🇸US | 363ms | 🇩🇪All¹⁰ | @BigSmoke_Conf
+  - 🇨🇦CA | 397ms | 🇨🇦CA_800_@Surfboardv2ray
+  - 🇫🇷FR | 432ms | @confiig_hub
+  - 🇯🇵JP | 438ms | 🇯🇵JP-3.112.15.214-0201
+  - 🌐?? | 439ms | 🇯🇵 Join+Telegram:@Farah_
+  - '🇳🇱NL | 439ms | 🇳🇱148684 | ⚡️Telegram = '
+  - 🇯🇵JP | 439ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🇯🇵JP | 440ms | 🇯🇵JP-18.181.194.227-0207
+  - 🇯🇵JP | 440ms | 🇯🇵JP-18.181.164.216-0257
+  - 🇯🇵JP | 441ms | @V2ray_Alpha🐌 8
+  - 🇯🇵JP | 441ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🌐?? | 442ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🌐?? | 442ms | 🇯🇵JP-52.198.117.121-2985
+  - 🌐?? | 443ms | 🇯🇵 Join+Telegram:@Farah_
+  - '🌐?? | 443ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  - 🇯🇵JP | 443ms | 🇯🇵_JP_日本-2
+  - 🌐?? | 444ms | 🇯🇵 Join+Telegram:@Farah_
+  - '🌐?? | 444ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  - 🌐?? | 445ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🇯🇵JP | 445ms | 🇯🇵JP-13.114.122.131-0241
+  - 🌐?? | 445ms | 🇯🇵JP-13.230.240.243-0196
+  - 🌐?? | 446ms | 🇯🇵JP-52.194.223.176-0176
+  - 🌐?? | 446ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🇯🇵JP | 446ms | @meliproxyy-8
+  - 🇯🇵JP | 446ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🌐?? | 447ms | 🇯🇵 Join+Telegram:@Farah_
+  - '🌐?? | 447ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  - 🌐?? | 448ms | 🇯🇵JP-13.230.97.36-0243
+  - 🌐?? | 448ms | 🇯🇵JP-18.183.92.88-0232
+  - 🌐?? | 449ms | 🇯🇵 Join+Telegram:@Farah_
+  - '🌐?? | 449ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  - 🌐?? | 449ms | >>@v2nodes::JP-4
+  - 🇯🇵JP | 450ms | 🇯🇵JP-54.64.255.224-0177
+  - 🌐?? | 451ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🇯🇵JP | 451ms | 🇯🇵JP-52.68.175.30-0234
+  - 🌐?? | 451ms | >>@v2nodes::JP-6
+  - 🌐?? | 452ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🌐?? | 453ms | 🇯🇵 Join+Telegram:@Farah_
+  - '🌐?? | 453ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  - '🌐?? | 453ms | 🇯🇵 Join+Telegram:@Farah_ #3'
+  - '🌐?? | 453ms | 🇯🇵 Join+Telegram:@Farah_ #4'
+  - 🌐?? | 454ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🇫🇷FR | 456ms | 🍏15@oneclickvpnkeys
+  - 🌐?? | 458ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🇬🇧GB | 459ms | @hex_proxy ⁴-2
+  - 🌐?? | 461ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🌐?? | 461ms | >>@v2nodes::JP-5
+  - 🌐?? | 464ms | >>@v2nodes::JP-2
+  - 🇬🇧GB | 469ms | 🇬🇧GB-141.98.101.181-0160
+  - 🇩🇪DE | 471ms | (S101)🇩🇪t.me/PrivateVPNs
+  - 🇯🇵JP | 471ms | 🇯🇵JP-18.178.132.111-0215
+  - 🇹🇼TW | 473ms | 加拿大 006
+  - 🌐?? | 478ms | >>@v2nodes::JP-3
+  - 🇳🇱NL | 479ms | @meliproxyy-9
+  - 🇳🇱NL | 480ms | @meliproxyy-5
+  - 🇳🇱NL | 481ms | @VpnCostumer+|+بیا+تو+وص
+  - 🇨🇦CA | 484ms | >>@oneclickvpnkeys::CA
+  - 🇳🇱NL | 485ms | @v2rayngzendegimamad🕊️-3
+  - 🇳🇱NL | 486ms | @meliproxyy
+  - 🇳🇱NL | 486ms | @v2rayng3
+  - 🇳🇱NL | 486ms | 🇬🇧GB-82.38.31.186-0126
+  - 🇳🇱NL | 487ms | @hex_proxy ²
+  - 🇳🇱NL | 488ms | 🇬🇧GB-82.38.31.16-0123
+  - 🇳🇱NL | 489ms | T.me/Vpn_Mafia 🇳🇱
+  - 🇳🇱NL | 490ms | 🇳🇱NL-193.29.139.235-0095
+  - 🇳🇱NL | 491ms | @Rayan_Config-82.38.31.2
+  - 🇳🇱NL | 491ms | @Rayan_Config-82.38.31.1
+  - 🇳🇱NL | 493ms | @EXPRESSVPN_420  👈🏻 کانا
+  - 🇳🇱NL | 496ms | 🐦‍🔥31@oneclickvpnkeys
+  - 🇳🇱NL | 496ms | @SylphNet | 2026-06-27 0
+  - 🇩🇪DE | 497ms | @v2rayng3-2
+  - 🇳🇱NL | 499ms | 🇬🇧GB-82.38.31.46-0109
+  - 🇳🇱NL | 502ms | @v2rayng3-11
+  - 🇳🇱NL | 503ms | 🇬🇧GB-82.38.31.49-0101
+  - 🇳🇱NL | 503ms | 🇬🇧GB-82.38.31.149-0113
+  - 🇬🇧GB | 505ms | 美国 329
+  - 🇦🇺AU | 509ms | 🇦🇺 Join+Telegram:@Farah_
+  - 🇸🇬SG | 516ms | 以色列 001
+  - 🇸🇬SG | 520ms | 以色列 002
+  - 🌐IE | 522ms | >>@oneclickvpnkeys::IE-3
+  - 🌐IE | 523ms | Ireland 🇮🇪
+  - 🌐?? | 525ms | 美国 001
+  - 🌐IE | 532ms | >>@oneclickvpnkeys::IE-7
+  - 🇯🇵JP | 535ms | @Alpha_v2rayIP-4
+  - 🌐?? | 541ms | 🇵🇱 Join+Telegram:@Farah_
+  - 🌐IE | 541ms | @hex_proxy ⁴
+  - 🇨🇦CA | 544ms | >>@oneclickvpnkeys::US-1
+  - 🇰🇷KR | 551ms | 日本 035
+  - 🌐?? | 551ms | >>@oneclickvpnkeys::IE-8
+  - 🌐ES | 551ms | 乌克兰 002
+  - 🌐IE | 554ms | >>@oneclickvpnkeys::IE-9
+  - 🇺🇸US | 561ms | 🇺🇸 Join+Telegram:@Farah_
+  - 🌐?? | 562ms | >>@oneclickvpnkeys::IE-5
+  - 🌐?? | 566ms | >>@oneclickvpnkeys::IE-2
+  - 🇳🇱NL | 572ms | 🇬🇧GB-82.38.31.212-0142
+  - 🇳🇱NL | 576ms | @v2ray313 کانالمون ☹️
+  - 🇺🇸US | 576ms | 美国 560
+  - 🇳🇱NL | 586ms | @v2ray313 کانالمون 🦋
+  - 🌐?? | 587ms | 🇮🇪_IE_爱尔兰
+  - 🇫🇷FR | 587ms | 🇫🇷_FR_法国
+  - 🌐?? | 590ms | >>@oneclickvpnkeys::NL
+  - 🇳🇱NL | 592ms | 🍏7@oneclickvpnkeys
+  - 🇩🇪DE | 594ms | 🇩🇪 Join+Telegram:@Farah_
+  - 🇩🇪DE | 596ms | 🇩🇪 Join+Telegram:@Farah_
+  - 🇫🇷FR | 596ms | >>@oneclickvpnkeys::FR-7
+  - 🌐?? | 597ms | >>@oneclickvpnkeys::FR-6
+  - 🇳🇱NL | 599ms | 🍥5@oneclickvpnkeys
+  - '🌐IE | 600ms | 🇮🇪148752 | ⚡️Telegram = '
+  - 🇫🇷FR | 601ms | >>@oneclickvpnkeys::FR-5
+  - 🇳🇱NL | 603ms | @hex_proxy ⁵
+  - 🇩🇪DE | 605ms | 🍥3@oneclickvpnkeys
+  - 🇫🇷FR | 607ms | 🚀t.me/iProxyChannel-12
+  - 🇳🇱NL | 609ms | @meliproxyy-3
+  - '🇳🇱NL | 609ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn-6'
+  - 🌐?? | 609ms | >>@oneclickvpnkeys::NL-5
+  - 🌐?? | 611ms | 🇵🇱 Join+Telegram:@Farah_
+  - 🇨🇦CA | 611ms | 美国 144
+  - 🇫🇷FR | 611ms | 美国 745
+  - 🇳🇱NL | 613ms | 🍥6@oneclickvpnkeys
+  - 🌐?? | 613ms | 🍥14@oneclickvpnkeys
+  - 🇫🇷FR | 615ms | 🍥26@oneclickvpnkeys
+  - 🇳🇱NL | 615ms | 🍥7@oneclickvpnkeys
+  - 🌐?? | 615ms | @v2ray313 کانالمون 😙
+  - 🇩🇪DE | 615ms | >>@oneclickvpnkeys::DE-7
+  - 🇩🇪DE | 617ms | 🐦‍🔥6@oneclickvpnkeys
+  - '🇳🇱NL | 617ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn-5'
+  - 🇩🇪DE | 617ms | @GozargahAzad|🇩🇪
+  - 🌐?? | 617ms | >>@oneclickvpnkeys::FR-8
+  - 🇺🇸US | 619ms | 𝗡𝗲𝗧𝗠𝗲𝗹𝗶⚡️@prrofile_purpl
+  - 🌐?? | 619ms | >>@oneclickvpnkeys::NL-2
+  - 🇳🇱NL | 619ms | >>@oneclickvpnkeys::NL-4
+  - '🇩🇪DE | 619ms | 🇩🇪148744 | ⚡️Telegram = '
+  - 🇫🇷FR | 624ms | @Net2ray 2
+  - 🌐?? | 624ms | >>@oneclickvpnkeys::FR-3
+  - 🌐?? | 626ms | >>@oneclickvpnkeys::FR-2
+  - 🌐AT | 628ms | 🇩🇪All¹⁰ | @BigSmoke_Conf
+  - 🇳🇱NL | 630ms | @hex_proxy ¹
+  - '🌐?? | 632ms | 法国 #1'
+  - 🌐?? | 638ms | >>@oneclickvpnkeys::NL-6
+  - 🇳🇱NL | 638ms | 🐦‍🔥13@oneclickvpnkeys
+  - 🌐FI | 646ms | 🍥22@oneclickvpnkeys
+  - 🌐?? | 652ms | 🇪🇸ES_2|1.1MB/s
+  - 🇺🇸US | 652ms | 🐦‍🔥30@oneclickvpnkeys
+  - 🌐?? | 658ms | >>@oneclickvpnkeys::DE-2
+  - '🇩🇪DE | 662ms | 德国 #4'
+  - 🌐?? | 665ms | 🇦🇺 Join+Telegram:@Farah_
+  - 🌐?? | 667ms | >>@oneclickvpnkeys::IE
+  - '🌐?? | 669ms | 🇪🇪148676 | ⚡️Telegram = '
+  - 🌐?? | 680ms | >>@v2nodes::AU
+  - 🇸🇬SG | 681ms | 🇸🇬SG
+  - 🌐?? | 687ms | >>@v2nodes::JP
+  - 🇳🇱NL | 690ms | 🇬🇧GB-82.38.31.189-0102
+  - 🇩🇪DE | 692ms | 德国 007
+  - 🇨🇦CA | 693ms | 美国 145
+  - 🇸🇬SG | 693ms | @v2rayng3-8
+  - 🌐CH | 693ms | @EVAY_VPN 3
+  - 🇸🇬SG | 695ms | @GozargahAzad|🇸🇬
+  - 🇸🇬SG | 698ms | 🐦‍🔥86@oneclickvpnkeys
+  - 🇩🇪DE | 699ms | 美国 312
+  - 🌐FI | 722ms | 🇫🇮FI_2|2.9MB/s
+  - '🌐?? | 726ms | 波兰 #1'
+  - 🌐?? | 730ms | [🇩🇪]t.me/ConfigV2RayNG
+  - 🌐?? | 735ms | 美国 171
+  - 🌐?? | 748ms | 🇭🇰 Join+Telegram:@Farah_
+  - 🌐?? | 749ms | @hex_proxy ⁸
+  - 🌐?? | 750ms | 🇵🇱_PL_波兰
+  - '🌐?? | 752ms | 🇳🇱148697 | ⚡️Telegram = '
+  - 🌐?? | 753ms | >>@oneclickvpnkeys::PL-2
+  - '🇭🇰HK | 756ms | [25706] - Telegram : @V2'
+  - 🌐?? | 759ms | >>@oneclickvpnkeys::PL
+  - 🇩🇪DE | 776ms | >>@oneclickvpnkeys::DE-6
+  - 🌐?? | 787ms | >>@oneclickvpnkeys::FR
+  - 🌐?? | 798ms | @v2ray313 کانالمون 🇳🇱
+  - 🇩🇪DE | 800ms | >>@oneclickvpnkeys::DE-5
+  - 🇩🇪DE | 800ms | @hex_proxy ³
+  - 🇷🇺RU | 804ms | >>@oneclickvpnkeys::DE-3
+  - 🌐?? | 832ms | >>@oneclickvpnkeys::FR-4
+  - 🌐FI | 843ms | @meliproxyy-6
+  - 🇩🇪DE | 857ms | 德国 047
+  - 🌐?? | 863ms | 🇫🇷 Join+Telegram:@Farah_
+  - 🌐LT | 901ms | >>@oneclickvpnkeys::LT
+  - 🇳🇱NL | 919ms | 荷兰 039
+  - 🇮🇳IN | 922ms | 🇮🇳 Join+Telegram:@Farah_
+  - 🇸🇬SG | 925ms | >>@freeland8::SG
+  - 🇩🇪DE | 944ms | >>@oneclickvpnkeys::DE-4
+  - 🌐?? | 965ms | >>@v2nodes::FR
+  - 🇳🇱NL | 974ms | kurdconfig-7
+  - 🌐IE | 994ms | >>@oneclickvpnkeys::IE-4
+  - 🇳🇱NL | 994ms | 荷兰+阿姆斯特丹Online+S.A.S
+  - 🌐FI | 997ms | @Begoo_VPN ²⁶⁸
+  - 🇺🇸US | 1007ms | @v2raybaaz ¹
+  - 🌐FI | 1010ms | 英国
+  - 🌐?? | 1046ms | >>@oneclickvpnkeys::DE
+  - '🌐?? | 1067ms | 🇷🇺148586 | ⚡️Telegram = '
+  - 🌐?? | 1087ms | 🚀t.me/iProxyChannel-8
+  - 🌐?? | 1090ms | 🇷🇺RU_1|1.7MB/s
+  - 🌐?? | 1099ms | 🇩🇪DE-🚀@VPNine1
+  - 🇨🇦CA | 1121ms | 美国 743
+  - 🌐?? | 1126ms | 🇯🇵_JP_日本
+  - 🌐AT | 1132ms | 🇦🇹 Join+Telegram:@Farah_
+  - 🌐?? | 1168ms | 美国 013
+  - 🇩🇪DE | 1198ms | @ghand_sheken
+  - '🌐?? | 1240ms | SG #1'
+  - 🌐?? | 1294ms | 🚀t.me/iProxyChannel-6
+  - 🇨🇦CA | 1331ms | @tootffarangi🍓-8
+  - 🇯🇵JP | 1350ms | @vmesskhodam-6
+  - 🌐?? | 1373ms | 美国 330
+  - 🇨🇦CA | 1427ms | >>@configV2rayNG::FR
+  - '🇺🇸US | 1504ms | 🇺🇸139822 | ⚡️Telegram = '
+  - 🌐FI | 1659ms | @Selinc
+  - 🇳🇱NL | 1798ms | @V2ray_Alpha👽 5
+  - 🇨🇦CA | 2014ms | >>@v2nodes::US
+  - 🇷🇺RU | 2174ms | @vmesskhodam
+  - 🌐PL | 2518ms | @ghand_sheken-3
+  - 🇭🇰HK | 2545ms | 中国 007
+  - 🌐?? | 2653ms | 🇬🇧 Join+Telegram:@Farah_
+  - 🌐?? | 3102ms | @MDvpnSEC-2
+  - 🇺🇸US | 3422ms | vless-169.40.42.74
+  - 🌐PL | 3689ms | 🐦‍🔥39@oneclickvpnkeys
+  - 🇳🇱NL | 3843ms | @v2ray313 کانالمون 🦋-2
+  - 🌐?? | 3960ms | >>@oneclickvpnkeys::IE-6
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -2947,276 +2774,273 @@ proxy-groups:
   type: select
   proxies:
   - ♻️ 自动选优
-  - 🇺🇸US | 30ms | 5🍏@oneclickvpnkeys
-  - 🇨🇦CA | 62ms | >>@configV2rayNG::US-2
-  - 🇨🇦CA | 62ms | 美国 371
-  - 🇨🇦CA | 63ms | >>@configV2rayNG::US-3
-  - 🇺🇸US | 65ms | @hopev2ray❤️‍🔥
-  - 🇨🇦CA | 65ms | 美国 685
-  - 🇨🇦CA | 66ms | @Lent_Gc
-  - 🇨🇦CA | 66ms | >>@configV2rayNG::US-6
-  - 🇨🇦CA | 66ms | 美国 425
-  - 🇨🇦CA | 67ms | >>@oneclickvpnkeys::US-2
-  - 🇨🇦CA | 68ms | >>@configV2rayNG::US-4
-  - 🇨🇦CA | 72ms | >>@oneclickvpnkeys::US-1
-  - 🇺🇸US | 72ms | >>@oneclickvpnkeys::US-1
-  - 🇨🇦CA | 73ms | >>@oneclickvpnkeys::US-7
-  - 🇺🇸US | 73ms | >>@oneclickvpnkeys::US-1
-  - 🇨🇦CA | 74ms | 美国 544
-  - 🌐?? | 74ms | 美国+CloudFlare节点
-  - 🇨🇦CA | 75ms | 🔥Join+Telegram:@Azarbayj
-  - 🇨🇦CA | 76ms | >>@v2rayng_fast::US
-  - 🇺🇸US | 76ms | >>@oneclickvpnkeys::US-1
-  - 🇨🇦CA | 78ms | 美国 647
-  - 🇨🇦CA | 81ms | >>@oneclickvpnkeys::US-1
-  - 🇨🇦CA | 82ms | 美国 236
-  - 🌐?? | 82ms | 🇸🇬 Join+Telegram:@Farah_
-  - 🌐?? | 82ms | >>@configV2rayNG::US-5
-  - 🇺🇸US | 82ms | >>@oneclickvpnkeys::US-2
-  - 🇺🇸US | 83ms | >>@oneclickvpnkeys::US-4
-  - 🇺🇸US | 84ms | 巴西 009
-  - '🇺🇸US | 90ms | 🇺🇸148686 | ⚡️Telegram = '
-  - 🇺🇸US | 93ms | >>@ShadowsocksM::US
-  - 🇨🇦CA | 96ms | >>@v2ray1_ng::US
-  - 🇷🇺RU | 96ms | >>@oneclickvpnkeys::US-9
-  - 🌐?? | 96ms | 🇺🇸_US_美国
-  - 🇺🇸US | 97ms | >>@configV2rayNG::US
-  - 🇨🇦CA | 97ms | >>@oneclickvpnkeys::US-6
-  - 🌐?? | 100ms | >>@oneclickvpnkeys::US-1
-  - 🇺🇸US | 104ms | 英国 019
-  - 🇺🇸US | 105ms | 英国 020
-  - 🇺🇸US | 113ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🌐?? | 118ms | >>@oneclickvpnkeys::US
-  - 🇺🇸US | 133ms | 美国 354
-  - 🌐?? | 137ms | 1🐦‍🔥@oneclickvpnkeys
-  - 🇺🇸US | 138ms | 🐦‍🔥78@oneclickvpnkeys
-  - 🌐?? | 152ms | >>@ShadowsocksM::US-2
-  - 🌐?? | 156ms | 美国+CloudFlare节点-2
-  - 🌐?? | 162ms | >>@oneclickvpnkeys::US-2
-  - 🇺🇸US | 172ms | 🇺🇸US-156.146.38.169-0085
-  - 🇺🇸US | 177ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🇺🇸US | 211ms | 美国 269
-  - 🇺🇸US | 213ms | 🇺🇸US-37.19.198.244-0112
-  - 🇨🇦CA | 215ms | 美国 270
-  - 🇺🇸US | 219ms | United+States
-  - 🇺🇸US | 220ms | 🇺🇸US-173.244.56.6-0137
-  - 🌐?? | 222ms | >>@oneclickvpnkeys::US-1
-  - '🇨🇦CA | 230ms | @appsooner کانال تلگرام '
-  - 🇨🇦CA | 233ms | @v2ray313 کانالمون 🙊
-  - 🇺🇸US | 235ms | 美国 261
-  - '🇺🇸US | 251ms | 🇺🇸148542 | ⚡️Telegram = '
-  - 🌐?? | 260ms | 🇩🇪2
-  - 🇨🇦CA | 267ms | 美国 278
-  - 🇺🇸US | 267ms | 🐦‍🔥66@oneclickvpnkeys
-  - 🌐?? | 287ms | >>@oneclickvpnkeys::CA
-  - 🇺🇸US | 296ms | vless-169.40.42.74
-  - 🇯🇵JP | 301ms | 🇯🇵JP-149.22.87.241-0255
-  - 🇯🇵JP | 302ms | 🇯🇵 Join+Telegram:@Farah_
-  - 🌐?? | 305ms | 🐦‍🔥74@oneclickvpnkeys
-  - 🇺🇸US | 307ms | 🍏97@oneclickvpnkeys
-  - 🌐?? | 309ms | @vmess_ir
-  - '🇯🇵JP | 318ms | 🇯🇵148619 | ⚡️Telegram = '
-  - 🇺🇸US | 319ms | 🐦‍🔥60@oneclickvpnkeys
-  - 🇺🇸US | 322ms | 🇺🇸US_21|2.9MB/s
-  - 🌐?? | 329ms | >>@oneclickvpnkeys::US-8
-  - 🇺🇸US | 347ms | @v2ray313 کانالمون 😁
-  - 🇺🇸US | 371ms | 🍏100@oneclickvpnkeys
-  - 🇨🇦CA | 391ms | 美国 557
-  - 🇯🇵JP | 407ms | 🇯🇵JP-3.112.238.99-0186
-  - 🇯🇵JP | 408ms | @V2ray_Alpha🐌 8
-  - 🇯🇵JP | 410ms | >>@configV2rayNG::JP
-  - 🇯🇵JP | 410ms | 🇯🇵JP-54.249.34.120-0225
-  - 🇺🇸US | 410ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🇯🇵JP | 410ms | 🇯🇵JP-3.112.223.141-0191
-  - 🌐?? | 415ms | >>@v2nodes::JP-2
-  - '🇺🇸US | 416ms | اگه میخوای قطع نشی جوین '
-  - 🇯🇵JP | 416ms | @vmesskhodam-5
-  - 🇯🇵JP | 416ms | 🇯🇵 Join+Telegram:@Farah_
-  - 🇺🇸US | 417ms | 🐦‍🔥71@oneclickvpnkeys
-  - 🌐?? | 418ms | 🇯🇵 Join+Telegram:@Farah_
-  - 🌐?? | 418ms | 🇯🇵JP-18.181.200.117-0172
-  - 🇫🇷FR | 419ms | @confiig_hub-2
-  - 🌐?? | 420ms | 🇯🇵JP-57.180.23.141-0185
-  - 🌐?? | 421ms | 🇯🇵 Join+Telegram:@Farah_
-  - 🌐?? | 422ms | >>@v2nodes::JP-9
-  - 🌐?? | 422ms | 🇯🇵JP-57.180.38.121-0256
-  - 🌐?? | 422ms | 🇯🇵JP-13.113.89.229-0430
-  - 🇺🇸US | 424ms | 🇩🇪telegram➠@v2rayNG_Mats
-  - 🌐?? | 425ms | >>@v2nodes::JP-10
-  - 🇭🇰HK | 434ms | @filembad-2
-  - 🇳🇱NL | 438ms | @v2rayng3-3
-  - 🇫🇷FR | 439ms | 🍏15@oneclickvpnkeys
-  - 🇳🇱NL | 441ms | 🇳🇱NL-109.201.152.181-013
-  - 🌐?? | 447ms | >>@v2nodes::JP-4
-  - 🌐?? | 453ms | @Lent_Gc-2
-  - 🌐?? | 463ms | 立陶宛+V2CROSS.COM
-  - 🇳🇱NL | 469ms | 🇬🇧GB-82.38.31.15-0124
-  - 🇳🇱NL | 470ms | @freenettir-6
-  - 🇳🇱NL | 475ms | 🇬🇧GB-82.38.31.36-0121
-  - 🇳🇱NL | 477ms | نتورلد تو تلگرام جستجو ک
-  - 🇳🇱NL | 477ms | @hex_proxy ⁸
-  - 🇳🇱NL | 477ms | 🇳🇱 Join+Telegram:@Farah_
-  - 🇳🇱NL | 477ms | 🇬🇧GB-82.38.31.46-0109
-  - 🇳🇱NL | 477ms | 🇬🇧GB-82.38.31.49-0101
-  - 🇳🇱NL | 477ms | TEL:Father_vpn-3
-  - 🇳🇱NL | 478ms | 🇬🇧GB-82.38.31.16-0123
-  - 🇳🇱NL | 479ms | 🇳🇱NL-193.29.139.235-0095
-  - 🇳🇱NL | 480ms | @freenettir
-  - 🇳🇱NL | 482ms | 🇬🇧GB-82.38.31.180-0100
-  - 🇳🇱NL | 483ms | T.me/Vpn_Mafia 🇳🇱
-  - 🇳🇱NL | 485ms | @v2rayng3-19
-  - 🇳🇱NL | 486ms | @Rayan_Config-82.38.31.1
-  - 🇳🇱NL | 487ms | @freenettir-5
-  - 🇸🇬SG | 489ms | channel_@networld_vpn
-  - 🇳🇱NL | 489ms | @freenettir-8
-  - '🇸🇬SG | 491ms | 🇸🇬148685 | ⚡️Telegram = '
-  - 🇩🇪DE | 494ms | 𝐕𝐄𝐆𝐀𝐀𝐒_𝐕𝐏𝐍 🇩🇪
-  - 🇳🇱NL | 496ms | @Rayan_Config-82.38.31.1
-  - 🌐FI | 499ms | @Selinc-4
-  - 🇸🇬SG | 511ms | kurdconfig-2
-  - 🌐IE | 512ms | @hex_proxy ⁴
-  - 🌐IE | 514ms | @hex_proxy ⁵-2
-  - 🌐IE | 519ms | >>@oneclickvpnkeys::IE-3
-  - 🌐PL | 519ms | @TEHRANARGO
-  - 🌐IE | 521ms | >>@oneclickvpnkeys::IE-4
-  - 🌐IE | 536ms | >>@oneclickvpnkeys::IE-2
-  - 🌐IE | 537ms | @hex_proxy ⁴-2
-  - 🌐MY | 539ms | 🇲🇾 Join+Telegram:@Farah_
-  - 🌐?? | 542ms | 🇨🇦 Join+Telegram:@Farah_
-  - 🇸🇬SG | 550ms | 以色列 001
-  - 🌐?? | 557ms | >>@v2nodes::JP-8
-  - 🇳🇱NL | 570ms | @v2rayng3-16
-  - '🇳🇱NL | 571ms | کانال تلگرام : Free_VPN_'
-  - '🇳🇱NL | 571ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn-10'
-  - 🇳🇱NL | 572ms | >>@oneclickvpnkeys::NL
-  - 🇳🇱NL | 573ms | @v2ray313 کانالمون ☹️
-  - 🌐?? | 573ms | 法国 005
-  - 🇳🇱NL | 574ms | >>@oneclickvpnkeys::NL-2
-  - 🇳🇱NL | 574ms | 美国 302
-  - 🌐?? | 577ms | 法国 006
-  - 🌐?? | 583ms | @hex_proxy ⁵
-  - 🇧🇷BR | 584ms | 🇧🇷 Join+Telegram:@Farah_
-  - 🌐?? | 585ms | 🇯🇵JP-13.231.255.107-0235
-  - 🇫🇷FR | 589ms | 🍏61@oneclickvpnkeys
-  - 🌐?? | 589ms | >>@v2nodes::JP-6
-  - 🇳🇱NL | 591ms | @freenettir-2
-  - '🇳🇱NL | 592ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn-5'
-  - 🌐?? | 594ms | >>@v2nodes::JP
-  - 🇫🇷FR | 596ms | >>@oneclickvpnkeys::FR-3
-  - 🇳🇱NL | 596ms | @v2ray313 کانالمون 💚
-  - 🌐?? | 597ms | >>@oneclickvpnkeys::FR-4
-  - 🇫🇷FR | 599ms | 🚀t.me/iProxyChannel-5
-  - 🇳🇱NL | 601ms | @meliproxyy-9
-  - 🌐ES | 602ms | 🇪🇸 Join+Telegram:@Farah_
-  - 🌐?? | 602ms | 🍏91@oneclickvpnkeys
-  - 🌐?? | 603ms | 🇫🇷_FR_法国
-  - 🇭🇰HK | 605ms | 🐦‍🔥100@oneclickvpnkeys
-  - 🇩🇪DE | 605ms | 🇩🇪 Join+Telegram:@Farah_
-  - 🇳🇱NL | 606ms | 🐦‍🔥12@oneclickvpnkeys
-  - 🇳🇱NL | 607ms | @freenettir-3
-  - 🌐?? | 613ms | @hex_proxy ¹
-  - 🌐?? | 617ms | 🍏63@oneclickvpnkeys
-  - 🌐?? | 619ms | >>@v2nodes::JP-3
-  - 🇩🇪DE | 621ms | >>@oneclickvpnkeys::DE-3
-  - 🇫🇷FR | 623ms | 美国 745
-  - 🇷🇺RU | 626ms | @filembad-4
-  - 🌐?? | 632ms | 🇯🇵JP-18.177.142.108-0187
-  - 🇨🇦CA | 632ms | 美国 144
-  - 🇳🇱NL | 633ms | 🐦‍🔥19@oneclickvpnkeys
-  - 🌐?? | 635ms | 🇯🇵JP-52.198.117.121-2985
-  - 🌐IE | 636ms | برای اتصال دائمی جوین شو
-  - '🇩🇪DE | 636ms | 德国 #2'
-  - 🌐SC | 637ms | 荷兰 002
-  - 🇩🇪DE | 638ms | >>@oneclickvpnkeys::DE-4
-  - 🇩🇪DE | 645ms | @v2rayng3-17
-  - 🇸🇬SG | 656ms | @v2rayng3-13
-  - 🇩🇪DE | 656ms | 保加利亚 003
-  - 🌐?? | 658ms | >>@v2nodes::JP-5
-  - 🇩🇪DE | 661ms | 🍏64@oneclickvpnkeys
-  - 🇨🇦CA | 662ms | 巴西 019
-  - 🌐?? | 665ms | 🐦‍🔥32@oneclickvpnkeys
-  - 🇳🇱NL | 665ms | 🍏76@oneclickvpnkeys
-  - 🌐?? | 671ms | Germany 🇩🇪
-  - 🌐SE | 671ms | 🇸🇪 Join+Telegram:@Farah_
-  - 🇩🇪DE | 672ms | @Net2ray Germany 🇩🇪
-  - 🇺🇸US | 673ms | 美国 154
-  - 🌐CH | 681ms | @EVAY_VPN 3
-  - 🇨🇦CA | 684ms | 美国 670
-  - 🇩🇪DE | 690ms | 🍏92@oneclickvpnkeys
-  - 🌐?? | 696ms | 🇯🇵JP-13.231.237.228-0188
-  - 🇩🇪DE | 703ms | @icv2ray-3
-  - 🌐?? | 704ms | >>@oneclickvpnkeys::IE
-  - 🌐FI | 708ms | @Daily_Configs-3
-  - 🇨🇦CA | 711ms | @icv2ray-2
-  - 🌐FI | 715ms | 🇫🇮FI_1|1.0MB/s
-  - 🌐?? | 717ms | 🍏81@oneclickvpnkeys
-  - 🌐AT | 720ms | 🇩🇪All¹⁰ | @BigSmoke_Conf
-  - 🌐PL | 727ms | @filembad-3
-  - 🌐PL | 730ms | 🍏85@oneclickvpnkeys
-  - 🌐PL | 731ms | 🍏74@oneclickvpnkeys
-  - 🌐PL | 732ms | >>@oneclickvpnkeys::PL-4
-  - 🇨🇦CA | 738ms | @tootffarangi🍓-8
-  - 🌐?? | 740ms | >>@oneclickvpnkeys::PL-3
-  - 🌐?? | 740ms | >>@v2nodes::JP-7
-  - 🌐?? | 740ms | @hex_proxy ⁸-2
-  - 🇦🇺AU | 742ms | 澳大利亚 016
-  - 🌐IT | 746ms | @V2ray_Alpha👽 7
-  - 🌐PL | 747ms | 🍏87@oneclickvpnkeys
-  - 🌐?? | 751ms | >>@oneclickvpnkeys::FI
-  - 🌐?? | 752ms | >>@v2nodes::AU
-  - 🇳🇱NL | 761ms | @hex_proxy ¹-2
-  - 🌐?? | 775ms | 🐦‍🔥98@oneclickvpnkeys
-  - 🌐?? | 784ms | >>@oneclickvpnkeys::PL
-  - '🌐?? | 793ms | [25700] - Telegram : @V2'
-  - 🌐PL | 802ms | @ghand_sheken
-  - 🌐?? | 806ms | >>@oneclickvpnkeys::FR-5
-  - 🌐?? | 810ms | 🇯🇵JP-13.115.247.230-0260
-  - 🇷🇺RU | 827ms | 🇷🇺RU_2|2.5MB/s
-  - 🇹🇷TR | 830ms | 🏳️ Join+Telegram:@Farah_
-  - 🌐FI | 838ms | @Net2ray Fi🇫🇮 2
-  - 🌐?? | 844ms | 🇵🇱_PL_波兰-2
-  - 🌐?? | 845ms | >>@oneclickvpnkeys::FR-2
-  - 🌐?? | 855ms | 🍏71@oneclickvpnkeys
-  - 🇸🇬SG | 855ms | >>@freeland8::SG
-  - '🇩🇪DE | 878ms | 德国 #3'
-  - 🇩🇪DE | 882ms | 🐦‍🔥5@oneclickvpnkeys
-  - 🌐?? | 911ms | >>@oneclickvpnkeys::DE-2
-  - 🌐?? | 916ms | 🐦‍🔥42@oneclickvpnkeys
-  - 🌐?? | 923ms | >>@oneclickvpnkeys::PL-2
-  - 🌐?? | 938ms | 🇵🇱_PL_波兰
-  - 🇮🇳IN | 954ms | @bored_vpn-2
-  - 🌐?? | 965ms | 🇮🇪_IE_爱尔兰
-  - 🌐?? | 973ms | >>@v2nodes::PL-2
-  - 🌐PL | 1032ms | 波兰 008
-  - 🇨🇦CA | 1039ms | 美国 743
-  - 🇨🇦CA | 1042ms | >>@configV2rayNG::FR
-  - 🌐PL | 1056ms | @Nexus_Panell چنل تلگرام
-  - 🌐?? | 1057ms | @hex_proxy ⁷-2
-  - 🌐SC | 1059ms | >>@oneclickvpnkeys::DE
-  - 🌐?? | 1066ms | >>@oneclickvpnkeys::HK
-  - 🇺🇸US | 1066ms | 美国+V2CROSS.COM
-  - '🌐?? | 1102ms | 🇷🇺148586 | ⚡️Telegram = '
-  - 🌐FI | 1115ms | @Begoo_VPN ²⁶⁸
-  - 🌐?? | 1138ms | 🚀t.me/iProxyChannel-4
-  - 🌐LV | 1143ms | >>@oneclickvpnkeys::LV
-  - 🇹🇷TR | 1146ms | 立陶宛 010
-  - 🌐?? | 1173ms | >>@v2nodes::FR
-  - 🇭🇰HK | 1211ms | 🇭🇰 ConfigV2RayNG
-  - 🌐FI | 1213ms | 伊朗 095
-  - 🌐FI | 1303ms | @meliproxyy-7
-  - '🌐?? | 1308ms | @appsooner کانال تلگرام '
-  - 🌐PL | 1310ms | @FarazV2ray
-  - '🌐?? | 1316ms | 🇨🇦148654 | ⚡️Telegram = '
-  - 🌐?? | 1415ms | >>@v2nodes::FR-2
-  - '🌐?? | 1511ms | 🇪🇪148676 | ⚡️Telegram = '
-  - 🌐?? | 1561ms | @V2rayng_market_1378_bot
-  - 🇨🇦CA | 1640ms | 🇵🇱 Join+Telegram:@Farah_
-  - 🇨🇦CA | 1739ms | 美国 680
-  - 🌐?? | 1800ms | 🚀t.me/iProxyChannel-12
-  - 🌐?? | 2211ms | 香港
-  - 🇨🇦CA | 2268ms | 美国 372
-  - 🌐?? | 2949ms | @hex_proxy ⁷
-  - 🌐?? | 3113ms | @MDvpnSEC-3
+  - 🇺🇸US | 38ms | 🇺🇸US-173.249.209.146-014
+  - 🇺🇸US | 46ms | @hopev2ray❤️‍🔥
+  - 🇨🇦CA | 47ms | 美国 583
+  - 🇺🇸US | 50ms | 英国 021
+  - 🇨🇦CA | 53ms | 🔥Join+Telegram:@Azarbayj
+  - 🇺🇸US | 54ms | 🐦‍🔥36@oneclickvpnkeys
+  - 🇨🇦CA | 56ms | 美国 544
+  - 🇨🇦CA | 57ms | >>@configV2rayNG::US-3
+  - 🇨🇦CA | 58ms | >>@configV2rayNG::US
+  - 🇨🇦CA | 61ms | 美国 517
+  - 🇨🇦CA | 64ms | >>@configV2rayNG::US-2
+  - 🇨🇦CA | 66ms | 美国 741
+  - 🌐?? | 66ms | Fast Deploy Your Own Wor
+  - 🇺🇸US | 66ms | >>@oneclickvpnkeys::US-1
+  - 🇨🇦CA | 67ms | 美国 647
+  - '🇨🇦CA | 71ms | اگه میخوای قطع نشی جوین '
+  - 🇷🇺RU | 73ms | >>@oneclickvpnkeys::US-2
+  - 🇨🇦CA | 73ms | 🇺🇸_US_美国->🇰🇷_KR_韩国
+  - 🇨🇦CA | 73ms | 美国 685
+  - 🇺🇸US | 77ms | 美国 253
+  - 🇨🇦CA | 79ms | >>@oneclickvpnkeys::US-4
+  - 🇨🇦CA | 79ms | >>@oneclickvpnkeys::US-8
+  - 🇨🇦CA | 79ms | >>@oneclickvpnkeys::US-1
+  - 🇺🇸US | 84ms | 美国 231
+  - 🇨🇦CA | 86ms | 🇨🇦CA-149.22.95.183-0141
+  - 🇨🇦CA | 97ms | >>@configV2rayNG::US-5
+  - 🇨🇦CA | 108ms | >>@configV2rayNG::US-4
+  - 🇺🇸US | 113ms | 🐦‍🔥83@oneclickvpnkeys
+  - 🇺🇸US | 116ms | 🐦‍🔥87@oneclickvpnkeys
+  - 🇺🇸US | 119ms | 🐦‍🔥99@oneclickvpnkeys
+  - 🌐?? | 120ms | 🇺🇸US-35.88.210.26-0426
+  - 🌐?? | 121ms | 1🐦‍🔥@oneclickvpnkeys
+  - 🇺🇸US | 125ms | 🇺🇸 Join+Telegram:@Farah_
+  - 🌐?? | 129ms | 🇩🇪
+  - 🇺🇸US | 136ms | channel_@networld_vpn-2
+  - 🇺🇸US | 179ms | 美国 261
+  - 🌐?? | 216ms | >>@oneclickvpnkeys::US
+  - 🇺🇸US | 219ms | 美国 269
+  - 🇺🇸US | 223ms | channel_@networld_vpn
+  - 🌐?? | 236ms | >>@oneclickvpnkeys::US-6
+  - 🌐?? | 239ms | >>@oneclickvpnkeys::US-1
+  - 🇺🇸US | 241ms | United+States
+  - '🇨🇦CA | 261ms | @appsooner کانال تلگرام '
+  - '🇯🇵JP | 339ms | 🇯🇵148619 | ⚡️Telegram = '
+  - 🇺🇸US | 354ms | 🐦‍🔥60@oneclickvpnkeys
+  - 🇺🇸US | 355ms | @v2ray313 کانالمون 😁
+  - 🇺🇸US | 363ms | 🇩🇪All¹⁰ | @BigSmoke_Conf
+  - 🇨🇦CA | 397ms | 🇨🇦CA_800_@Surfboardv2ray
+  - 🇫🇷FR | 432ms | @confiig_hub
+  - 🇯🇵JP | 438ms | 🇯🇵JP-3.112.15.214-0201
+  - 🌐?? | 439ms | 🇯🇵 Join+Telegram:@Farah_
+  - '🇳🇱NL | 439ms | 🇳🇱148684 | ⚡️Telegram = '
+  - 🇯🇵JP | 439ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🇯🇵JP | 440ms | 🇯🇵JP-18.181.194.227-0207
+  - 🇯🇵JP | 440ms | 🇯🇵JP-18.181.164.216-0257
+  - 🇯🇵JP | 441ms | @V2ray_Alpha🐌 8
+  - 🇯🇵JP | 441ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🌐?? | 442ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🌐?? | 442ms | 🇯🇵JP-52.198.117.121-2985
+  - 🌐?? | 443ms | 🇯🇵 Join+Telegram:@Farah_
+  - '🌐?? | 443ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  - 🇯🇵JP | 443ms | 🇯🇵_JP_日本-2
+  - 🌐?? | 444ms | 🇯🇵 Join+Telegram:@Farah_
+  - '🌐?? | 444ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  - 🌐?? | 445ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🇯🇵JP | 445ms | 🇯🇵JP-13.114.122.131-0241
+  - 🌐?? | 445ms | 🇯🇵JP-13.230.240.243-0196
+  - 🌐?? | 446ms | 🇯🇵JP-52.194.223.176-0176
+  - 🌐?? | 446ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🇯🇵JP | 446ms | @meliproxyy-8
+  - 🇯🇵JP | 446ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🌐?? | 447ms | 🇯🇵 Join+Telegram:@Farah_
+  - '🌐?? | 447ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  - 🌐?? | 448ms | 🇯🇵JP-13.230.97.36-0243
+  - 🌐?? | 448ms | 🇯🇵JP-18.183.92.88-0232
+  - 🌐?? | 449ms | 🇯🇵 Join+Telegram:@Farah_
+  - '🌐?? | 449ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  - 🌐?? | 449ms | >>@v2nodes::JP-4
+  - 🇯🇵JP | 450ms | 🇯🇵JP-54.64.255.224-0177
+  - 🌐?? | 451ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🇯🇵JP | 451ms | 🇯🇵JP-52.68.175.30-0234
+  - 🌐?? | 451ms | >>@v2nodes::JP-6
+  - 🌐?? | 452ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🌐?? | 453ms | 🇯🇵 Join+Telegram:@Farah_
+  - '🌐?? | 453ms | 🇯🇵 Join+Telegram:@Farah_ #2'
+  - '🌐?? | 453ms | 🇯🇵 Join+Telegram:@Farah_ #3'
+  - '🌐?? | 453ms | 🇯🇵 Join+Telegram:@Farah_ #4'
+  - 🌐?? | 454ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🇫🇷FR | 456ms | 🍏15@oneclickvpnkeys
+  - 🌐?? | 458ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🇬🇧GB | 459ms | @hex_proxy ⁴-2
+  - 🌐?? | 461ms | 🇯🇵 Join+Telegram:@Farah_
+  - 🌐?? | 461ms | >>@v2nodes::JP-5
+  - 🌐?? | 464ms | >>@v2nodes::JP-2
+  - 🇬🇧GB | 469ms | 🇬🇧GB-141.98.101.181-0160
+  - 🇩🇪DE | 471ms | (S101)🇩🇪t.me/PrivateVPNs
+  - 🇯🇵JP | 471ms | 🇯🇵JP-18.178.132.111-0215
+  - 🇹🇼TW | 473ms | 加拿大 006
+  - 🌐?? | 478ms | >>@v2nodes::JP-3
+  - 🇳🇱NL | 479ms | @meliproxyy-9
+  - 🇳🇱NL | 480ms | @meliproxyy-5
+  - 🇳🇱NL | 481ms | @VpnCostumer+|+بیا+تو+وص
+  - 🇨🇦CA | 484ms | >>@oneclickvpnkeys::CA
+  - 🇳🇱NL | 485ms | @v2rayngzendegimamad🕊️-3
+  - 🇳🇱NL | 486ms | @meliproxyy
+  - 🇳🇱NL | 486ms | @v2rayng3
+  - 🇳🇱NL | 486ms | 🇬🇧GB-82.38.31.186-0126
+  - 🇳🇱NL | 487ms | @hex_proxy ²
+  - 🇳🇱NL | 488ms | 🇬🇧GB-82.38.31.16-0123
+  - 🇳🇱NL | 489ms | T.me/Vpn_Mafia 🇳🇱
+  - 🇳🇱NL | 490ms | 🇳🇱NL-193.29.139.235-0095
+  - 🇳🇱NL | 491ms | @Rayan_Config-82.38.31.2
+  - 🇳🇱NL | 491ms | @Rayan_Config-82.38.31.1
+  - 🇳🇱NL | 493ms | @EXPRESSVPN_420  👈🏻 کانا
+  - 🇳🇱NL | 496ms | 🐦‍🔥31@oneclickvpnkeys
+  - 🇳🇱NL | 496ms | @SylphNet | 2026-06-27 0
+  - 🇩🇪DE | 497ms | @v2rayng3-2
+  - 🇳🇱NL | 499ms | 🇬🇧GB-82.38.31.46-0109
+  - 🇳🇱NL | 502ms | @v2rayng3-11
+  - 🇳🇱NL | 503ms | 🇬🇧GB-82.38.31.49-0101
+  - 🇳🇱NL | 503ms | 🇬🇧GB-82.38.31.149-0113
+  - 🇬🇧GB | 505ms | 美国 329
+  - 🇦🇺AU | 509ms | 🇦🇺 Join+Telegram:@Farah_
+  - 🇸🇬SG | 516ms | 以色列 001
+  - 🇸🇬SG | 520ms | 以色列 002
+  - 🌐IE | 522ms | >>@oneclickvpnkeys::IE-3
+  - 🌐IE | 523ms | Ireland 🇮🇪
+  - 🌐?? | 525ms | 美国 001
+  - 🌐IE | 532ms | >>@oneclickvpnkeys::IE-7
+  - 🇯🇵JP | 535ms | @Alpha_v2rayIP-4
+  - 🌐?? | 541ms | 🇵🇱 Join+Telegram:@Farah_
+  - 🌐IE | 541ms | @hex_proxy ⁴
+  - 🇨🇦CA | 544ms | >>@oneclickvpnkeys::US-1
+  - 🇰🇷KR | 551ms | 日本 035
+  - 🌐?? | 551ms | >>@oneclickvpnkeys::IE-8
+  - 🌐ES | 551ms | 乌克兰 002
+  - 🌐IE | 554ms | >>@oneclickvpnkeys::IE-9
+  - 🇺🇸US | 561ms | 🇺🇸 Join+Telegram:@Farah_
+  - 🌐?? | 562ms | >>@oneclickvpnkeys::IE-5
+  - 🌐?? | 566ms | >>@oneclickvpnkeys::IE-2
+  - 🇳🇱NL | 572ms | 🇬🇧GB-82.38.31.212-0142
+  - 🇳🇱NL | 576ms | @v2ray313 کانالمون ☹️
+  - 🇺🇸US | 576ms | 美国 560
+  - 🇳🇱NL | 586ms | @v2ray313 کانالمون 🦋
+  - 🌐?? | 587ms | 🇮🇪_IE_爱尔兰
+  - 🇫🇷FR | 587ms | 🇫🇷_FR_法国
+  - 🌐?? | 590ms | >>@oneclickvpnkeys::NL
+  - 🇳🇱NL | 592ms | 🍏7@oneclickvpnkeys
+  - 🇩🇪DE | 594ms | 🇩🇪 Join+Telegram:@Farah_
+  - 🇩🇪DE | 596ms | 🇩🇪 Join+Telegram:@Farah_
+  - 🇫🇷FR | 596ms | >>@oneclickvpnkeys::FR-7
+  - 🌐?? | 597ms | >>@oneclickvpnkeys::FR-6
+  - 🇳🇱NL | 599ms | 🍥5@oneclickvpnkeys
+  - '🌐IE | 600ms | 🇮🇪148752 | ⚡️Telegram = '
+  - 🇫🇷FR | 601ms | >>@oneclickvpnkeys::FR-5
+  - 🇳🇱NL | 603ms | @hex_proxy ⁵
+  - 🇩🇪DE | 605ms | 🍥3@oneclickvpnkeys
+  - 🇫🇷FR | 607ms | 🚀t.me/iProxyChannel-12
+  - 🇳🇱NL | 609ms | @meliproxyy-3
+  - '🇳🇱NL | 609ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn-6'
+  - 🌐?? | 609ms | >>@oneclickvpnkeys::NL-5
+  - 🌐?? | 611ms | 🇵🇱 Join+Telegram:@Farah_
+  - 🇨🇦CA | 611ms | 美国 144
+  - 🇫🇷FR | 611ms | 美国 745
+  - 🇳🇱NL | 613ms | 🍥6@oneclickvpnkeys
+  - 🌐?? | 613ms | 🍥14@oneclickvpnkeys
+  - 🇫🇷FR | 615ms | 🍥26@oneclickvpnkeys
+  - 🇳🇱NL | 615ms | 🍥7@oneclickvpnkeys
+  - 🌐?? | 615ms | @v2ray313 کانالمون 😙
+  - 🇩🇪DE | 615ms | >>@oneclickvpnkeys::DE-7
+  - 🇩🇪DE | 617ms | 🐦‍🔥6@oneclickvpnkeys
+  - '🇳🇱NL | 617ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn-5'
+  - 🇩🇪DE | 617ms | @GozargahAzad|🇩🇪
+  - 🌐?? | 617ms | >>@oneclickvpnkeys::FR-8
+  - 🇺🇸US | 619ms | 𝗡𝗲𝗧𝗠𝗲𝗹𝗶⚡️@prrofile_purpl
+  - 🌐?? | 619ms | >>@oneclickvpnkeys::NL-2
+  - 🇳🇱NL | 619ms | >>@oneclickvpnkeys::NL-4
+  - '🇩🇪DE | 619ms | 🇩🇪148744 | ⚡️Telegram = '
+  - 🇫🇷FR | 624ms | @Net2ray 2
+  - 🌐?? | 624ms | >>@oneclickvpnkeys::FR-3
+  - 🌐?? | 626ms | >>@oneclickvpnkeys::FR-2
+  - 🌐AT | 628ms | 🇩🇪All¹⁰ | @BigSmoke_Conf
+  - 🇳🇱NL | 630ms | @hex_proxy ¹
+  - '🌐?? | 632ms | 法国 #1'
+  - 🌐?? | 638ms | >>@oneclickvpnkeys::NL-6
+  - 🇳🇱NL | 638ms | 🐦‍🔥13@oneclickvpnkeys
+  - 🌐FI | 646ms | 🍥22@oneclickvpnkeys
+  - 🌐?? | 652ms | 🇪🇸ES_2|1.1MB/s
+  - 🇺🇸US | 652ms | 🐦‍🔥30@oneclickvpnkeys
+  - 🌐?? | 658ms | >>@oneclickvpnkeys::DE-2
+  - '🇩🇪DE | 662ms | 德国 #4'
+  - 🌐?? | 665ms | 🇦🇺 Join+Telegram:@Farah_
+  - 🌐?? | 667ms | >>@oneclickvpnkeys::IE
+  - '🌐?? | 669ms | 🇪🇪148676 | ⚡️Telegram = '
+  - 🌐?? | 680ms | >>@v2nodes::AU
+  - 🇸🇬SG | 681ms | 🇸🇬SG
+  - 🌐?? | 687ms | >>@v2nodes::JP
+  - 🇳🇱NL | 690ms | 🇬🇧GB-82.38.31.189-0102
+  - 🇩🇪DE | 692ms | 德国 007
+  - 🇨🇦CA | 693ms | 美国 145
+  - 🇸🇬SG | 693ms | @v2rayng3-8
+  - 🌐CH | 693ms | @EVAY_VPN 3
+  - 🇸🇬SG | 695ms | @GozargahAzad|🇸🇬
+  - 🇸🇬SG | 698ms | 🐦‍🔥86@oneclickvpnkeys
+  - 🇩🇪DE | 699ms | 美国 312
+  - 🌐FI | 722ms | 🇫🇮FI_2|2.9MB/s
+  - '🌐?? | 726ms | 波兰 #1'
+  - 🌐?? | 730ms | [🇩🇪]t.me/ConfigV2RayNG
+  - 🌐?? | 735ms | 美国 171
+  - 🌐?? | 748ms | 🇭🇰 Join+Telegram:@Farah_
+  - 🌐?? | 749ms | @hex_proxy ⁸
+  - 🌐?? | 750ms | 🇵🇱_PL_波兰
+  - '🌐?? | 752ms | 🇳🇱148697 | ⚡️Telegram = '
+  - 🌐?? | 753ms | >>@oneclickvpnkeys::PL-2
+  - '🇭🇰HK | 756ms | [25706] - Telegram : @V2'
+  - 🌐?? | 759ms | >>@oneclickvpnkeys::PL
+  - 🇩🇪DE | 776ms | >>@oneclickvpnkeys::DE-6
+  - 🌐?? | 787ms | >>@oneclickvpnkeys::FR
+  - 🌐?? | 798ms | @v2ray313 کانالمون 🇳🇱
+  - 🇩🇪DE | 800ms | >>@oneclickvpnkeys::DE-5
+  - 🇩🇪DE | 800ms | @hex_proxy ³
+  - 🇷🇺RU | 804ms | >>@oneclickvpnkeys::DE-3
+  - 🌐?? | 832ms | >>@oneclickvpnkeys::FR-4
+  - 🌐FI | 843ms | @meliproxyy-6
+  - 🇩🇪DE | 857ms | 德国 047
+  - 🌐?? | 863ms | 🇫🇷 Join+Telegram:@Farah_
+  - 🌐LT | 901ms | >>@oneclickvpnkeys::LT
+  - 🇳🇱NL | 919ms | 荷兰 039
+  - 🇮🇳IN | 922ms | 🇮🇳 Join+Telegram:@Farah_
+  - 🇸🇬SG | 925ms | >>@freeland8::SG
+  - 🇩🇪DE | 944ms | >>@oneclickvpnkeys::DE-4
+  - 🌐?? | 965ms | >>@v2nodes::FR
+  - 🇳🇱NL | 974ms | kurdconfig-7
+  - 🌐IE | 994ms | >>@oneclickvpnkeys::IE-4
+  - 🇳🇱NL | 994ms | 荷兰+阿姆斯特丹Online+S.A.S
+  - 🌐FI | 997ms | @Begoo_VPN ²⁶⁸
+  - 🇺🇸US | 1007ms | @v2raybaaz ¹
+  - 🌐FI | 1010ms | 英国
+  - 🌐?? | 1046ms | >>@oneclickvpnkeys::DE
+  - '🌐?? | 1067ms | 🇷🇺148586 | ⚡️Telegram = '
+  - 🌐?? | 1087ms | 🚀t.me/iProxyChannel-8
+  - 🌐?? | 1090ms | 🇷🇺RU_1|1.7MB/s
+  - 🌐?? | 1099ms | 🇩🇪DE-🚀@VPNine1
+  - 🇨🇦CA | 1121ms | 美国 743
+  - 🌐?? | 1126ms | 🇯🇵_JP_日本
+  - 🌐AT | 1132ms | 🇦🇹 Join+Telegram:@Farah_
+  - 🌐?? | 1168ms | 美国 013
+  - 🇩🇪DE | 1198ms | @ghand_sheken
+  - '🌐?? | 1240ms | SG #1'
+  - 🌐?? | 1294ms | 🚀t.me/iProxyChannel-6
+  - 🇨🇦CA | 1331ms | @tootffarangi🍓-8
+  - 🇯🇵JP | 1350ms | @vmesskhodam-6
+  - 🌐?? | 1373ms | 美国 330
+  - 🇨🇦CA | 1427ms | >>@configV2rayNG::FR
+  - '🇺🇸US | 1504ms | 🇺🇸139822 | ⚡️Telegram = '
+  - 🌐FI | 1659ms | @Selinc
+  - 🇳🇱NL | 1798ms | @V2ray_Alpha👽 5
+  - 🇨🇦CA | 2014ms | >>@v2nodes::US
+  - 🇷🇺RU | 2174ms | @vmesskhodam
+  - 🌐PL | 2518ms | @ghand_sheken-3
+  - 🇭🇰HK | 2545ms | 中国 007
+  - 🌐?? | 2653ms | 🇬🇧 Join+Telegram:@Farah_
+  - 🌐?? | 3102ms | @MDvpnSEC-2
+  - 🇺🇸US | 3422ms | vless-169.40.42.74
+  - 🌐PL | 3689ms | 🐦‍🔥39@oneclickvpnkeys
+  - 🇳🇱NL | 3843ms | @v2ray313 کانالمون 🦋-2
+  - 🌐?? | 3960ms | >>@oneclickvpnkeys::IE-6
 - name: 🔯 故障转移
   type: fallback
   proxies: *id001
