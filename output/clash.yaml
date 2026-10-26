@@ -3,171 +3,98 @@ mode: rule
 log-level: info
 ipv6: false
 proxies:
-- name: 🇺🇸US | 62ms | @Tarkahodeh 🏴󠁧󠁢󠁷󠁬󠁳󠁿-2
+- name: 🇺🇸US | 49ms | @Tarkahodeh 🏴󠁧󠁢󠁷󠁬󠁳󠁿-3
   type: ss
   server: 156.146.38.169
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸US | 63ms | 🇺🇸US-156.146.38.170-0055
+- name: 🇺🇸US | 75ms | 🇺🇸US-156.146.38.168-0052
   type: ss
-  server: 156.146.38.170
+  server: 156.146.38.168
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸US | 122ms | @VPsave-11
+- name: 🇺🇸US | 97ms | 🇺🇸US-37.19.198.243-0054
   type: ss
-  server: 95.215.201.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇨🇦CA | 124ms | 美国+CloudFlare节点
-  type: vless
-  server: 104.17.162.11
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇨🇦CA | 133ms | 美国 038
-  type: vless
-  network: ws
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  servername: hhlfy.twiladaphne.ndjp.net
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /sg-melbi
-- name: 🇺🇸US | 145ms | @V2ray_Alpha🕌 8
-  type: vless
-  server: 15.204.97.197
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🇺🇸US | 150ms | 🇺🇸 Join+Telegram:@Farah_
-  type: ss
-  server: 173.244.56.9
+  server: 37.19.198.243
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸US | 167ms | 美国 098
+- name: 🇺🇸US | 103ms | 🇺🇸US-37.19.198.236-0059
+  type: ss
+  server: 37.19.198.236
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸US | 110ms | 🇺🇸US-37.19.198.244-0057
+  type: ss
+  server: 37.19.198.244
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸US | 126ms | 美国 103
   type: vmess
   network: tcp
-  server: 38.110.1.246
+  server: 67.220.85.46
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   skip-cert-verify: true
   alterId: 0
   cipher: auto
-- name: 🇺🇸US | 184ms | @IRAN_V2RAY1 🌟-6
+- name: 🇺🇸US | 131ms | 🇺🇸US-15.204.247.206-0161
+  type: ss
+  server: 15.204.247.206
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+  udp: true
+- name: 🇺🇸US | 136ms | 🇺🇸 Join+Telegram:@Farah_
+  type: vless
+  server: 69.48.201.136
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  udp: true
+  tls: false
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: uspanel.unixzone.us
+- name: 🇺🇸US | 140ms | @IRAN_V2RAY1 🌟
   type: ss
   server: 45.86.51.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🌐?? | 189ms | [OpenRay] 🌐XX-1762
-  type: vmess
-  server: rib9jxayoqjgn2kw.v.3dns.vip
-  port: 443
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-  alterId: 0
-  cipher: auto
-  udp: true
+- name: 🇫🇷FR | 142ms | 荷兰 002
+  type: vless
   network: ws
+  server: 185.193.29.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  tls: true
+  encryption: none
   ws-opts:
-    path: /ws-vmess
-    headers: {}
-  tls: true
-  servername: rib9jxayoqjgn2kw.v.3dns.vip
-- name: 🇨🇦CA | 195ms | 美国 106
-  type: vmess
-  network: tcp
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-- name: 🌐?? | 234ms | @VPsave-23
-  type: trojan
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: f0eb8c92ce8946aaba856569cff1a16b
+    headers:
+      Host: notls.lukongtou.eu.org
+    path: Telegram-WangCai2🇨🇳
+- name: 🇺🇸US | 142ms | @VPsave-38
+  type: ss
+  server: 95.215.201.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
-- name: '🇺🇸US | 244ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
-  type: vless
-  server: 169.40.42.74
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 🇺🇸US | 251ms | @i10VPN³-2
-  type: vless
-  server: 169.40.42.224
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 🇺🇸US | 303ms | 🇺🇸US_3278_@Surfboardv2ra
-  type: vless
-  server: 169.40.42.231
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 🇺🇸US | 313ms | 🇺🇸US_3194_@Surfboardv2ra
-  type: vless
-  server: 169.40.42.163
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 🇺🇸US | 316ms | @V2ray_Alpha🛑 10
+- name: 🇺🇸US | 149ms | @V2ray_Alpha🛑 10
   type: vless
   server: 159.89.87.21
   port: 28190
@@ -180,9 +107,129 @@ proxies:
     public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
     short-id: ''
   client-fingerprint: chrome
-- name: 🇺🇸US | 317ms | @i10VPN³-3
+- name: 🇨🇦CA | 159ms | 🇨🇦[www.v2nodes.com] ss-C
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇺🇸US | 163ms | 🇺🇸 Join+Telegram:@Farah_
+  type: vmess
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇨🇦CA | 164ms | 美国 106
+  type: vmess
+  network: tcp
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦CA | 186ms | 🇸🇬 Join+Telegram:@Farah_
   type: vless
-  server: 169.40.42.168
+  server: 172.64.147.91
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  udp: true
+  tls: true
+  servername: powered-by-surena.configfarsi695fce27aa549.workers.dev
+  network: ws
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: powered-by-surena.configfarsi695fce27aa549.workers.dev
+- name: '🌐?? | 188ms | آموزش ایجاد سریع کانفیگ '
+  type: vless
+  server: mybb.com
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  udp: true
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🌐SC | 190ms | 荷兰 003
+  type: vless
+  network: ws
+  server: 45.130.125.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  servername: vms.lifetime58.workers.dev
+  tls: false
+  ws-opts:
+    headers:
+      Host: vms.lifetime58.workers.dev
+    path: /
+- name: 🇺🇸US | 194ms | 美国 016
+  type: vless
+  network: ws
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: false
+  encryption: none
+  ws-opts:
+    headers:
+      Host: vms.lifetime42.workers.dev
+    path: /
+- name: 🇨🇦CA | 199ms | @VPsave-14
+  type: vless
+  server: 104.17.215.31
+  port: 443
+  uuid: f6a015b4-4783-4f2a-a01b-39f281ba5d07
+  udp: true
+  tls: true
+  servername: cf.5208877.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.5208877.xyz
+- name: 🇨🇦CA | 199ms | 🇨🇦CA-149.22.95.183-0103
+  type: ss
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇨🇦CA | 211ms | 巴西 001
+  type: vless
+  network: ws
+  server: 188.114.98.0
+  port: 443
+  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
+  servername: tn1r.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: tn1r.eu.cc
+    path: /id-pusat
+- name: 🌐PE | 211ms | 🇨🇦 Join+Telegram:@Farah_
+  type: vless
+  server: 154.218.15.250
+  port: 2083
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  udp: true
+  tls: true
+  servername: proxy-1cu.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy-1cu.pages.dev
+- name: 🇺🇸US | 215ms | 🇺🇸US_3176_@Surfboardv2ra
+  type: vless
+  server: 169.40.42.104
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
@@ -193,241 +240,72 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: chrome
-- name: 🇬🇧GB | 357ms | 🇬🇧[www.v2nodes.com] ss-G
-  type: ss
-  server: 158.173.24.73
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇨🇦CA | 362ms | 🇸🇬 新加坡 | SGP 4
-  type: trojan
-  server: 104.18.35.86
-  port: 2096
-  password: '123456'
-  udp: true
-  sni: 321dfbc6.uir-9i6.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇯🇵JP | 364ms | 🇯🇵JP-149.22.87.204-0146
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵JP | 365ms | 🇯🇵JP-149.22.87.241-0140
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵JP | 366ms | 🇯🇵JP-149.22.87.240-0136
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧GB | 379ms | 🇬🇧[www.v2nodes.com] ss-G
-  type: ss
-  server: 185.176.206.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇳🇱NL | 391ms | @tootffarangi🍓-2
-  type: ss
-  server: 82.38.31.165
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 392ms | @hex_proxy ³
-  type: ss
-  server: 82.38.31.35
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🌐?? | 395ms | 🇺🇸 美国 | USA 5
-  type: hysteria2
-  server: starlink-ft.251313.xyz
-  port: 443
-  password: https://xship.best
-  udp: true
-  skip-cert-verify: true
-  sni: xship.top
-- name: 🇳🇱NL | 407ms | 🇬🇧GB-82.38.31.2-0129
-  type: ss
-  server: 82.38.31.2
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🌐?? | 407ms | 🇺🇸 Join+Telegram:@Farah_
+- name: 🇬🇧GB | 221ms | @tootffarangi🍓-7
   type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 45.12.30.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
-  servername: ccc.010304.xyz
+  tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ccc.010304.xyz
-- name: 🇯🇵JP | 409ms | 🇯🇵JP-84.247.155.196-0163
-  type: ss
-  server: 84.247.155.196
+      Host: vms.lifetime28.workers.dev
+- name: 🇺🇸US | 224ms | 美国 492
+  type: vmess
+  network: tcp
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+- name: '🇨🇦CA | 229ms | 🇨🇦200012 | ⚡️Telegram = '
+  type: vless
+  server: 173.245.49.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime36.workers.dev
+- name: 🌐?? | 237ms | @VPsave-27
+  type: trojan
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
   port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  password: f0eb8c92ce8946aaba856569cff1a16b
   udp: true
-- name: 🇳🇱NL | 409ms | @V2ray_Alpha🍦 1
-  type: ss
-  server: 82.38.31.205
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+- name: '🇧🇷BR | 258ms | 🇧🇷199994 | ⚡️Telegram = '
+  type: vless
+  server: 45.194.53.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-- name: 🇳🇱NL | 410ms | 🇳🇱NL-193.29.139.235-0132
-  type: ss
-  server: 193.29.139.235
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime19.workers.dev
+- name: 🇨🇦CA | 259ms | 🇨🇦 Join+Telegram:@Farah_
+  type: vless
+  server: 188.114.98.112
+  port: 80
+  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
   udp: true
-- name: 🇳🇱NL | 411ms | 🇬🇧GB-82.38.31.49-0133
-  type: ss
-  server: 82.38.31.49
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 412ms | @EXPRESSVPN_420
-  type: ss
-  server: 193.29.139.225
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 413ms | 🇬🇧GB-82.38.31.34-0144
-  type: ss
-  server: 82.38.31.34
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 414ms | 🇬🇧GB-82.38.31.203-0065
-  type: ss
-  server: 82.38.31.203
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱NL | 415ms | @V2ray_Alpha🍄‍🟫 3
-  type: ss
-  server: 82.38.31.218
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱NL | 417ms | 🇬🇧GB-82.38.31.82-0131
-  type: ss
-  server: 82.38.31.82
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 417ms | @vpnbaz🦄
-  type: ss
-  server: 82.38.31.216
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱NL | 418ms | 🇳🇱 Join+Telegram:@Farah_
-  type: ss
-  server: 82.38.31.39
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 418ms | >>@Easy_Free_VPN::XX
-  type: ss
-  server: 193.29.139.151
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 418ms | @V2ray_Alpha🚃 5
-  type: ss
-  server: 82.38.31.189
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱NL | 418ms | 🇬🇧GB-82.38.31.48-0128
-  type: ss
-  server: 82.38.31.48
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 419ms | @ICV2RAY-9
-  type: ss
-  server: 82.38.31.66
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 421ms | @hex_proxy ⁷
-  type: ss
-  server: 82.38.31.213
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱NL | 421ms | 🇬🇧GB-82.38.31.171-0137
-  type: ss
-  server: 82.38.31.171
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 422ms | TEL;Father_vpn
-  type: ss
-  server: 82.38.31.192
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱NL | 422ms | @V2ray_Alpha🚃 6
-  type: ss
-  server: 82.38.31.193
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱NL | 426ms | 🇳🇱 Join+Telegram:@Farah_
-  type: ss
-  server: 82.38.31.26
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL | 436ms | @Rayan_Config-82.38.31.2
-  type: ss
-  server: 82.38.31.214
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇺🇸US | 445ms | 🇺🇸US_3370_@Surfboardv2ra
+  tls: false
+  servername: elenaaaaaaaaaa.cloudns.pro.
+  network: ws
+  ws-opts:
+    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
+    headers:
+      Host: elenaaaaaaaaaa.cloudns.pro.
+- name: 🇺🇸US | 271ms | 🇺🇸US_3370_@Surfboardv2ra
   type: vless
   server: 169.40.42.235
   port: 443
@@ -440,629 +318,322 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: chrome
-- name: 🇳🇱NL | 449ms | @IRAN_V2RAY1 🌟-3
+- name: 🌐?? | 272ms | 🇸🇬[www.v2nodes.com] vles
+  type: vless
+  server: vl.cocopon.top
+  port: 2053
+  uuid: 44f06ad1-982c-4e03-849f-899c1c8dc14f
+  udp: true
+  tls: true
+  servername: vl.cocopon.top
+  network: ws
+  ws-opts:
+    path: /fp=random
+    headers:
+      Host: vl.cocopon.top
+- name: '🌐CW | 275ms | [78356] - Telegram : @V2'
+  type: vless
+  server: 88.216.67.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime05.workers.dev
+- name: 🇺🇸US | 285ms | 🇺🇸 Join+Telegram:@Farah_
+  type: vless
+  server: 169.40.42.202
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: 🇺🇸US | 289ms | 🇷🇺 direct
+  type: vless
+  server: 169.40.42.89
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: 🇺🇸US | 297ms | @i10VPN³-2
+  type: vless
+  server: 169.40.42.168
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: '🌐VG | 308ms | [78357] - Telegram : @V2'
+  type: vless
+  server: 45.142.120.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime08.workers.dev
+- name: '🌐?? | 321ms | 🇨🇦200010 | ⚡️Telegram = '
+  type: vless
+  server: chat.openai.com
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime29.workers.dev
+- name: 🇳🇱NL | 350ms | @V2ray_Alpha🍦 4
   type: ss
-  server: 82.38.31.170
+  server: 82.38.31.61
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL | 352ms | 🇳🇱 Join+Telegram:@Farah_
+  type: ss
+  server: 82.38.31.26
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL | 358ms | 🇬🇧GB-82.38.31.42-0124
+  type: ss
+  server: 82.38.31.42
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: '🇸🇬SG | 358ms | [78358] - Telegram : @V2'
+  type: vless
+  server: 154.194.12.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime35.workers.dev
+- name: 🇳🇱NL | 360ms | @V2ray_Alpha🍦 1
+  type: ss
+  server: 82.38.31.205
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱NL | 361ms | 🇬🇧GB-82.38.31.46-0121
+  type: ss
+  server: 82.38.31.46
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL | 366ms | @tootffarangi🍓-17
+  type: ss
+  server: 82.38.31.165
   port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇬🇧GB | 449ms | 🇦🇹[www.v2nodes.com] ss-A
+- name: 🇳🇱NL | 367ms | @Shh_Proxy-New³-4
   type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🌐IT | 464ms | 🇮🇹[www.v2nodes.com] ss-I
-  type: ss
-  server: 202.50.253.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇳🇱NL | 482ms | 11
-  type: vless
-  server: 51.158.206.34
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🇳🇱NL | 485ms | 🇳🇱 | 3
-  type: vless
-  server: 51.158.206.86
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🇳🇱NL | 487ms | 🇳🇱NL-109.201.152.181-011
-  type: ss
-  server: 109.201.152.181
-  port: 443
-  cipher: aes-128-cfb
-  password: shadowsocks
-  udp: true
-- name: 🇳🇱NL | 487ms | 5
-  type: vless
-  server: 51.158.206.8
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🇬🇧GB | 489ms | 🇫🇷FR-🚀@VPNine1
-  type: vless
-  server: 54.37.2.245
-  port: 8443
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: ozon.ru
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  client-fingerprint: chrome
-- name: 🇬🇧GB | 500ms | 🇬🇧GB-146.70.61.37-0064
-  type: ss
-  server: 146.70.61.37
+  server: 193.29.139.234
   port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
   udp: true
-- name: 🌐?? | 523ms | 美国 860
-  type: vmess
-  network: ws
-  server: cf.0sm.com
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws
-- name: '🇳🇱NL | 531ms | 🇳🇱139818 | ⚡️Telegram = '
-  type: vless
-  server: 51.158.206.80
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: 🇳🇱NL | 369ms | @V2ray_Alpha🍄‍🟫 3
+  type: ss
+  server: 82.38.31.218
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🌐PL | 534ms | 🍄‍🟫94@oneclickvpnkeys
+- name: 🇳🇱NL | 369ms | 🇬🇧GB-82.38.31.171-0137
+  type: ss
+  server: 82.38.31.171
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL | 369ms | @Rayan_Config-82.38.31.2
+  type: ss
+  server: 82.38.31.214
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱NL | 371ms | 🇬🇧GB-82.38.31.62-0143
+  type: ss
+  server: 82.38.31.62
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL | 374ms | 🇳🇱 Join+Telegram:@Farah_
+  type: ss
+  server: 82.38.31.39
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL | 376ms | >>@Easy_Free_VPN::XX
+  type: ss
+  server: 193.29.139.151
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL | 377ms | 🇬🇧GB-82.38.31.207-0096
+  type: ss
+  server: 82.38.31.207
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱NL | 377ms | Free x754 @Outline_Vpn
+  type: ss
+  server: 82.38.31.219
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇩🇪DE | 384ms | @tootffarangi🍓-11mtn
   type: vless
-  server: 5.22.221.127
-  port: 443
-  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  server: 142.132.140.143
+  port: 1003
+  uuid: 0e6cd6ca-fba2-4b86-923c-f0a021f7ad15
   udp: true
   tls: false
-- name: 🌐IT | 544ms | 🇮🇹_IT_意大利
+- name: 🇳🇱NL | 384ms | 🇬🇧GB-82.38.31.159-0122
+  type: ss
+  server: 82.38.31.159
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL | 386ms | @hex_proxy ⁸
+  type: ss
+  server: 82.38.31.178
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱NL | 388ms | @hex_proxy ⁷
+  type: ss
+  server: 82.38.31.213
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🌐IT | 390ms | 🇮🇹[www.v2nodes.com] ss-I
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: '🇳🇱NL | 391ms | @appsooner کانال تلگرام '
+  type: ss
+  server: 82.38.31.181
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🌐IT | 409ms | 🇮🇹_IT_意大利-3
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇯🇵JP | 413ms | 🇯🇵[www.v2nodes.com] ss-J
+  type: ss
+  server: 191.223.221.53
+  port: 8388
+  cipher: aes-256-gcm
+  password: JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv
+  udp: true
+- name: 🌐IT | 422ms | 🇮🇹_IT_意大利-2
   type: ss
   server: 202.50.253.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷FR | 545ms | 8
+- name: 🌐?? | 428ms | 🇺🇸 Join+Telegram:@Farah_
   type: vless
-  server: 62.210.91.10
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: '🇳🇱NL | 548ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @AZARBAYJAB1-2'
-  type: vless
-  server: 185.121.179.122
+  server: cf.130519.xyz
   port: 443
-  uuid: 63c5f8b3-3d3d-46a9-ae1f-58635cdaf891
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
-  flow: xtls-rprx-vision
-  servername: de.stream-node6.com
-  reality-opts:
-    public-key: wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg
-    short-id: 98753667b2406829
-  client-fingerprint: chrome
-- name: 🇳🇱NL | 549ms | 🍄‍🟫7@oneclickvpnkeys
-  type: hysteria2
-  server: 109.235.49.234
-  port: 443
-  password: 529f1911-04d5-4427-94b9-c851fd459a27
-  udp: true
-  skip-cert-verify: false
-  sni: tcp-reset-club.net
-- name: 🇳🇱NL | 554ms | @V2ray_Alpha🍦 3
-  type: ss
-  server: 82.38.31.16
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇫🇷FR | 562ms | >>@oneclickvpnkeys::FR-2
-  type: vless
-  server: 62.210.91.2
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🇫🇷FR | 566ms | @hopev2ray💙
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /vless/
-    headers: {}
-- name: 🇺🇸US | 567ms | 🇩🇪 Join+Telegram:@Farah_
-  type: vless
-  server: 177.3.222.100
-  port: 443
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: ge-s-1.pythonmakemigreat.wiki
-  reality-opts:
-    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
-    short-id: 2c9a2790ad5900b2
-  client-fingerprint: chrome
-- name: 🌐CH | 569ms | 🍄‍🟫74@oneclickvpnkeys
-  type: hysteria2
-  server: 140.238.213.114
-  port: 50160
-  password: 84a506ca5aca505696a454d828420b3f
-  udp: true
-  skip-cert-verify: true
-  sni: 140.238.213.114
-- name: '🇩🇪DE | 581ms | 🇩🇪199747 | ⚡️Telegram = '
-  type: hysteria2
-  server: 88.99.213.222
-  port: 14444
-  password: mhsl
-  udp: true
-  skip-cert-verify: true
-  sni: bing.com
-- name: 🌐MD | 596ms | filembad-304
-  type: vless
-  server: 217.69.167.203
-  port: 43000
-  uuid: a094cdfb-8894-4a0e-8299-5ece1078a857
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: A8sWghnS7fSui7vIrx18mCX4rx1nr-yBpYKmwmkcXjo
-    short-id: 870721a2
-  client-fingerprint: chrome
-- name: 🌐FI | 599ms | 荷兰 004
-  type: vless
-  network: ws
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  servername: 45.144.234.157
-  tls: false
-  ws-opts:
+    path: /
     headers:
-      Host: 45.144.234.157
-    path: /vless
-- name: 🌐?? | 600ms | 🇺🇸 Join+Telegram:@Farah_
-  type: trojan
-  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  udp: true
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
-- name: 🇺🇸US | 605ms | @pass_net🎃🕸️🎃🇺🇸
-  type: trojan
-  server: 8.6.112.206
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.trusteeforward.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: '🇨🇦CA | 611ms | ####@vpnbaz⁵'
-  type: trojan
-  server: 104.18.32.47
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇩🇪DE | 617ms | 🇩🇪 Join+Telegram:@Farah_
-  type: vless
-  server: 31.70.111.146
-  port: 443
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.apple.com
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  client-fingerprint: chrome
-- name: '🇰🇷KR | 636ms | 🇰🇷200058 | ⚡️Telegram = '
+      Host: ccc.010304.xyz
+- name: 🇯🇵JP | 430ms | 🇯🇵JP-84.247.155.196-0163
   type: ss
-  server: 13.125.13.26
-  port: 8443
-  cipher: chacha20-ietf-poly1305
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  udp: true
-- name: 🌐PL | 644ms | 🇵🇱PL-🚀@VPNine1
-  type: vless
-  server: 144.31.112.193
+  server: 84.247.155.196
   port: 443
-  uuid: b2d5eabe-b95b-41ac-950c-79e7a5535416
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: smotrim.ru
-  reality-opts:
-    public-key: 1ZayBdUlr1WvxrXQxgOA8Fz8yrHZ7p6qfGmbzgbUtQA
-    short-id: c1e2f3b067f3325b
-  client-fingerprint: chrome
-- name: 🇩🇪DE | 645ms | @V2ray_Alpha🦝 3
-  type: vless
-  server: 144.31.215.162
-  port: 443
-  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: c1.qwyak.ru
-  reality-opts:
-    public-key: kqKpUiLtm5SPT2NO5Ss4LuH9xpTOxi79UJZWURwulwI
-    short-id: 547f159030aedc64
-  client-fingerprint: chrome
-- name: 🌐LT | 649ms | @pass_net🎃🕸️🎃
-  type: trojan
-  server: 88.216.69.253
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇩🇪DE | 655ms | 🍄‍🟫41@oneclickvpnkeys
-  type: hysteria2
-  server: 5.45.100.100
-  port: 51511
-  password: miaoge110
-  udp: true
-  skip-cert-verify: true
-- name: 🇳🇱NL | 659ms | @GozargahAzad|🇳🇱
-  type: vless
-  server: 213.152.165.201
-  port: 2094
-  uuid: 2ddcb519-ac96-48fe-8f91-4af4254c7d90
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.apple.com
-  reality-opts:
-    public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
-    short-id: 55986a94e2228791
-  client-fingerprint: chrome
-- name: 🌐IT | 671ms | 🇮🇹_IT_意大利-3
-  type: ss
-  server: 202.50.253.81
-  port: 19999
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇭🇰HK | 685ms | @meliproxyy-8
-  type: vless
-  server: 165.154.63.139
-  port: 443
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.amazon.com
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  client-fingerprint: chrome
-- name: 🇩🇪DE | 689ms | 🇩🇪 Join+Telegram:@Farah_
-  type: vless
-  server: 140.225.208.50
-  port: 2083
-  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  udp: true
-  tls: true
-  servername: speedtestmark.com
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers: {}
-- name: 🌐?? | 689ms | 美国 017
-  type: trojan
-  network: ws
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
-  sni: www.calmlunch.com
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: 🌐CR | 689ms | @pass_net🎃🕸️🎃🇨🇷
-  type: trojan
-  server: 190.93.245.148
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐ME | 697ms | 伊朗 001
-  type: vless
-  network: ws
-  server: 31.57.190.89
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  servername: ccc.010304.xyz
-  tls: true
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /fp=chromefp=chrome
-- name: 🌐FI | 712ms | 11091@proxy_online_net
-  type: vless
-  server: 78.17.55.225
-  port: 443
-  uuid: b2d5eabe-b95b-41ac-950c-79e7a5535416
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: tvigle.ru
-  reality-opts:
-    public-key: nnyAPMILuXf-yuxu1RNW2qUq1WknAf9uMx8hNoFH410
-    short-id: d63e1739f583607a
-  client-fingerprint: chrome
-- name: 🌐FI | 723ms | @VPsave-3
-  type: vless
-  server: 177.3.214.156
-  port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: finlandlanzarotte.live
-  reality-opts:
-    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
-    short-id: ''
-  client-fingerprint: chrome
-- name: 🌐?? | 728ms | @filembad-2
-  type: vless
-  server: trdatair.egekaradecojistik.net.tr
-  port: 35577
-  uuid: b7d3a581-74d6-4ead-9235-ce9dedf08152
-  udp: true
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: play.google.com
-- name: 🇨🇦CA | 730ms | 🇩🇪 Join+Telegram:@Farah_
-  type: vless
-  server: 104.18.0.181
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  udp: true
-  tls: false
-  servername: eu02.123450908.xyz
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
-- name: 🇸🇬SG | 741ms | 🇸🇬SG-68.183.227.4-0149
+- name: 🌐?? | 431ms | 11096@proxy_online_net
   type: ss
-  server: 68.183.227.4
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-- name: 🌐SE | 743ms | 巴西 003
-  type: vless
-  network: ws
-  server: 191.44.114.179
-  port: 2096
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  servername: st33614.rumedia-cdn.com
-  tls: true
-  udp: true
-  client-fingerprint: firefox
-  ws-opts:
-    headers:
-      Host: st33614.rumedia-cdn.com
-    path: /cdn/v3/live
-- name: 🇨🇦CA | 751ms | @ICV2RAY
-  type: trojan
-  server: 172.66.1.36
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐BY | 765ms | 白俄罗斯 002
-  type: vless
-  network: ws
-  server: 95.128.71.79
-  port: 14430
-  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
-  tls: false
-  ws-opts:
-    headers:
-      Host: 95.128.71.79
-    path: /vless
-- name: 🌐?? | 765ms | @VPsave-29
-  type: vless
-  server: 45-149-147-213.sslip.io
-  port: 4443
-  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
-  udp: true
-  tls: true
-  servername: 45-149-147-213.sslip.io
-  network: grpc
-  grpc-opts:
-    grpc-service-name: kobedin-server1-vless
-- name: 🌐ME | 776ms | 🇳🇱[www.v2nodes.com] troj
-  type: trojan
-  server: 31.57.190.71
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐?? | 789ms | 11053@proxy_online_net
-  type: vless
-  server: se13-node.rumedia-cdn.com
-  port: 2096
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  udp: true
-  tls: true
-  servername: st5ff8a.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st5ff8a.rumedia-cdn.com
-- name: 🇩🇪DE | 792ms | 🍄‍🟫43@oneclickvpnkeys
-  type: vless
-  server: 91.107.188.129
-  port: 2083
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
-  udp: true
-  tls: true
-  servername: site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers: {}
-- name: 🌐?? | 798ms | @meliproxyy
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐?? | 803ms | 🐙73@oneclickvpnkeys
-  type: vless
-  server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇮🇳IN | 804ms | 🇮🇳 Join+Telegram:@Farah_
-  type: ss
-  server: 139.84.166.47
+  server: ams2.4ebur.app
   port: 8388
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
+  cipher: chacha20-ietf-poly1305
+  password: Vm8ZDBCWk3ND0lIgW8emzg
   udp: true
-- name: 🌐?? | 804ms | [OpenRay] 🌐XX-2980
-  type: vmess
-  server: node8.liudonghoe.com
-  port: 443
-  uuid: 47050e4e-965d-41ca-976d-73c1f11e6905
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /hoe8
-    headers: {}
-  tls: true
-- name: 🇩🇪DE | 809ms | 🇳🇱[www.v2nodes.com] troj
-  type: trojan
-  server: 161.35.192.122
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇷🇺RU | 822ms | @VPsave-19
+- name: 🇳🇱NL | 446ms | 14
   type: vless
-  server: 5.129.222.115
-  port: 443
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  server: 51.158.206.97
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
   tls: true
   flow: xtls-rprx-vision
-  servername: ad7.vkusnews.com
+  servername: fuck.rkn
   reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-    short-id: ''
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   client-fingerprint: chrome
-- name: 🇬🇧GB | 822ms | @ICV2RAY-10
+- name: 🇯🇵JP | 450ms | 🇯🇵[www.v2nodes.com] ss-J
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇬🇧GB | 450ms | @ICV2RAY-11
   type: vless
   server: 167.104.223.215
   port: 443
@@ -1075,106 +646,217 @@ proxies:
     public-key: fyfX-egDrRvXNW1Gt2P_8rH4jdupAcmhFLOCZCzCowo
     short-id: fc36b4a584871aa5
   client-fingerprint: chrome
-- name: 🌐?? | 827ms | 🇩🇪All⁶ | @BigSmoke_Confi
+- name: 🇷🇺RU | 454ms | @meliproxyy-6
   type: vless
-  server: fly.lumexa.ir
-  port: 443
-  uuid: 756c8a9d-ff97-41f3-90b8-50f29acaba1f
+  server: 193.160.140.117
+  port: 8443
+  uuid: 57c87188-1056-4bd5-92f8-c7ca1fd19147
   udp: true
   tls: true
   flow: xtls-rprx-vision
-  servername: dynu.com
+  servername: apple.com
   reality-opts:
-    public-key: 0E-OTXVHsukKvwgwynrI49nTaT5m6rxdaFPg4D_UszI
-    short-id: 9cc0
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: ''
   client-fingerprint: chrome
-- name: 🇸🇬SG | 829ms | @MDVpnSEC
+- name: 🇳🇱NL | 460ms | >>@oneclickvpnkeys::NL
   type: vless
-  server: 43.174.193.1
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 51.158.206.19
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
   tls: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇨🇦CA | 835ms | @ICV2RAY-6
-  type: trojan
-  server: 104.18.45.38
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇷🇺RU | 841ms | 俄罗斯 003
-  type: vless
-  network: grpc
-  server: 77.232.135.141
-  port: 8445
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  servername: ru1.radiolumens.uk
-  tls: true
-  udp: true
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: beru-pl
-- name: 🌐?? | 845ms | @Qara_atayi | 🇬🇧
-  type: vless
-  server: connect.wecantos.site
-  port: 10000
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-  udp: true
-  tls: false
-- name: 🇷🇺RU | 898ms | 🇷🇺RU-🚀@VPNine1
-  type: vless
-  server: 46.8.29.17
-  port: 443
-  uuid: b2d5eabe-b95b-41ac-950c-79e7a5535416
-  udp: true
-  tls: true
-  servername: deti-online.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: skazki
+  flow: xtls-rprx-vision
+  servername: fuck.rkn
   reality-opts:
-    public-key: y8tdYYF4byfHuyhCUb0x8SLK2gjmhKLK_wr-QVb3Dko
-    short-id: 2fd2739b0851f9e4
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   client-fingerprint: chrome
-- name: 🇷🇺RU | 900ms | ZikkOVpnBot | خوش‌قیمت و
+- name: 🌐MD | 460ms | filembad-304
   type: vless
-  server: 45.151.71.158
+  server: 217.69.167.203
+  port: 43000
+  uuid: a094cdfb-8894-4a0e-8299-5ece1078a857
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: A8sWghnS7fSui7vIrx18mCX4rx1nr-yBpYKmwmkcXjo
+    short-id: 870721a2
+  client-fingerprint: chrome
+- name: 🇳🇱NL | 462ms | >>@configV2rayNG::NL
+  type: ss
+  server: 82.38.31.186
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🌐IT | 466ms | 🇮🇹_IT_意大利
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: '🇳🇱NL | 470ms | 🇳🇱139818 | ⚡️Telegram = '
+  type: vless
+  server: 51.158.206.80
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🇳🇱NL | 472ms | 🇳🇱 Join+Telegram:@Farah_
+  type: vless
+  server: 51.158.206.103
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🇷🇺RU | 473ms | 🐙11@oneclickvpnkeys
+  type: vless
+  server: 147.45.47.83
   port: 443
   uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
   udp: true
   tls: true
   flow: xtls-rprx-vision
-  servername: ai.ozon.ru
+  servername: ozon.ru
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: ''
   client-fingerprint: chrome
-- name: 🇷🇺RU | 900ms | @V2ray_Alpha🥬 5
+- name: 🇳🇱NL | 473ms | 🍄‍🟫5@oneclickvpnkeys
   type: vless
-  server: 5.42.99.64
-  port: 8443
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  server: 86.54.28.75
+  port: 443
+  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
   udp: true
   tls: true
   flow: xtls-rprx-vision
-  servername: du-rov.secureservice.top
+  servername: www.apple.com
   reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
+    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
+    short-id: 1d86d17709852910
   client-fingerprint: chrome
-- name: 🌐HU | 930ms | @Tarkshodeh 🇺🇲-6
+- name: 🇳🇱NL | 474ms | 🍄‍🟫7@oneclickvpnkeys
+  type: hysteria2
+  server: 109.235.49.234
+  port: 443
+  password: 529f1911-04d5-4427-94b9-c851fd459a27
+  udp: true
+  skip-cert-verify: false
+  sni: tcp-reset-club.net
+- name: 🌐?? | 476ms | 🇫🇷FR-🚀@VPNine1
+  type: ss
+  server: ger1.4ebur.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: kBQA4ihPCmDzgdEd2RCu6A
+  udp: true
+- name: 🇳🇱NL | 477ms | >>@oneclickvpnkeys::NL-2
+  type: vless
+  server: 51.158.206.87
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🇩🇪DE | 482ms | 🍄‍🟫6@oneclickvpnkeys
+  type: vless
+  server: 64.188.66.181
+  port: 443
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ge-s-1.pythonmakemigreat.wiki
+  reality-opts:
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+  client-fingerprint: chrome
+- name: 🇫🇷FR | 482ms | >>@oneclickvpnkeys::FR
+  type: vless
+  server: 62.210.91.2
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🌐PL | 488ms | 🍄‍🟫94@oneclickvpnkeys
+  type: vless
+  server: 5.22.221.127
+  port: 443
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  udp: true
+  tls: false
+- name: 🇷🇺RU | 489ms | @VPsave-2
+  type: vless
+  server: 193.160.140.99
+  port: 443
+  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ozon.ru
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇷🇺RU | 490ms | 🍄‍🟫40@oneclickvpnkeys
+  type: vless
+  server: 45.128.78.176
+  port: 443
+  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ozon.ru
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇳🇱NL | 504ms | @ICV2RAY-4
+  type: ss
+  server: 82.38.31.180
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇨🇦CA | 505ms | 🇳🇱[www.v2nodes.com] troj
   type: trojan
-  server: 185.225.68.232
+  server: 172.66.40.99
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.trusteeforward.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: '🇺🇸US | 513ms | @prrofile_purple | 𝗙𝗮𝗦𝗧 '
+  type: trojan
+  server: 141.193.213.172
   port: 443
   password: humanity
   udp: true
@@ -1182,34 +864,256 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🌐ZA | 940ms | 🇿🇦[www.v2nodes.com] ss-Z
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
-- name: 🌐ZA | 947ms | @filembad-5
-  type: ss
-  server: 20.164.41.194
+- name: 🌐?? | 522ms | 美国 503
+  type: vmess
+  network: ws
+  server: guanwang.awsno.com
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: UQFMIrjfuCgElfpl
-  udp: true
-- name: 🌐?? | 957ms | 11104@proxy_online_net
-  type: vless
-  server: au5.pad-sservice.lat
-  port: 8443
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  udp: true
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  skip-cert-verify: true
   tls: true
-  servername: au5.pad-sservice.lat
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: guanwang.awsno.com
+    path: /hls/cctv5phd.m3u8
+- name: 🇨🇦CA | 526ms | @pass_net🎃🕸️🎃🇨🇦
+  type: trojan
+  server: 104.27.201.80
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
   network: ws
   ws-opts:
-    path: /AU5W
+    path: /assignment
+- name: 🌐ES | 533ms | @pass_net🎃🕸️🎃🇪🇸
+  type: trojan
+  server: 109.234.211.232
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇩🇪DE | 537ms | 🍄‍🟫8@oneclickvpnkeys
+  type: vless
+  server: 5.252.179.15
+  port: 443
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.bing.com
+  reality-opts:
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  client-fingerprint: chrome
+- name: 🌐?? | 537ms | @VPsave-37
+  type: vless
+  server: gb2.murainternet.network
+  port: 443
+  uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: gb2.murainternet.network
+  reality-opts:
+    public-key: fyfX-egDrRvXNW1Gt2P_8rH4jdupAcmhFLOCZCzCowo
+    short-id: fc36b4a584871aa5
+  client-fingerprint: chrome
+- name: 🇺🇸US | 548ms | @v2ray_phoenix-3
+  type: trojan
+  server: 8.47.69.0
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐FI | 549ms | @VPsave-21
+  type: vless
+  server: 177.3.214.156
+  port: 443
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: finlandlanzarotte.live
+  reality-opts:
+    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇳🇱NL | 570ms | @VPsave-20
+  type: trojan
+  server: 168.235.125.93
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇯🇵JP | 588ms | 🇯🇵_JP_日本
+  type: ss
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+  udp: true
+- name: 🇸🇬SG | 596ms | telegram:@pirozi_ArGaP-2
+  type: vless
+  server: 43.134.176.236
+  port: 13954
+  uuid: 6ce8ff5b-4975-46d2-80ee-7eb48200cade
+  udp: true
+  tls: false
+- name: 🇨🇦CA | 597ms | @pass_net🎃🕸️🎃🇨🇦-2
+  type: trojan
+  server: 104.27.203.207
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇯🇵JP | 600ms | 🇮🇹 direct
+  type: vless
+  server: 3.114.220.22
+  port: 10583
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.apple.com
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  client-fingerprint: chrome
+- name: 🇸🇬SG | 603ms | 以色列 002
+  type: vmess
+  network: tcp
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪DE | 615ms | 🍄‍🟫63@oneclickvpnkeys
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
     headers:
-      Host: au5.pad-sservice.lat
-- name: 🇫🇷FR | 1004ms | 法国 001
+      Host: sino.bestsellers1.site
+- name: 🌐BY | 635ms | 白俄罗斯 002
+  type: vless
+  network: ws
+  server: 95.128.71.79
+  port: 14430
+  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
+  tls: false
+  ws-opts:
+    headers:
+      Host: 95.128.71.79
+    path: /vless
+- name: 🇺🇸US | 646ms | @V2ray_Alpha🕌 7
+  type: vless
+  server: 67.220.73.204
+  port: 16016
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.apple.com
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  client-fingerprint: chrome
+- name: 🌐PL | 654ms | @VPsave-19
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  servername: 2.26.6.1
+- name: 🇩🇪DE | 668ms | 🇩🇪 Join+Telegram:@Farah_
+  type: vless
+  server: 167.172.183.195
+  port: 2096
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  udp: true
+  tls: true
+  servername: edge.yzkvm.top
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: edge.yzkvm.top
+- name: 🌐MY | 675ms | 马来西亚 001
+  type: vmess
+  network: tcp
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪DE | 688ms | 德国 058
+  type: vless
+  network: ws
+  server: 46.101.253.244
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  servername: edge.yzkvm.top
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: edge.yzkvm.top
+    path: /
+- name: 🌐?? | 694ms | 11055@proxy_online_net
+  type: vless
+  server: pl4-node.rumedia-cdn.com
+  port: 2096
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  udp: true
+  tls: true
+  servername: stb6390.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: stb6390.rumedia-cdn.com
+- name: 🌐PL | 702ms | 美国 043
+  type: vmess
+  network: ws
+  server: 54.37.131.126
+  port: 80
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+    path: /
+- name: 🇫🇷FR | 703ms | 法国 001
   type: vmess
   network: ws
   server: 145.239.55.210
@@ -1223,22 +1127,42 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
     path: /
-- name: 🌐?? | 1018ms | 11111@proxy_online_net
+- name: 🇮🇳IN | 712ms | 🇮🇳 Join+Telegram:@Farah_
+  type: ss
+  server: 139.84.166.47
+  port: 8388
+  cipher: aes-256-gcm
+  password: GEdoeeqLZtkJRgSa
+  udp: true
+- name: 🇩🇪DE | 713ms | 🇩🇪 Join+Telegram:@Farah_
   type: vless
-  server: nl6.pad-sservice.lat
-  port: 8443
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  server: 77.239.104.82
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
-  servername: nl6.pad-sservice.lat
+  servername: vp58.cc.cd
   network: ws
   ws-opts:
-    path: /NL6W
+    path: /Telegram🇨🇳 @VPNine1
     headers:
-      Host: nl6.pad-service.com
-- name: 🌐ES | 1031ms | @pass_net🎃🕸️🎃🇪🇸
+      Host: vp58.cc.cd
+- name: 🇨🇦CA | 716ms | 🇩🇪 Join+Telegram:@Farah_
+  type: vless
+  server: 104.18.0.181
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  udp: true
+  tls: false
+  servername: eu02.123450908.xyz
+  network: ws
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
+- name: 🇨🇦CA | 722ms | @ICV2RAY
   type: trojan
-  server: 109.234.211.232
+  server: 104.18.45.38
   port: 443
   password: humanity
   udp: true
@@ -1246,19 +1170,275 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇮🇳IN | 1101ms | 美国 008
+- name: 🇩🇪DE | 727ms | 🇳🇱[www.v2nodes.com] troj
+  type: trojan
+  server: 161.35.192.122
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐?? | 729ms | [OpenRay] 🌐XX-1762
+  type: vmess
+  server: rib9jxayoqjgn2kw.v.3dns.vip
+  port: 443
+  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers: {}
+  tls: true
+  servername: rib9jxayoqjgn2kw.v.3dns.vip
+- name: 🇩🇪DE | 739ms | @V2ray_Alpha🕌 3
+  type: trojan
+  server: 144.31.205.106
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐?? | 775ms | @VPsave-33
+  type: vless
+  server: uk1.connectsuite.org
+  port: 443
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  udp: true
+  tls: true
+  servername: uk1.connectsuite.org
+  network: ws
+  ws-opts:
+    path: /cdn-cgi/ws
+    headers: {}
+- name: 🇫🇷FR | 777ms | @meliproxyy-9
+  type: vless
+  server: 161.97.160.224
+  port: 443
+  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: passport.yandex.ru
+  reality-opts:
+    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
+    short-id: e6
+  client-fingerprint: chrome
+- name: 🌐?? | 788ms | 🐙99@oneclickvpnkeys
+  type: hysteria2
+  server: srv-17e124.21freedom.net
+  port: 11592
+  password: 41edb44c8e
+  udp: true
+  skip-cert-verify: false
+- name: 🇷🇺RU | 794ms | @VPsave
+  type: vless
+  server: 5.129.222.115
+  port: 443
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ad7.vkusnews.com
+  reality-opts:
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇷🇺RU | 802ms | 11052@proxy_online_net
+  type: vless
+  server: 201.51.8.163
+  port: 443
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: atk.vkusnews.com
+  reality-opts:
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🌐CH | 802ms | 🇮🇹 Join+Telegram:@Farah_
+  type: vless
+  server: 116.204.164.17
+  port: 7443
+  uuid: ef8907eb-8bb5-4735-80f2-1d0068500d95
+  udp: true
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🌐?? | 809ms | @Qara_atayi | 🇬🇧
+  type: vless
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+  udp: true
+  tls: false
+- name: 🇷🇺RU | 829ms | vpnsal
+  type: vless
+  server: 72.56.241.230
+  port: 443
+  uuid: 88b744bb-8ac7-484e-a376-136193452a2c
+  udp: true
+  tls: true
+  servername: max.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: api.v1.StreamService
+  reality-opts:
+    public-key: SCQ-mhDUvmeQzJvctQYDDSha1R_rggGFkWK_9IRuvH4
+    short-id: aabbccdd
+  client-fingerprint: chrome
+- name: 🌐HU | 856ms | @Tarkshodeh 🇺🇲-2
+  type: trojan
+  server: 185.225.68.232
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐GR | 878ms | 乌克兰 003
   type: vless
   network: ws
-  server: 13.140.56.100
+  server: 85.90.197.156
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  servername: free.cndyw.ggff.net
+  tls: true
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: pyip=bpb.yousef.isegaro.comfp=random
+- name: 🇷🇺RU | 890ms | @V2ray_Alpha🥬 5
+  type: vless
+  server: 5.42.99.64
+  port: 8443
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: du-rov.secureservice.top
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  client-fingerprint: chrome
+- name: 🇷🇺RU | 899ms | 巴西 026
+  type: vless
+  network: ws
+  server: 200.165.231.209
+  port: 443
+  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
+  servername: wstg.datasynctrue.online
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: wstg.datasynctrue.online
+    path: /api/connect
+- name: 🇨🇦CA | 978ms | 🇨🇦[www.v2nodes.com] ss-C
+  type: ss
+  server: 51.222.155.32
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: 🌐?? | 981ms | 11114@proxy_online_net
+  type: vless
+  server: pl1.pad-sservice.lat
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  servername: pl1.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /PL1W
+    headers:
+      Host: pl1.pad-service.com
+- name: 🌐AE | 994ms | 荷兰 001
+  type: vless
+  network: ws
+  server: 95.174.68.188
   port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  servername: 13.140.56.100
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  servername: 95.174.68.188
   tls: false
   ws-opts:
     headers:
-      Host: 13.140.56.100
+      Host: 95.174.68.188
     path: /vless
-- name: 🌐VN | 1112ms | 🇻🇳VN-🚀@VPNine1
+- name: 🌐?? | 1002ms | 11104@proxy_online_net
+  type: vless
+  server: au5.pad-sservice.lat
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  servername: au5.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /AU5W
+    headers:
+      Host: au5.pad-sservice.lat
+- name: 🌐AL | 1025ms | 爱尔兰 001
+  type: vless
+  network: ws
+  server: 89.125.139.115
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  servername: free.cndyw.ggff.net
+  tls: true
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: pyip=bpb.yousef.isegaro.comfp=chrome
+- name: 🇮🇳IN | 1133ms | @tootffarangi🍓-18
+  type: ss
+  server: 172.105.39.124
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🌐?? | 1144ms | [OpenRay] 🌐XX-372
+  type: vmess
+  server: or3.sfacg.uk
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+  tls: true
+  servername: cdn.sfacg.uk
+- name: 🌐?? | 1145ms | @tootffarangi🍓-15
+  type: vless
+  server: tr2.soft10.ir
+  port: 443
+  uuid: 480b4042-f713-43d7-b24b-b4064c97f841
+  udp: true
+  tls: true
+  servername: tr2.soft10.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers: {}
+- name: 🌐VN | 1189ms | 🇻🇳VN-🚀@VPNine1
   type: vless
   server: 163.61.182.194
   port: 34646
@@ -1270,97 +1450,54 @@ proxies:
     public-key: UuXUXzPnZM8IY-D5bQPy4iBIzEpK4PJFEOJzeObISRA
     short-id: 4710d669
   client-fingerprint: chrome
-- name: 🌐?? | 1112ms | 🔵@chillguy_vpn
-  type: vless
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
-  uuid: 948a83ff-6277-48f1-a31e-f9b2f6b34fe4
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: timeline.www.cloudflare.com
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  client-fingerprint: chrome
-- name: 🌐ES | 1112ms | 俄罗斯 002
-  type: trojan
-  network: ws
-  server: 185.114.72.31
-  port: 2053
-  password: humanity
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: 🌐?? | 1115ms | 美国 012
-  type: vless
-  network: ws
-  server: centurylink.es
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  servername: free.sahanwickramasinghe.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-    path: /
-- name: 🌐KZ | 1132ms | 美国 088
-  type: vmess
-  network: ws
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: viber.com
-    path: /vmess/
-- name: 🌐?? | 1133ms | 11113@proxy_online_net
-  type: vless
-  server: pl2.pad-sservice.lat
-  port: 8443
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  udp: true
-  tls: true
-  servername: pl2.pad-sservice.lat
-  network: ws
-  ws-opts:
-    path: /PL2W
-    headers:
-      Host: pl2.pad-service.com
-- name: 🇺🇸US | 1154ms | 🇷🇺 direct
-  type: vless
-  server: 169.40.42.89
+- name: 🌐?? | 1202ms | 🇺🇸 美国 | USA 5
+  type: hysteria2
+  server: starlink-ft.251313.xyz
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  password: https://xship.best
   udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 🌐?? | 1194ms | @irdusti(48)🇩🇪⁵
+  skip-cert-verify: true
+  sni: xship.top
+- name: 🌐?? | 1220ms | 11110@proxy_online_net
   type: vless
-  server: de10.pad-sservice.lat
+  server: fin2.pad-sservice.lat
   port: 8443
   uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   udp: true
   tls: true
-  servername: de10.pad-sservice.lat
+  servername: fin2.pad-sservice.lat
   network: ws
   ws-opts:
-    path: /DE10W
+    path: /fin2-1
     headers:
-      Host: de10.pad-service.com
-- name: 🇺🇸US | 1226ms | 美国 487
+      Host: fin2.pad-service.com
+- name: 🌐?? | 1239ms | 11108@proxy_online_net
+  type: vless
+  server: nl2.pad-sservice.lat
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  servername: nl2.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /NL2W
+    headers:
+      Host: nl2.pad-service.com
+- name: 🌐?? | 1284ms | 11115@proxy_online_net
+  type: vless
+  server: nl8.pad-sservice.lat
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  servername: nl8.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /NL8W
+    headers:
+      Host: nl8.pad-service.com
+- name: 🇺🇸US | 1306ms | 美国 487
   type: vless
   network: ws
   server: 8.35.211.242
@@ -1375,144 +1512,161 @@ proxies:
     headers:
       Host: vpn.cintaku.qzz.io
     path: /vlessws
-- name: 🌐?? | 1237ms | 11105@proxy_online_net
-  type: vless
-  server: nl7.pad-sservice.lat
-  port: 8443
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  udp: true
-  tls: true
-  servername: nl7.pad-sservice.lat
-  network: ws
-  ws-opts:
-    path: /NL7W
-    headers:
-      Host: nl7.pad-service.com
-- name: 🌐?? | 1268ms | 11114@proxy_online_net
-  type: vless
-  server: pl1.pad-sservice.lat
-  port: 8443
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  udp: true
-  tls: true
-  servername: pl1.pad-sservice.lat
-  network: ws
-  ws-opts:
-    path: /PL1W
-    headers:
-      Host: pl1.pad-service.com
-- name: 🌐MY | 1288ms | 🏳[www.v2nodes.com] vless
-  type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇺🇸US | 1479ms | 美国 103
+- name: 🌐KZ | 1312ms | 美国 088
   type: vmess
-  network: tcp
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  network: ws
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
   skip-cert-verify: true
   alterId: 0
   cipher: auto
-- name: 🌐?? | 1608ms | @filembad-3
+  ws-opts:
+    headers:
+      Host: viber.com
+    path: /vmess/
+- name: '🇭🇰HK | 1354ms | ✅  @vistav2ray کانال ما '
   type: vless
-  server: free.familysharing.ir
-  port: 443
-  uuid: 6f79d21b-1c7a-ba5f-3e1b-4dc69c364948
+  server: 66.90.115.124
+  port: 2090
+  uuid: 3644635c-f8c4-449c-a665-fce1897a7bf3
   udp: true
   tls: true
   flow: xtls-rprx-vision
-  servername: amp-api-search-edge.apps.apple.com
+  servername: www.apple.com
   reality-opts:
-    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
-    short-id: 35938c4e546cd459
+    public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk
+    short-id: bb472a184677af64
   client-fingerprint: chrome
-- name: 🇺🇸US | 1920ms | 🇺🇸 Join+Telegram:@Farah_
+- name: 🌐?? | 1358ms | 11111@proxy_online_net
   type: vless
-  server: 50.117.15.225
-  port: 443
-  uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
+  server: nl6.pad-sservice.lat
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   udp: true
   tls: true
-  flow: xtls-rprx-vision
-  servername: www.foxsports.com
-  reality-opts:
-    public-key: G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY
-    short-id: 91af08b1ce1f
-  client-fingerprint: chrome
-- name: 🌐?? | 2260ms | @VPsave-18
-  type: vless
-  server: uk1.connectsuite.org
-  port: 443
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
-  udp: true
-  tls: true
-  servername: uk1.connectsuite.org
+  servername: nl6.pad-sservice.lat
   network: ws
   ws-opts:
-    path: /cdn-cgi/ws
-    headers: {}
-- name: 🌐FI | 2325ms | @vpnbaz 🍋‍🟩
+    path: /NL6W
+    headers:
+      Host: nl6.pad-service.com
+- name: 🌐?? | 1394ms | 11112@proxy_online_net
   type: vless
-  server: 107.181.151.128
-  port: 443
-  uuid: 88742d38-3f5c-4b9c-b256-7df5db8257ec
+  server: pl3.pad-sservice.lat
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   udp: true
   tls: true
-  flow: xtls-rprx-vision
-  servername: www.mozilla.org
+  servername: pl3.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /PL3W
+    headers:
+      Host: pl3.pad-service.com
+- name: 🌐?? | 1404ms | 🩵⇝ @v2mystery جوین شو قط
+  type: vless
+  server: 510.150333.xyz
+  port: 21003
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  udp: true
+  tls: true
+  servername: www.cloudflare.com
   reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 8f79726c5002
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: f3602a3a1cf928b7
   client-fingerprint: chrome
-- name: 🇺🇸US | 2381ms | @v2ray_phoenix-5
+- name: 🌐?? | 1432ms | 11118@proxy_online_net
+  type: vless
+  server: de4.pad-sservice.lat
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  servername: de4.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /D14E
+    headers:
+      Host: de4.pad-service.com
+- name: 🌐CL | 1438ms | 🇨🇱[www.v2nodes.com] ss-C
+  type: ss
+  server: 64.176.2.21
+  port: 8388
+  cipher: aes-256-gcm
+  password: xBStBEVqvGwHPocc
+  udp: true
+- name: 🇨🇦CA | 1717ms | 🇨🇦[www.v2nodes.com] ss-C
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🌐KZ | 1820ms | 美国 014
+  type: vless
+  network: ws
+  server: 38.180.38.137
+  port: 443
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  servername: vlso5.1d.mom
+  tls: true
+  client-fingerprint: chrome
+  encryption: none
+  ws-opts:
+    headers:
+      Host: vlso5.1d.mom
+    path: /socks5=888:888
+- name: 🌐?? | 1823ms | @ICV2RAY-3
+  type: vless
+  server: mci1.amir12.ir
+  port: 1222
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  udp: true
+  tls: true
+  servername: play.google.com
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  client-fingerprint: chrome
+- name: 🇰🇷KR | 2229ms | >>@shadowproxy66::XX
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
+- name: 🌐RO | 2359ms | 🇷🇴[www.v2nodes.com] ss-R
+  type: ss
+  server: 194.68.44.42
+  port: 64546
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
+  udp: true
+- name: 🇰🇷KR | 2564ms | >>@shadowproxy66::KR
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: '🌐?? | 2928ms | 🇩🇪 德国 | DEU #5'
   type: trojan
-  server: 8.47.69.0
-  port: 443
-  password: humanity
+  server: oge126.pacemakere.com
+  port: 20029
+  password: e2c626bcab2143cf
   udp: true
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇳🇱NL | 2538ms | @ICV2RAY-12
+  sni: oge126.pacemakere.com
+- name: 🇨🇦CA | 3158ms | 🇨🇦[www.v2nodes.com] ss-C
   type: ss
-  server: 82.38.31.180
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  server: 51.222.155.113
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇭🇰HK | 3067ms | 🇨🇳CN-47.244.120.197-2422
-  type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers: {}
-- name: 🇺🇸US | 3152ms | United+States
-  type: ss
-  server: 198.98.53.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-  udp: true
-- name: 🇺🇸US | 3200ms | @meliproxyy-7
+- name: 🇩🇪DE | 3680ms | @filembad-2
   type: vless
-  server: 208.84.100.209
+  server: 157.90.175.178
   port: 2112
   uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   udp: true
@@ -1522,205 +1676,171 @@ proxies:
     public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
     short-id: 125ba3
   client-fingerprint: chrome
-- name: 🇺🇸US | 3202ms | 🇺🇸 Join+Telegram:@Farah_
-  type: vless
-  server: 47.251.25.74
-  port: 443
-  uuid: 18805ff3-b420-45de-af18-93be14024ae8
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.amazon.com
-  reality-opts:
-    public-key: H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8
-    short-id: ''
-  client-fingerprint: chrome
-- name: 🌐?? | 3209ms | @GozargahAzad|🇫🇮
-  type: vless
-  server: webdisk.jaggyslawa.org
-  port: 443
-  uuid: 75113671-63e3-452d-87d3-261a37e8b472
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.mozilla.org
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: baf023e1026a
-  client-fingerprint: chrome
-- name: 🇨🇦CA | 3283ms | 🇨🇦[www.v2nodes.com] ss-C
-  type: ss
-  server: 51.222.155.32
-  port: 5003
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: 🌐?? | 3740ms | @k2guard  جوین شو 👈🏻
-  type: vmess
-  server: de.zhou-yufan.com
-  port: 443
-  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: de.zhou-yufan.com
 proxy-groups:
 - name: ♻️ 自动选优
   type: url-test
   proxies: &id001
-  - 🇺🇸US | 62ms | @Tarkahodeh 🏴󠁧󠁢󠁷󠁬󠁳󠁿-2
-  - 🇺🇸US | 63ms | 🇺🇸US-156.146.38.170-0055
-  - 🇺🇸US | 122ms | @VPsave-11
-  - 🇨🇦CA | 124ms | 美国+CloudFlare节点
-  - 🇨🇦CA | 133ms | 美国 038
-  - 🇺🇸US | 145ms | @V2ray_Alpha🕌 8
-  - 🇺🇸US | 150ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🇺🇸US | 167ms | 美国 098
-  - 🇺🇸US | 184ms | @IRAN_V2RAY1 🌟-6
-  - 🌐?? | 189ms | [OpenRay] 🌐XX-1762
-  - 🇨🇦CA | 195ms | 美国 106
-  - 🌐?? | 234ms | @VPsave-23
-  - '🇺🇸US | 244ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
-  - 🇺🇸US | 251ms | @i10VPN³-2
-  - 🇺🇸US | 303ms | 🇺🇸US_3278_@Surfboardv2ra
-  - 🇺🇸US | 313ms | 🇺🇸US_3194_@Surfboardv2ra
-  - 🇺🇸US | 316ms | @V2ray_Alpha🛑 10
-  - 🇺🇸US | 317ms | @i10VPN³-3
-  - 🇬🇧GB | 357ms | 🇬🇧[www.v2nodes.com] ss-G
-  - 🇨🇦CA | 362ms | 🇸🇬 新加坡 | SGP 4
-  - 🇯🇵JP | 364ms | 🇯🇵JP-149.22.87.204-0146
-  - 🇯🇵JP | 365ms | 🇯🇵JP-149.22.87.241-0140
-  - 🇯🇵JP | 366ms | 🇯🇵JP-149.22.87.240-0136
-  - 🇬🇧GB | 379ms | 🇬🇧[www.v2nodes.com] ss-G
-  - 🇳🇱NL | 391ms | @tootffarangi🍓-2
-  - 🇳🇱NL | 392ms | @hex_proxy ³
-  - 🌐?? | 395ms | 🇺🇸 美国 | USA 5
-  - 🇳🇱NL | 407ms | 🇬🇧GB-82.38.31.2-0129
-  - 🌐?? | 407ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🇯🇵JP | 409ms | 🇯🇵JP-84.247.155.196-0163
-  - 🇳🇱NL | 409ms | @V2ray_Alpha🍦 1
-  - 🇳🇱NL | 410ms | 🇳🇱NL-193.29.139.235-0132
-  - 🇳🇱NL | 411ms | 🇬🇧GB-82.38.31.49-0133
-  - 🇳🇱NL | 412ms | @EXPRESSVPN_420
-  - 🇳🇱NL | 413ms | 🇬🇧GB-82.38.31.34-0144
-  - 🇳🇱NL | 414ms | 🇬🇧GB-82.38.31.203-0065
-  - 🇳🇱NL | 415ms | @V2ray_Alpha🍄‍🟫 3
-  - 🇳🇱NL | 417ms | 🇬🇧GB-82.38.31.82-0131
-  - 🇳🇱NL | 417ms | @vpnbaz🦄
-  - 🇳🇱NL | 418ms | 🇳🇱 Join+Telegram:@Farah_
-  - 🇳🇱NL | 418ms | >>@Easy_Free_VPN::XX
-  - 🇳🇱NL | 418ms | @V2ray_Alpha🚃 5
-  - 🇳🇱NL | 418ms | 🇬🇧GB-82.38.31.48-0128
-  - 🇳🇱NL | 419ms | @ICV2RAY-9
-  - 🇳🇱NL | 421ms | @hex_proxy ⁷
-  - 🇳🇱NL | 421ms | 🇬🇧GB-82.38.31.171-0137
-  - 🇳🇱NL | 422ms | TEL;Father_vpn
-  - 🇳🇱NL | 422ms | @V2ray_Alpha🚃 6
-  - 🇳🇱NL | 426ms | 🇳🇱 Join+Telegram:@Farah_
-  - 🇳🇱NL | 436ms | @Rayan_Config-82.38.31.2
-  - 🇺🇸US | 445ms | 🇺🇸US_3370_@Surfboardv2ra
-  - 🇳🇱NL | 449ms | @IRAN_V2RAY1 🌟-3
-  - 🇬🇧GB | 449ms | 🇦🇹[www.v2nodes.com] ss-A
-  - 🌐IT | 464ms | 🇮🇹[www.v2nodes.com] ss-I
-  - 🇳🇱NL | 482ms | 11
-  - 🇳🇱NL | 485ms | 🇳🇱 | 3
-  - 🇳🇱NL | 487ms | 🇳🇱NL-109.201.152.181-011
-  - 🇳🇱NL | 487ms | 5
-  - 🇬🇧GB | 489ms | 🇫🇷FR-🚀@VPNine1
-  - 🇬🇧GB | 500ms | 🇬🇧GB-146.70.61.37-0064
-  - 🌐?? | 523ms | 美国 860
-  - '🇳🇱NL | 531ms | 🇳🇱139818 | ⚡️Telegram = '
-  - 🌐PL | 534ms | 🍄‍🟫94@oneclickvpnkeys
-  - 🌐IT | 544ms | 🇮🇹_IT_意大利
-  - 🇫🇷FR | 545ms | 8
-  - '🇳🇱NL | 548ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @AZARBAYJAB1-2'
-  - 🇳🇱NL | 549ms | 🍄‍🟫7@oneclickvpnkeys
-  - 🇳🇱NL | 554ms | @V2ray_Alpha🍦 3
-  - 🇫🇷FR | 562ms | >>@oneclickvpnkeys::FR-2
-  - 🇫🇷FR | 566ms | @hopev2ray💙
-  - 🇺🇸US | 567ms | 🇩🇪 Join+Telegram:@Farah_
-  - 🌐CH | 569ms | 🍄‍🟫74@oneclickvpnkeys
-  - '🇩🇪DE | 581ms | 🇩🇪199747 | ⚡️Telegram = '
-  - 🌐MD | 596ms | filembad-304
-  - 🌐FI | 599ms | 荷兰 004
-  - 🌐?? | 600ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🇺🇸US | 605ms | @pass_net🎃🕸️🎃🇺🇸
-  - '🇨🇦CA | 611ms | ####@vpnbaz⁵'
-  - 🇩🇪DE | 617ms | 🇩🇪 Join+Telegram:@Farah_
-  - '🇰🇷KR | 636ms | 🇰🇷200058 | ⚡️Telegram = '
-  - 🌐PL | 644ms | 🇵🇱PL-🚀@VPNine1
-  - 🇩🇪DE | 645ms | @V2ray_Alpha🦝 3
-  - 🌐LT | 649ms | @pass_net🎃🕸️🎃
-  - 🇩🇪DE | 655ms | 🍄‍🟫41@oneclickvpnkeys
-  - 🇳🇱NL | 659ms | @GozargahAzad|🇳🇱
-  - 🌐IT | 671ms | 🇮🇹_IT_意大利-3
-  - 🇭🇰HK | 685ms | @meliproxyy-8
-  - 🇩🇪DE | 689ms | 🇩🇪 Join+Telegram:@Farah_
-  - 🌐?? | 689ms | 美国 017
-  - 🌐CR | 689ms | @pass_net🎃🕸️🎃🇨🇷
-  - 🌐ME | 697ms | 伊朗 001
-  - 🌐FI | 712ms | 11091@proxy_online_net
-  - 🌐FI | 723ms | @VPsave-3
-  - 🌐?? | 728ms | @filembad-2
-  - 🇨🇦CA | 730ms | 🇩🇪 Join+Telegram:@Farah_
-  - 🇸🇬SG | 741ms | 🇸🇬SG-68.183.227.4-0149
-  - 🌐SE | 743ms | 巴西 003
-  - 🇨🇦CA | 751ms | @ICV2RAY
-  - 🌐BY | 765ms | 白俄罗斯 002
-  - 🌐?? | 765ms | @VPsave-29
-  - 🌐ME | 776ms | 🇳🇱[www.v2nodes.com] troj
-  - 🌐?? | 789ms | 11053@proxy_online_net
-  - 🇩🇪DE | 792ms | 🍄‍🟫43@oneclickvpnkeys
-  - 🌐?? | 798ms | @meliproxyy
-  - 🌐?? | 803ms | 🐙73@oneclickvpnkeys
-  - 🇮🇳IN | 804ms | 🇮🇳 Join+Telegram:@Farah_
-  - 🌐?? | 804ms | [OpenRay] 🌐XX-2980
-  - 🇩🇪DE | 809ms | 🇳🇱[www.v2nodes.com] troj
-  - 🇷🇺RU | 822ms | @VPsave-19
-  - 🇬🇧GB | 822ms | @ICV2RAY-10
-  - 🌐?? | 827ms | 🇩🇪All⁶ | @BigSmoke_Confi
-  - 🇸🇬SG | 829ms | @MDVpnSEC
-  - 🇨🇦CA | 835ms | @ICV2RAY-6
-  - 🇷🇺RU | 841ms | 俄罗斯 003
-  - 🌐?? | 845ms | @Qara_atayi | 🇬🇧
-  - 🇷🇺RU | 898ms | 🇷🇺RU-🚀@VPNine1
-  - 🇷🇺RU | 900ms | ZikkOVpnBot | خوش‌قیمت و
-  - 🇷🇺RU | 900ms | @V2ray_Alpha🥬 5
-  - 🌐HU | 930ms | @Tarkshodeh 🇺🇲-6
-  - 🌐ZA | 940ms | 🇿🇦[www.v2nodes.com] ss-Z
-  - 🌐ZA | 947ms | @filembad-5
-  - 🌐?? | 957ms | 11104@proxy_online_net
-  - 🇫🇷FR | 1004ms | 法国 001
-  - 🌐?? | 1018ms | 11111@proxy_online_net
-  - 🌐ES | 1031ms | @pass_net🎃🕸️🎃🇪🇸
-  - 🇮🇳IN | 1101ms | 美国 008
-  - 🌐VN | 1112ms | 🇻🇳VN-🚀@VPNine1
-  - 🌐?? | 1112ms | 🔵@chillguy_vpn
-  - 🌐ES | 1112ms | 俄罗斯 002
-  - 🌐?? | 1115ms | 美国 012
-  - 🌐KZ | 1132ms | 美国 088
-  - 🌐?? | 1133ms | 11113@proxy_online_net
-  - 🇺🇸US | 1154ms | 🇷🇺 direct
-  - 🌐?? | 1194ms | @irdusti(48)🇩🇪⁵
-  - 🇺🇸US | 1226ms | 美国 487
-  - 🌐?? | 1237ms | 11105@proxy_online_net
-  - 🌐?? | 1268ms | 11114@proxy_online_net
-  - 🌐MY | 1288ms | 🏳[www.v2nodes.com] vless
-  - 🇺🇸US | 1479ms | 美国 103
-  - 🌐?? | 1608ms | @filembad-3
-  - 🇺🇸US | 1920ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🌐?? | 2260ms | @VPsave-18
-  - 🌐FI | 2325ms | @vpnbaz 🍋‍🟩
-  - 🇺🇸US | 2381ms | @v2ray_phoenix-5
-  - 🇳🇱NL | 2538ms | @ICV2RAY-12
-  - 🇭🇰HK | 3067ms | 🇨🇳CN-47.244.120.197-2422
-  - 🇺🇸US | 3152ms | United+States
-  - 🇺🇸US | 3200ms | @meliproxyy-7
-  - 🇺🇸US | 3202ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🌐?? | 3209ms | @GozargahAzad|🇫🇮
-  - 🇨🇦CA | 3283ms | 🇨🇦[www.v2nodes.com] ss-C
-  - 🌐?? | 3740ms | @k2guard  جوین شو 👈🏻
+  - 🇺🇸US | 49ms | @Tarkahodeh 🏴󠁧󠁢󠁷󠁬󠁳󠁿-3
+  - 🇺🇸US | 75ms | 🇺🇸US-156.146.38.168-0052
+  - 🇺🇸US | 97ms | 🇺🇸US-37.19.198.243-0054
+  - 🇺🇸US | 103ms | 🇺🇸US-37.19.198.236-0059
+  - 🇺🇸US | 110ms | 🇺🇸US-37.19.198.244-0057
+  - 🇺🇸US | 126ms | 美国 103
+  - 🇺🇸US | 131ms | 🇺🇸US-15.204.247.206-0161
+  - 🇺🇸US | 136ms | 🇺🇸 Join+Telegram:@Farah_
+  - 🇺🇸US | 140ms | @IRAN_V2RAY1 🌟
+  - 🇫🇷FR | 142ms | 荷兰 002
+  - 🇺🇸US | 142ms | @VPsave-38
+  - 🇺🇸US | 149ms | @V2ray_Alpha🛑 10
+  - 🇨🇦CA | 159ms | 🇨🇦[www.v2nodes.com] ss-C
+  - 🇺🇸US | 163ms | 🇺🇸 Join+Telegram:@Farah_
+  - 🇨🇦CA | 164ms | 美国 106
+  - 🇨🇦CA | 186ms | 🇸🇬 Join+Telegram:@Farah_
+  - '🌐?? | 188ms | آموزش ایجاد سریع کانفیگ '
+  - 🌐SC | 190ms | 荷兰 003
+  - 🇺🇸US | 194ms | 美国 016
+  - 🇨🇦CA | 199ms | @VPsave-14
+  - 🇨🇦CA | 199ms | 🇨🇦CA-149.22.95.183-0103
+  - 🇨🇦CA | 211ms | 巴西 001
+  - 🌐PE | 211ms | 🇨🇦 Join+Telegram:@Farah_
+  - 🇺🇸US | 215ms | 🇺🇸US_3176_@Surfboardv2ra
+  - 🇬🇧GB | 221ms | @tootffarangi🍓-7
+  - 🇺🇸US | 224ms | 美国 492
+  - '🇨🇦CA | 229ms | 🇨🇦200012 | ⚡️Telegram = '
+  - 🌐?? | 237ms | @VPsave-27
+  - '🇧🇷BR | 258ms | 🇧🇷199994 | ⚡️Telegram = '
+  - 🇨🇦CA | 259ms | 🇨🇦 Join+Telegram:@Farah_
+  - 🇺🇸US | 271ms | 🇺🇸US_3370_@Surfboardv2ra
+  - 🌐?? | 272ms | 🇸🇬[www.v2nodes.com] vles
+  - '🌐CW | 275ms | [78356] - Telegram : @V2'
+  - 🇺🇸US | 285ms | 🇺🇸 Join+Telegram:@Farah_
+  - 🇺🇸US | 289ms | 🇷🇺 direct
+  - 🇺🇸US | 297ms | @i10VPN³-2
+  - '🌐VG | 308ms | [78357] - Telegram : @V2'
+  - '🌐?? | 321ms | 🇨🇦200010 | ⚡️Telegram = '
+  - 🇳🇱NL | 350ms | @V2ray_Alpha🍦 4
+  - 🇳🇱NL | 352ms | 🇳🇱 Join+Telegram:@Farah_
+  - 🇳🇱NL | 358ms | 🇬🇧GB-82.38.31.42-0124
+  - '🇸🇬SG | 358ms | [78358] - Telegram : @V2'
+  - 🇳🇱NL | 360ms | @V2ray_Alpha🍦 1
+  - 🇳🇱NL | 361ms | 🇬🇧GB-82.38.31.46-0121
+  - 🇳🇱NL | 366ms | @tootffarangi🍓-17
+  - 🇳🇱NL | 367ms | @Shh_Proxy-New³-4
+  - 🇳🇱NL | 369ms | @V2ray_Alpha🍄‍🟫 3
+  - 🇳🇱NL | 369ms | 🇬🇧GB-82.38.31.171-0137
+  - 🇳🇱NL | 369ms | @Rayan_Config-82.38.31.2
+  - 🇳🇱NL | 371ms | 🇬🇧GB-82.38.31.62-0143
+  - 🇳🇱NL | 374ms | 🇳🇱 Join+Telegram:@Farah_
+  - 🇳🇱NL | 376ms | >>@Easy_Free_VPN::XX
+  - 🇳🇱NL | 377ms | 🇬🇧GB-82.38.31.207-0096
+  - 🇳🇱NL | 377ms | Free x754 @Outline_Vpn
+  - 🇩🇪DE | 384ms | @tootffarangi🍓-11mtn
+  - 🇳🇱NL | 384ms | 🇬🇧GB-82.38.31.159-0122
+  - 🇳🇱NL | 386ms | @hex_proxy ⁸
+  - 🇳🇱NL | 388ms | @hex_proxy ⁷
+  - 🌐IT | 390ms | 🇮🇹[www.v2nodes.com] ss-I
+  - '🇳🇱NL | 391ms | @appsooner کانال تلگرام '
+  - 🌐IT | 409ms | 🇮🇹_IT_意大利-3
+  - 🇯🇵JP | 413ms | 🇯🇵[www.v2nodes.com] ss-J
+  - 🌐IT | 422ms | 🇮🇹_IT_意大利-2
+  - 🌐?? | 428ms | 🇺🇸 Join+Telegram:@Farah_
+  - 🇯🇵JP | 430ms | 🇯🇵JP-84.247.155.196-0163
+  - 🌐?? | 431ms | 11096@proxy_online_net
+  - 🇳🇱NL | 446ms | 14
+  - 🇯🇵JP | 450ms | 🇯🇵[www.v2nodes.com] ss-J
+  - 🇬🇧GB | 450ms | @ICV2RAY-11
+  - 🇷🇺RU | 454ms | @meliproxyy-6
+  - 🇳🇱NL | 460ms | >>@oneclickvpnkeys::NL
+  - 🌐MD | 460ms | filembad-304
+  - 🇳🇱NL | 462ms | >>@configV2rayNG::NL
+  - 🌐IT | 466ms | 🇮🇹_IT_意大利
+  - '🇳🇱NL | 470ms | 🇳🇱139818 | ⚡️Telegram = '
+  - 🇳🇱NL | 472ms | 🇳🇱 Join+Telegram:@Farah_
+  - 🇷🇺RU | 473ms | 🐙11@oneclickvpnkeys
+  - 🇳🇱NL | 473ms | 🍄‍🟫5@oneclickvpnkeys
+  - 🇳🇱NL | 474ms | 🍄‍🟫7@oneclickvpnkeys
+  - 🌐?? | 476ms | 🇫🇷FR-🚀@VPNine1
+  - 🇳🇱NL | 477ms | >>@oneclickvpnkeys::NL-2
+  - 🇩🇪DE | 482ms | 🍄‍🟫6@oneclickvpnkeys
+  - 🇫🇷FR | 482ms | >>@oneclickvpnkeys::FR
+  - 🌐PL | 488ms | 🍄‍🟫94@oneclickvpnkeys
+  - 🇷🇺RU | 489ms | @VPsave-2
+  - 🇷🇺RU | 490ms | 🍄‍🟫40@oneclickvpnkeys
+  - 🇳🇱NL | 504ms | @ICV2RAY-4
+  - 🇨🇦CA | 505ms | 🇳🇱[www.v2nodes.com] troj
+  - '🇺🇸US | 513ms | @prrofile_purple | 𝗙𝗮𝗦𝗧 '
+  - 🌐?? | 522ms | 美国 503
+  - 🇨🇦CA | 526ms | @pass_net🎃🕸️🎃🇨🇦
+  - 🌐ES | 533ms | @pass_net🎃🕸️🎃🇪🇸
+  - 🇩🇪DE | 537ms | 🍄‍🟫8@oneclickvpnkeys
+  - 🌐?? | 537ms | @VPsave-37
+  - 🇺🇸US | 548ms | @v2ray_phoenix-3
+  - 🌐FI | 549ms | @VPsave-21
+  - 🇳🇱NL | 570ms | @VPsave-20
+  - 🇯🇵JP | 588ms | 🇯🇵_JP_日本
+  - 🇸🇬SG | 596ms | telegram:@pirozi_ArGaP-2
+  - 🇨🇦CA | 597ms | @pass_net🎃🕸️🎃🇨🇦-2
+  - 🇯🇵JP | 600ms | 🇮🇹 direct
+  - 🇸🇬SG | 603ms | 以色列 002
+  - 🇩🇪DE | 615ms | 🍄‍🟫63@oneclickvpnkeys
+  - 🌐BY | 635ms | 白俄罗斯 002
+  - 🇺🇸US | 646ms | @V2ray_Alpha🕌 7
+  - 🌐PL | 654ms | @VPsave-19
+  - 🇩🇪DE | 668ms | 🇩🇪 Join+Telegram:@Farah_
+  - 🌐MY | 675ms | 马来西亚 001
+  - 🇩🇪DE | 688ms | 德国 058
+  - 🌐?? | 694ms | 11055@proxy_online_net
+  - 🌐PL | 702ms | 美国 043
+  - 🇫🇷FR | 703ms | 法国 001
+  - 🇮🇳IN | 712ms | 🇮🇳 Join+Telegram:@Farah_
+  - 🇩🇪DE | 713ms | 🇩🇪 Join+Telegram:@Farah_
+  - 🇨🇦CA | 716ms | 🇩🇪 Join+Telegram:@Farah_
+  - 🇨🇦CA | 722ms | @ICV2RAY
+  - 🇩🇪DE | 727ms | 🇳🇱[www.v2nodes.com] troj
+  - 🌐?? | 729ms | [OpenRay] 🌐XX-1762
+  - 🇩🇪DE | 739ms | @V2ray_Alpha🕌 3
+  - 🌐?? | 775ms | @VPsave-33
+  - 🇫🇷FR | 777ms | @meliproxyy-9
+  - 🌐?? | 788ms | 🐙99@oneclickvpnkeys
+  - 🇷🇺RU | 794ms | @VPsave
+  - 🇷🇺RU | 802ms | 11052@proxy_online_net
+  - 🌐CH | 802ms | 🇮🇹 Join+Telegram:@Farah_
+  - 🌐?? | 809ms | @Qara_atayi | 🇬🇧
+  - 🇷🇺RU | 829ms | vpnsal
+  - 🌐HU | 856ms | @Tarkshodeh 🇺🇲-2
+  - 🌐GR | 878ms | 乌克兰 003
+  - 🇷🇺RU | 890ms | @V2ray_Alpha🥬 5
+  - 🇷🇺RU | 899ms | 巴西 026
+  - 🇨🇦CA | 978ms | 🇨🇦[www.v2nodes.com] ss-C
+  - 🌐?? | 981ms | 11114@proxy_online_net
+  - 🌐AE | 994ms | 荷兰 001
+  - 🌐?? | 1002ms | 11104@proxy_online_net
+  - 🌐AL | 1025ms | 爱尔兰 001
+  - 🇮🇳IN | 1133ms | @tootffarangi🍓-18
+  - 🌐?? | 1144ms | [OpenRay] 🌐XX-372
+  - 🌐?? | 1145ms | @tootffarangi🍓-15
+  - 🌐VN | 1189ms | 🇻🇳VN-🚀@VPNine1
+  - 🌐?? | 1202ms | 🇺🇸 美国 | USA 5
+  - 🌐?? | 1220ms | 11110@proxy_online_net
+  - 🌐?? | 1239ms | 11108@proxy_online_net
+  - 🌐?? | 1284ms | 11115@proxy_online_net
+  - 🇺🇸US | 1306ms | 美国 487
+  - 🌐KZ | 1312ms | 美国 088
+  - '🇭🇰HK | 1354ms | ✅  @vistav2ray کانال ما '
+  - 🌐?? | 1358ms | 11111@proxy_online_net
+  - 🌐?? | 1394ms | 11112@proxy_online_net
+  - 🌐?? | 1404ms | 🩵⇝ @v2mystery جوین شو قط
+  - 🌐?? | 1432ms | 11118@proxy_online_net
+  - 🌐CL | 1438ms | 🇨🇱[www.v2nodes.com] ss-C
+  - 🇨🇦CA | 1717ms | 🇨🇦[www.v2nodes.com] ss-C
+  - 🌐KZ | 1820ms | 美国 014
+  - 🌐?? | 1823ms | @ICV2RAY-3
+  - 🇰🇷KR | 2229ms | >>@shadowproxy66::XX
+  - 🌐RO | 2359ms | 🇷🇴[www.v2nodes.com] ss-R
+  - 🇰🇷KR | 2564ms | >>@shadowproxy66::KR
+  - '🌐?? | 2928ms | 🇩🇪 德国 | DEU #5'
+  - 🇨🇦CA | 3158ms | 🇨🇦[www.v2nodes.com] ss-C
+  - 🇩🇪DE | 3680ms | @filembad-2
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -1728,158 +1848,167 @@ proxy-groups:
   type: select
   proxies:
   - ♻️ 自动选优
-  - 🇺🇸US | 62ms | @Tarkahodeh 🏴󠁧󠁢󠁷󠁬󠁳󠁿-2
-  - 🇺🇸US | 63ms | 🇺🇸US-156.146.38.170-0055
-  - 🇺🇸US | 122ms | @VPsave-11
-  - 🇨🇦CA | 124ms | 美国+CloudFlare节点
-  - 🇨🇦CA | 133ms | 美国 038
-  - 🇺🇸US | 145ms | @V2ray_Alpha🕌 8
-  - 🇺🇸US | 150ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🇺🇸US | 167ms | 美国 098
-  - 🇺🇸US | 184ms | @IRAN_V2RAY1 🌟-6
-  - 🌐?? | 189ms | [OpenRay] 🌐XX-1762
-  - 🇨🇦CA | 195ms | 美国 106
-  - 🌐?? | 234ms | @VPsave-23
-  - '🇺🇸US | 244ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
-  - 🇺🇸US | 251ms | @i10VPN³-2
-  - 🇺🇸US | 303ms | 🇺🇸US_3278_@Surfboardv2ra
-  - 🇺🇸US | 313ms | 🇺🇸US_3194_@Surfboardv2ra
-  - 🇺🇸US | 316ms | @V2ray_Alpha🛑 10
-  - 🇺🇸US | 317ms | @i10VPN³-3
-  - 🇬🇧GB | 357ms | 🇬🇧[www.v2nodes.com] ss-G
-  - 🇨🇦CA | 362ms | 🇸🇬 新加坡 | SGP 4
-  - 🇯🇵JP | 364ms | 🇯🇵JP-149.22.87.204-0146
-  - 🇯🇵JP | 365ms | 🇯🇵JP-149.22.87.241-0140
-  - 🇯🇵JP | 366ms | 🇯🇵JP-149.22.87.240-0136
-  - 🇬🇧GB | 379ms | 🇬🇧[www.v2nodes.com] ss-G
-  - 🇳🇱NL | 391ms | @tootffarangi🍓-2
-  - 🇳🇱NL | 392ms | @hex_proxy ³
-  - 🌐?? | 395ms | 🇺🇸 美国 | USA 5
-  - 🇳🇱NL | 407ms | 🇬🇧GB-82.38.31.2-0129
-  - 🌐?? | 407ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🇯🇵JP | 409ms | 🇯🇵JP-84.247.155.196-0163
-  - 🇳🇱NL | 409ms | @V2ray_Alpha🍦 1
-  - 🇳🇱NL | 410ms | 🇳🇱NL-193.29.139.235-0132
-  - 🇳🇱NL | 411ms | 🇬🇧GB-82.38.31.49-0133
-  - 🇳🇱NL | 412ms | @EXPRESSVPN_420
-  - 🇳🇱NL | 413ms | 🇬🇧GB-82.38.31.34-0144
-  - 🇳🇱NL | 414ms | 🇬🇧GB-82.38.31.203-0065
-  - 🇳🇱NL | 415ms | @V2ray_Alpha🍄‍🟫 3
-  - 🇳🇱NL | 417ms | 🇬🇧GB-82.38.31.82-0131
-  - 🇳🇱NL | 417ms | @vpnbaz🦄
-  - 🇳🇱NL | 418ms | 🇳🇱 Join+Telegram:@Farah_
-  - 🇳🇱NL | 418ms | >>@Easy_Free_VPN::XX
-  - 🇳🇱NL | 418ms | @V2ray_Alpha🚃 5
-  - 🇳🇱NL | 418ms | 🇬🇧GB-82.38.31.48-0128
-  - 🇳🇱NL | 419ms | @ICV2RAY-9
-  - 🇳🇱NL | 421ms | @hex_proxy ⁷
-  - 🇳🇱NL | 421ms | 🇬🇧GB-82.38.31.171-0137
-  - 🇳🇱NL | 422ms | TEL;Father_vpn
-  - 🇳🇱NL | 422ms | @V2ray_Alpha🚃 6
-  - 🇳🇱NL | 426ms | 🇳🇱 Join+Telegram:@Farah_
-  - 🇳🇱NL | 436ms | @Rayan_Config-82.38.31.2
-  - 🇺🇸US | 445ms | 🇺🇸US_3370_@Surfboardv2ra
-  - 🇳🇱NL | 449ms | @IRAN_V2RAY1 🌟-3
-  - 🇬🇧GB | 449ms | 🇦🇹[www.v2nodes.com] ss-A
-  - 🌐IT | 464ms | 🇮🇹[www.v2nodes.com] ss-I
-  - 🇳🇱NL | 482ms | 11
-  - 🇳🇱NL | 485ms | 🇳🇱 | 3
-  - 🇳🇱NL | 487ms | 🇳🇱NL-109.201.152.181-011
-  - 🇳🇱NL | 487ms | 5
-  - 🇬🇧GB | 489ms | 🇫🇷FR-🚀@VPNine1
-  - 🇬🇧GB | 500ms | 🇬🇧GB-146.70.61.37-0064
-  - 🌐?? | 523ms | 美国 860
-  - '🇳🇱NL | 531ms | 🇳🇱139818 | ⚡️Telegram = '
-  - 🌐PL | 534ms | 🍄‍🟫94@oneclickvpnkeys
-  - 🌐IT | 544ms | 🇮🇹_IT_意大利
-  - 🇫🇷FR | 545ms | 8
-  - '🇳🇱NL | 548ms | 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @AZARBAYJAB1-2'
-  - 🇳🇱NL | 549ms | 🍄‍🟫7@oneclickvpnkeys
-  - 🇳🇱NL | 554ms | @V2ray_Alpha🍦 3
-  - 🇫🇷FR | 562ms | >>@oneclickvpnkeys::FR-2
-  - 🇫🇷FR | 566ms | @hopev2ray💙
-  - 🇺🇸US | 567ms | 🇩🇪 Join+Telegram:@Farah_
-  - 🌐CH | 569ms | 🍄‍🟫74@oneclickvpnkeys
-  - '🇩🇪DE | 581ms | 🇩🇪199747 | ⚡️Telegram = '
-  - 🌐MD | 596ms | filembad-304
-  - 🌐FI | 599ms | 荷兰 004
-  - 🌐?? | 600ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🇺🇸US | 605ms | @pass_net🎃🕸️🎃🇺🇸
-  - '🇨🇦CA | 611ms | ####@vpnbaz⁵'
-  - 🇩🇪DE | 617ms | 🇩🇪 Join+Telegram:@Farah_
-  - '🇰🇷KR | 636ms | 🇰🇷200058 | ⚡️Telegram = '
-  - 🌐PL | 644ms | 🇵🇱PL-🚀@VPNine1
-  - 🇩🇪DE | 645ms | @V2ray_Alpha🦝 3
-  - 🌐LT | 649ms | @pass_net🎃🕸️🎃
-  - 🇩🇪DE | 655ms | 🍄‍🟫41@oneclickvpnkeys
-  - 🇳🇱NL | 659ms | @GozargahAzad|🇳🇱
-  - 🌐IT | 671ms | 🇮🇹_IT_意大利-3
-  - 🇭🇰HK | 685ms | @meliproxyy-8
-  - 🇩🇪DE | 689ms | 🇩🇪 Join+Telegram:@Farah_
-  - 🌐?? | 689ms | 美国 017
-  - 🌐CR | 689ms | @pass_net🎃🕸️🎃🇨🇷
-  - 🌐ME | 697ms | 伊朗 001
-  - 🌐FI | 712ms | 11091@proxy_online_net
-  - 🌐FI | 723ms | @VPsave-3
-  - 🌐?? | 728ms | @filembad-2
-  - 🇨🇦CA | 730ms | 🇩🇪 Join+Telegram:@Farah_
-  - 🇸🇬SG | 741ms | 🇸🇬SG-68.183.227.4-0149
-  - 🌐SE | 743ms | 巴西 003
-  - 🇨🇦CA | 751ms | @ICV2RAY
-  - 🌐BY | 765ms | 白俄罗斯 002
-  - 🌐?? | 765ms | @VPsave-29
-  - 🌐ME | 776ms | 🇳🇱[www.v2nodes.com] troj
-  - 🌐?? | 789ms | 11053@proxy_online_net
-  - 🇩🇪DE | 792ms | 🍄‍🟫43@oneclickvpnkeys
-  - 🌐?? | 798ms | @meliproxyy
-  - 🌐?? | 803ms | 🐙73@oneclickvpnkeys
-  - 🇮🇳IN | 804ms | 🇮🇳 Join+Telegram:@Farah_
-  - 🌐?? | 804ms | [OpenRay] 🌐XX-2980
-  - 🇩🇪DE | 809ms | 🇳🇱[www.v2nodes.com] troj
-  - 🇷🇺RU | 822ms | @VPsave-19
-  - 🇬🇧GB | 822ms | @ICV2RAY-10
-  - 🌐?? | 827ms | 🇩🇪All⁶ | @BigSmoke_Confi
-  - 🇸🇬SG | 829ms | @MDVpnSEC
-  - 🇨🇦CA | 835ms | @ICV2RAY-6
-  - 🇷🇺RU | 841ms | 俄罗斯 003
-  - 🌐?? | 845ms | @Qara_atayi | 🇬🇧
-  - 🇷🇺RU | 898ms | 🇷🇺RU-🚀@VPNine1
-  - 🇷🇺RU | 900ms | ZikkOVpnBot | خوش‌قیمت و
-  - 🇷🇺RU | 900ms | @V2ray_Alpha🥬 5
-  - 🌐HU | 930ms | @Tarkshodeh 🇺🇲-6
-  - 🌐ZA | 940ms | 🇿🇦[www.v2nodes.com] ss-Z
-  - 🌐ZA | 947ms | @filembad-5
-  - 🌐?? | 957ms | 11104@proxy_online_net
-  - 🇫🇷FR | 1004ms | 法国 001
-  - 🌐?? | 1018ms | 11111@proxy_online_net
-  - 🌐ES | 1031ms | @pass_net🎃🕸️🎃🇪🇸
-  - 🇮🇳IN | 1101ms | 美国 008
-  - 🌐VN | 1112ms | 🇻🇳VN-🚀@VPNine1
-  - 🌐?? | 1112ms | 🔵@chillguy_vpn
-  - 🌐ES | 1112ms | 俄罗斯 002
-  - 🌐?? | 1115ms | 美国 012
-  - 🌐KZ | 1132ms | 美国 088
-  - 🌐?? | 1133ms | 11113@proxy_online_net
-  - 🇺🇸US | 1154ms | 🇷🇺 direct
-  - 🌐?? | 1194ms | @irdusti(48)🇩🇪⁵
-  - 🇺🇸US | 1226ms | 美国 487
-  - 🌐?? | 1237ms | 11105@proxy_online_net
-  - 🌐?? | 1268ms | 11114@proxy_online_net
-  - 🌐MY | 1288ms | 🏳[www.v2nodes.com] vless
-  - 🇺🇸US | 1479ms | 美国 103
-  - 🌐?? | 1608ms | @filembad-3
-  - 🇺🇸US | 1920ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🌐?? | 2260ms | @VPsave-18
-  - 🌐FI | 2325ms | @vpnbaz 🍋‍🟩
-  - 🇺🇸US | 2381ms | @v2ray_phoenix-5
-  - 🇳🇱NL | 2538ms | @ICV2RAY-12
-  - 🇭🇰HK | 3067ms | 🇨🇳CN-47.244.120.197-2422
-  - 🇺🇸US | 3152ms | United+States
-  - 🇺🇸US | 3200ms | @meliproxyy-7
-  - 🇺🇸US | 3202ms | 🇺🇸 Join+Telegram:@Farah_
-  - 🌐?? | 3209ms | @GozargahAzad|🇫🇮
-  - 🇨🇦CA | 3283ms | 🇨🇦[www.v2nodes.com] ss-C
-  - 🌐?? | 3740ms | @k2guard  جوین شو 👈🏻
+  - 🇺🇸US | 49ms | @Tarkahodeh 🏴󠁧󠁢󠁷󠁬󠁳󠁿-3
+  - 🇺🇸US | 75ms | 🇺🇸US-156.146.38.168-0052
+  - 🇺🇸US | 97ms | 🇺🇸US-37.19.198.243-0054
+  - 🇺🇸US | 103ms | 🇺🇸US-37.19.198.236-0059
+  - 🇺🇸US | 110ms | 🇺🇸US-37.19.198.244-0057
+  - 🇺🇸US | 126ms | 美国 103
+  - 🇺🇸US | 131ms | 🇺🇸US-15.204.247.206-0161
+  - 🇺🇸US | 136ms | 🇺🇸 Join+Telegram:@Farah_
+  - 🇺🇸US | 140ms | @IRAN_V2RAY1 🌟
+  - 🇫🇷FR | 142ms | 荷兰 002
+  - 🇺🇸US | 142ms | @VPsave-38
+  - 🇺🇸US | 149ms | @V2ray_Alpha🛑 10
+  - 🇨🇦CA | 159ms | 🇨🇦[www.v2nodes.com] ss-C
+  - 🇺🇸US | 163ms | 🇺🇸 Join+Telegram:@Farah_
+  - 🇨🇦CA | 164ms | 美国 106
+  - 🇨🇦CA | 186ms | 🇸🇬 Join+Telegram:@Farah_
+  - '🌐?? | 188ms | آموزش ایجاد سریع کانفیگ '
+  - 🌐SC | 190ms | 荷兰 003
+  - 🇺🇸US | 194ms | 美国 016
+  - 🇨🇦CA | 199ms | @VPsave-14
+  - 🇨🇦CA | 199ms | 🇨🇦CA-149.22.95.183-0103
+  - 🇨🇦CA | 211ms | 巴西 001
+  - 🌐PE | 211ms | 🇨🇦 Join+Telegram:@Farah_
+  - 🇺🇸US | 215ms | 🇺🇸US_3176_@Surfboardv2ra
+  - 🇬🇧GB | 221ms | @tootffarangi🍓-7
+  - 🇺🇸US | 224ms | 美国 492
+  - '🇨🇦CA | 229ms | 🇨🇦200012 | ⚡️Telegram = '
+  - 🌐?? | 237ms | @VPsave-27
+  - '🇧🇷BR | 258ms | 🇧🇷199994 | ⚡️Telegram = '
+  - 🇨🇦CA | 259ms | 🇨🇦 Join+Telegram:@Farah_
+  - 🇺🇸US | 271ms | 🇺🇸US_3370_@Surfboardv2ra
+  - 🌐?? | 272ms | 🇸🇬[www.v2nodes.com] vles
+  - '🌐CW | 275ms | [78356] - Telegram : @V2'
+  - 🇺🇸US | 285ms | 🇺🇸 Join+Telegram:@Farah_
+  - 🇺🇸US | 289ms | 🇷🇺 direct
+  - 🇺🇸US | 297ms | @i10VPN³-2
+  - '🌐VG | 308ms | [78357] - Telegram : @V2'
+  - '🌐?? | 321ms | 🇨🇦200010 | ⚡️Telegram = '
+  - 🇳🇱NL | 350ms | @V2ray_Alpha🍦 4
+  - 🇳🇱NL | 352ms | 🇳🇱 Join+Telegram:@Farah_
+  - 🇳🇱NL | 358ms | 🇬🇧GB-82.38.31.42-0124
+  - '🇸🇬SG | 358ms | [78358] - Telegram : @V2'
+  - 🇳🇱NL | 360ms | @V2ray_Alpha🍦 1
+  - 🇳🇱NL | 361ms | 🇬🇧GB-82.38.31.46-0121
+  - 🇳🇱NL | 366ms | @tootffarangi🍓-17
+  - 🇳🇱NL | 367ms | @Shh_Proxy-New³-4
+  - 🇳🇱NL | 369ms | @V2ray_Alpha🍄‍🟫 3
+  - 🇳🇱NL | 369ms | 🇬🇧GB-82.38.31.171-0137
+  - 🇳🇱NL | 369ms | @Rayan_Config-82.38.31.2
+  - 🇳🇱NL | 371ms | 🇬🇧GB-82.38.31.62-0143
+  - 🇳🇱NL | 374ms | 🇳🇱 Join+Telegram:@Farah_
+  - 🇳🇱NL | 376ms | >>@Easy_Free_VPN::XX
+  - 🇳🇱NL | 377ms | 🇬🇧GB-82.38.31.207-0096
+  - 🇳🇱NL | 377ms | Free x754 @Outline_Vpn
+  - 🇩🇪DE | 384ms | @tootffarangi🍓-11mtn
+  - 🇳🇱NL | 384ms | 🇬🇧GB-82.38.31.159-0122
+  - 🇳🇱NL | 386ms | @hex_proxy ⁸
+  - 🇳🇱NL | 388ms | @hex_proxy ⁷
+  - 🌐IT | 390ms | 🇮🇹[www.v2nodes.com] ss-I
+  - '🇳🇱NL | 391ms | @appsooner کانال تلگرام '
+  - 🌐IT | 409ms | 🇮🇹_IT_意大利-3
+  - 🇯🇵JP | 413ms | 🇯🇵[www.v2nodes.com] ss-J
+  - 🌐IT | 422ms | 🇮🇹_IT_意大利-2
+  - 🌐?? | 428ms | 🇺🇸 Join+Telegram:@Farah_
+  - 🇯🇵JP | 430ms | 🇯🇵JP-84.247.155.196-0163
+  - 🌐?? | 431ms | 11096@proxy_online_net
+  - 🇳🇱NL | 446ms | 14
+  - 🇯🇵JP | 450ms | 🇯🇵[www.v2nodes.com] ss-J
+  - 🇬🇧GB | 450ms | @ICV2RAY-11
+  - 🇷🇺RU | 454ms | @meliproxyy-6
+  - 🇳🇱NL | 460ms | >>@oneclickvpnkeys::NL
+  - 🌐MD | 460ms | filembad-304
+  - 🇳🇱NL | 462ms | >>@configV2rayNG::NL
+  - 🌐IT | 466ms | 🇮🇹_IT_意大利
+  - '🇳🇱NL | 470ms | 🇳🇱139818 | ⚡️Telegram = '
+  - 🇳🇱NL | 472ms | 🇳🇱 Join+Telegram:@Farah_
+  - 🇷🇺RU | 473ms | 🐙11@oneclickvpnkeys
+  - 🇳🇱NL | 473ms | 🍄‍🟫5@oneclickvpnkeys
+  - 🇳🇱NL | 474ms | 🍄‍🟫7@oneclickvpnkeys
+  - 🌐?? | 476ms | 🇫🇷FR-🚀@VPNine1
+  - 🇳🇱NL | 477ms | >>@oneclickvpnkeys::NL-2
+  - 🇩🇪DE | 482ms | 🍄‍🟫6@oneclickvpnkeys
+  - 🇫🇷FR | 482ms | >>@oneclickvpnkeys::FR
+  - 🌐PL | 488ms | 🍄‍🟫94@oneclickvpnkeys
+  - 🇷🇺RU | 489ms | @VPsave-2
+  - 🇷🇺RU | 490ms | 🍄‍🟫40@oneclickvpnkeys
+  - 🇳🇱NL | 504ms | @ICV2RAY-4
+  - 🇨🇦CA | 505ms | 🇳🇱[www.v2nodes.com] troj
+  - '🇺🇸US | 513ms | @prrofile_purple | 𝗙𝗮𝗦𝗧 '
+  - 🌐?? | 522ms | 美国 503
+  - 🇨🇦CA | 526ms | @pass_net🎃🕸️🎃🇨🇦
+  - 🌐ES | 533ms | @pass_net🎃🕸️🎃🇪🇸
+  - 🇩🇪DE | 537ms | 🍄‍🟫8@oneclickvpnkeys
+  - 🌐?? | 537ms | @VPsave-37
+  - 🇺🇸US | 548ms | @v2ray_phoenix-3
+  - 🌐FI | 549ms | @VPsave-21
+  - 🇳🇱NL | 570ms | @VPsave-20
+  - 🇯🇵JP | 588ms | 🇯🇵_JP_日本
+  - 🇸🇬SG | 596ms | telegram:@pirozi_ArGaP-2
+  - 🇨🇦CA | 597ms | @pass_net🎃🕸️🎃🇨🇦-2
+  - 🇯🇵JP | 600ms | 🇮🇹 direct
+  - 🇸🇬SG | 603ms | 以色列 002
+  - 🇩🇪DE | 615ms | 🍄‍🟫63@oneclickvpnkeys
+  - 🌐BY | 635ms | 白俄罗斯 002
+  - 🇺🇸US | 646ms | @V2ray_Alpha🕌 7
+  - 🌐PL | 654ms | @VPsave-19
+  - 🇩🇪DE | 668ms | 🇩🇪 Join+Telegram:@Farah_
+  - 🌐MY | 675ms | 马来西亚 001
+  - 🇩🇪DE | 688ms | 德国 058
+  - 🌐?? | 694ms | 11055@proxy_online_net
+  - 🌐PL | 702ms | 美国 043
+  - 🇫🇷FR | 703ms | 法国 001
+  - 🇮🇳IN | 712ms | 🇮🇳 Join+Telegram:@Farah_
+  - 🇩🇪DE | 713ms | 🇩🇪 Join+Telegram:@Farah_
+  - 🇨🇦CA | 716ms | 🇩🇪 Join+Telegram:@Farah_
+  - 🇨🇦CA | 722ms | @ICV2RAY
+  - 🇩🇪DE | 727ms | 🇳🇱[www.v2nodes.com] troj
+  - 🌐?? | 729ms | [OpenRay] 🌐XX-1762
+  - 🇩🇪DE | 739ms | @V2ray_Alpha🕌 3
+  - 🌐?? | 775ms | @VPsave-33
+  - 🇫🇷FR | 777ms | @meliproxyy-9
+  - 🌐?? | 788ms | 🐙99@oneclickvpnkeys
+  - 🇷🇺RU | 794ms | @VPsave
+  - 🇷🇺RU | 802ms | 11052@proxy_online_net
+  - 🌐CH | 802ms | 🇮🇹 Join+Telegram:@Farah_
+  - 🌐?? | 809ms | @Qara_atayi | 🇬🇧
+  - 🇷🇺RU | 829ms | vpnsal
+  - 🌐HU | 856ms | @Tarkshodeh 🇺🇲-2
+  - 🌐GR | 878ms | 乌克兰 003
+  - 🇷🇺RU | 890ms | @V2ray_Alpha🥬 5
+  - 🇷🇺RU | 899ms | 巴西 026
+  - 🇨🇦CA | 978ms | 🇨🇦[www.v2nodes.com] ss-C
+  - 🌐?? | 981ms | 11114@proxy_online_net
+  - 🌐AE | 994ms | 荷兰 001
+  - 🌐?? | 1002ms | 11104@proxy_online_net
+  - 🌐AL | 1025ms | 爱尔兰 001
+  - 🇮🇳IN | 1133ms | @tootffarangi🍓-18
+  - 🌐?? | 1144ms | [OpenRay] 🌐XX-372
+  - 🌐?? | 1145ms | @tootffarangi🍓-15
+  - 🌐VN | 1189ms | 🇻🇳VN-🚀@VPNine1
+  - 🌐?? | 1202ms | 🇺🇸 美国 | USA 5
+  - 🌐?? | 1220ms | 11110@proxy_online_net
+  - 🌐?? | 1239ms | 11108@proxy_online_net
+  - 🌐?? | 1284ms | 11115@proxy_online_net
+  - 🇺🇸US | 1306ms | 美国 487
+  - 🌐KZ | 1312ms | 美国 088
+  - '🇭🇰HK | 1354ms | ✅  @vistav2ray کانال ما '
+  - 🌐?? | 1358ms | 11111@proxy_online_net
+  - 🌐?? | 1394ms | 11112@proxy_online_net
+  - 🌐?? | 1404ms | 🩵⇝ @v2mystery جوین شو قط
+  - 🌐?? | 1432ms | 11118@proxy_online_net
+  - 🌐CL | 1438ms | 🇨🇱[www.v2nodes.com] ss-C
+  - 🇨🇦CA | 1717ms | 🇨🇦[www.v2nodes.com] ss-C
+  - 🌐KZ | 1820ms | 美国 014
+  - 🌐?? | 1823ms | @ICV2RAY-3
+  - 🇰🇷KR | 2229ms | >>@shadowproxy66::XX
+  - 🌐RO | 2359ms | 🇷🇴[www.v2nodes.com] ss-R
+  - 🇰🇷KR | 2564ms | >>@shadowproxy66::KR
+  - '🌐?? | 2928ms | 🇩🇪 德国 | DEU #5'
+  - 🇨🇦CA | 3158ms | 🇨🇦[www.v2nodes.com] ss-C
+  - 🇩🇪DE | 3680ms | @filembad-2
 - name: 🔯 故障转移
   type: fallback
   proxies: *id001
